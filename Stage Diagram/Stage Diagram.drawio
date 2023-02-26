@@ -1,1 +1,30 @@
-<mxfile host="app.diagrams.net" modified="2023-02-26T01:42:36.236Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76" etag="qo9vjy8xhbnNMC8Bwnaz" version="20.8.23" type="github"><diagram name="Page-1" id="rK8sP8XB6P-i0ZL2sLej">7ZZdb9sgFIZ/TS4TOeAk3mWSNt1FJ23qpF0ibIhNisEDnI/++h1snMRyqrZSt6vlIoaXg4Fzntf2CK/L44OhVfFNMy5HKGLHEb4bITTFyRwuXjm1yiJJWiE3goWgi/AkXngQo6DWgnHbC3RaSyeqvphppXjmeho1Rh/6YVst+6tWNOcD4Smjcqj+EswVrZrMoov+lYu86FaeRmGkpF1wEGxBmT5cSfh+hNdGa9e2yuOaS5+8Li/tvM0ro+eNGa7ceyYku/SQPtIf8gHnWix/vvzePY3DXfZU1uHAYbPu1GUA9l35piibVK0KV0roTqG558YJyNVSilyB5nR1pT7SlMvv2gontB9NtXO6hADpB1Y0e86NrhVba6lNsxbeNj8IaRZb2qotaQQK7TpbceSsC4F+4ZxnYelPjjYZU2gigIatUIybSQYrog2jjsLF6xauVFF5gj2Ohdpz60rI4JgqNk6ppCrjbGwzbXhGDYPg2dQnNY4SwkxdNn+WCGUdNGAieRaOlLX1JybWn4cAsJAPUhnN6sz604+nKJlUKg/ZhgTx46tlnJ7hAFdxXXJnThASJuA5bqec+kY5XOicolmrFddkdiINjsjPt75AA43AzQcYQv8ZeidDCJM1zNaSE7YjJWzCtOgQ62om9L/gZ94BE/hB8RCgWTLkp9M+HR/8Nj43cHkVjNs86dpJofj6/JbwOJyfyL7DqC08E91Iw2t5zP1rbWIAtElRcUJNndKJPQiXFdxOdl8WC0wJmuGIoDgnleaVrC1pA+BGn1GwKO4VDKNhwRbRDcP/Lb/HbxdsYLSrClZaKNfsabYaze68LUOpMsgINxdbrrZaufBJAAa62FWU4ISNFKn34UttuD9RzhU3FHa/+a4P4Fq7zz+nAIuo75j4hmPieFiA+ccdA93LB0EzdvVZhe//AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2023-02-26T01:54:07.108Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76" etag="AmL4lF5IZ-qXLS4exAsh" version="20.8.23" type="github" pages="2">
+  <diagram name="Page-1" id="rK8sP8XB6P-i0ZL2sLej">
+    <mxGraphModel dx="1386" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8jbwbLaQlG3goiATzqjS-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/analytic-investment-and-balanced-scorecard/512/408_drum_drums_instrument_kit_musical_sound_design_producstion-128.png" parent="1" vertex="1">
+          <mxGeometry x="363" y="10" width="125" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="8jbwbLaQlG3goiATzqjS-2" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/analytic-investment-and-balanced-scorecard/512/423_Console_dj_mixer_music_studio_sound_design_producstion-128.png" parent="1" vertex="1">
+          <mxGeometry x="610" y="240" width="58" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="8jbwbLaQlG3goiATzqjS-3" value="" style="html=1;verticalLabelPosition=bottom;verticalAlign=top;outlineConnect=0;shadow=0;dashed=0;shape=mxgraph.rack.hpe_aruba.switches.j9773a_2530_24g_poeplus_switch;" parent="1" vertex="1">
+          <mxGeometry x="604" y="320" width="70" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="8jbwbLaQlG3goiATzqjS-4" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Power.svg;" parent="1" vertex="1">
+          <mxGeometry x="700" y="440" width="44" height="68" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="QeR8Ccd4h7qsdjCPe4_X" name="Drum Set">
+    <mxGraphModel dx="1386" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
