@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-26T16:56:38.936Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="WFSL5B48Ai9t_59W5vYq" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-26T16:57:03.348Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.41" etag="BWtSCaVjOUalMG7SI4ER" version="20.8.23" type="github">
   <diagram name="Stage Diagram" id="rK8sP8XB6P-i0ZL2sLej">
     <mxGraphModel dx="1158" dy="656" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -447,7 +447,7 @@
         </mxCell>
         <mxCell id="hYlaiTehcVsQXE26dI48-28" value="Kick, Snare,&lt;br&gt;4 Tom, Hi-Hat&lt;br&gt;2 Overheads" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;labelBackgroundColor=none;" vertex="1" connectable="0" parent="hYlaiTehcVsQXE26dI48-27">
           <mxGeometry x="-0.5533" y="-2" relative="1" as="geometry">
-            <mxPoint x="-15" y="25" as="offset" />
+            <mxPoint x="-17" y="25" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hYlaiTehcVsQXE26dI48-32" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Power.svg;" vertex="1" parent="1">
