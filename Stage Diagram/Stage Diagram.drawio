@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-02-26T18:49:45.266Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76" etag="fYMZzEtcGKsIosc31sjW" version="20.8.23" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-26T18:50:36.445Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36 Edg/108.0.1462.76" etag="sYa5z1Q5MOSW2aZnfluN" version="20.8.23" type="github">
   <diagram name="Stage Diagram" id="rK8sP8XB6P-i0ZL2sLej">
     <mxGraphModel dx="1386" dy="788" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -700,9 +700,6 @@
         </mxCell>
         <mxCell id="EcMg9sCo_F_qR1D-_K-o-10" value="DI Box" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=5;fontColor=none;" vertex="1" parent="EcMg9sCo_F_qR1D-_K-o-6">
           <mxGeometry x="-2.200000000000003" y="-5.83" width="40" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="EcMg9sCo_F_qR1D-_K-o-13" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/iconoir-vol-2/24/fx-rounded-128.png;strokeColor=#000000;strokeWidth=3;fillColor=#00FF00;opacity=10;" vertex="1" parent="1">
-          <mxGeometry x="500" y="160" width="128" height="128" as="geometry" />
         </mxCell>
         <mxCell id="EcMg9sCo_F_qR1D-_K-o-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeColor=#33FFFF;" edge="1" parent="1" source="EcMg9sCo_F_qR1D-_K-o-14" target="hYlaiTehcVsQXE26dI48-3">
           <mxGeometry relative="1" as="geometry">
