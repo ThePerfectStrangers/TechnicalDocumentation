@@ -12,11 +12,15 @@ This is the general layout of the band. It includes the people, microphones, equ
 
 ![Full Band Stage Diagram](./Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.png)
 
+**Note:**  In a situation where the band is not in charge of the PA, the speakers on the left and right sides of the stage should be omitted from consideration. There will still need to be crowd mics included. If the PS provider already has crows mics set up, they can patch them in to 16 (Right) and 32 (Left) of the bands IEM mix.
+
 ### Drum Set
 
 This is the layout of the drum set.
 
 ![Drum Set Stage Diagram](./Stage%20Diagram/Drum%20Set/Drum%20Set.drawio.png)
+
+The drummer has everything contained within a marked [DW Large Drum Rug](https://www.sweetwater.com/store/detail/DWCPRUG2--dw-dwcprug2-large-drum-rug). The only spillover will be for the overhead mic stands.
 
 ## Input List
 
