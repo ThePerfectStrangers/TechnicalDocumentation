@@ -24,7 +24,7 @@ The drummer has everything contained within a marked [DW Large Drum Rug](https:/
 
 ## Input List
 
-This is a list of inputs needed by the band. It includes the input description, type of equipment (such as microphone), if 48v Phantom Power is required, and other notes related to the input channel. Typically, 48v phantom power and gain control are performed on stage by the band's IEM mixing rig.
+This is a list of inputs needed by the band. It includes the input description, type of equipment (such as microphone), if 48v Phantom Power is required, and other notes related to the input channel. Typically, 48V phantom power and gain control are managed on stage by the band's IEM mixing rig.
 
 ### Input + Equipment
 
