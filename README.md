@@ -1,6 +1,6 @@
 # The Perfect Strangers
 
-A general repo for all things related to [The Perfect Strangers](https://www.facebook.com/ThePerfectStrangersRock).
+A general repo for all things related to [The Perfect Strangers](https://ThePerfectStrangers.band).
 
 ## Parking
 
@@ -10,7 +10,7 @@ The band may need as many as 3 parking spots for members and one extended space 
 
 ### Equipment Trailer
 
-The trailer the band uses to haul equipment is 9 feet tall (2.75  meters). This typically exceeds the height of most parking garages. Special parking accommodations must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance. 
+The trailer the band uses to haul equipment is 9 feet tall (2.75  meters). This typically exceeds the height of most parking garages. Special parking accommodations must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
 
 The trailer will need to have access close to the area designated for the band to load/unload equipment. This may require the use of parking cones to reserve the space until the band arrives. Please notify the band beforehand if there are special accommodations made for parking.
 
