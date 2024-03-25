@@ -53,6 +53,7 @@ We offer two splitting options to accommodate various PA setups.
       * Tom 2
       * Tom 3
       * Tom 4
-  * **Options 1 - 24 channel split**: This includes all vocal and instrument mics, including the drummer's vocals, hi-hat, and tom mics that are omitted in the 16 channel split.
+      * Bongos
+  * **Options 1 - 24 channel split**: This includes all channels from Option 1, along with the drummer's vocals, hi-hat, bongos, and tom mics that are omitted in the 16 channel split.
 
 ![Snake and PA list](./Input%20List/Snake%20+%20PA.png)
