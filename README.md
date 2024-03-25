@@ -2,6 +2,18 @@
 
 A general repo for all things related to [The Perfect Strangers](https://www.facebook.com/ThePerfectStrangersRock).
 
+## Parking
+
+### Band Member Vehicles
+
+The band may need as many as 3 parking spots for members and one extended space for the equipment truck adn trailer, totaling 4 spaces.
+
+### Equipment Trailer
+
+The trailer the band uses to haul equipment is 9 feet tall (2.75  meters). This typically exceeds the height of most parking garages. Special parking accommodations must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance. 
+
+The trailer will need to have access close to the area designated for the band to load/unload equipment. This may require the use of parking cones to reserve the space until the band arrives. Please notify the band beforehand if there are special accommodations made for parking.
+
 ## Stage Diagram
 
 These are diagrams relating to the configuration and placement of people and/or equipment on stage.
@@ -20,7 +32,7 @@ This is the layout of the drum set.
 
 ![Drum Set Stage Diagram](./Stage%20Diagram/Drum%20Set/Drum%20Set.drawio.png)
 
-The drummer has everything contained within a marked [DW Large Drum Rug](https://www.sweetwater.com/store/detail/DWCPRUG2--dw-dwcprug2-large-drum-rug). The only spillover will be for the overhead mic stands.
+The drummer has everything contained within a marked [DW Large Drum Rug](https://www.sweetwater.com/store/detail/DWCPRUG2--dw-dwcprug2-large-drum-rug). The only spillover will be some of the legs for the overhead mic stands.
 
 ## Input List
 
