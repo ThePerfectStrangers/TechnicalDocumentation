@@ -43,6 +43,16 @@ This is a list of inputs needed by the band. It includes the input description, 
 ![Input and equipment list](./Input%20List/Input%20+%20Equipment.png)
 
 
-### Snake + PA
+### Snake, PA, and Split
+
+We offer two splitting options to accommodate various PA setups.
+  * **Options 1 - 16 channel split**: This split includes the band, but omits the following from the drummer:
+      * Vocals
+      * Hi-Hat
+      * Tom 1
+      * Tom 2
+      * Tom 3
+      * Tom 4
+  * **Options 1 - 24 channel split**: This includes all vocal and instrument mics, including the drummer's vocals, hi-hat, and tom mics that are omitted in the 16 channel split.
 
 ![Snake and PA list](./Input%20List/Snake%20+%20PA.png)
