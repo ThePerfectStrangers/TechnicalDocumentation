@@ -1,6 +1,23 @@
-# The Perfect Strangers
+# The Perfect Strangers -  Technical Documentation
 
-A general repo for all things related to [The Perfect Strangers](https://ThePerfectStrangers.band).
+[![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://theperfectstrangers.band/)  [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.patreon.com/ThePerfectStrangers) [![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@theperfectstangers) [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/theperfectstrangersrock) [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.facebook.com/ThePerfectStrangersRock)
+
+All techical documentation related to [The Perfect Strangers](https://ThePerfectStrangers.band).
+
+- [The Perfect Strangers -  Technical Documentation](#the-perfect-strangers----technical-documentation)
+  - [Parking](#parking)
+    - [Band Member Vehicles](#band-member-vehicles)
+    - [Equipment Trailer](#equipment-trailer)
+  - [Stage Diagram](#stage-diagram)
+    - [Full Band](#full-band)
+  - [Input List](#input-list)
+    - [Full Band](#full-band-1)
+      - [Input + Equipment](#input--equipment)
+      - [Snake, PA, and Split](#snake-pa-and-split)
+    - [Acoustic](#acoustic)
+      - [Input + Equipment](#input--equipment-1)
+      - [Snake, PA, and Split](#snake-pa-and-split-1)
+
 
 ## Parking
 
@@ -10,7 +27,7 @@ The band may need as many as 3 parking spots for members and one extended space 
 
 ### Equipment Trailer
 
-The trailer the band uses to haul equipment is 9 feet tall (2.75  meters). This typically exceeds the height of most parking garages. Special parking accommodations must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
+The trailer the band uses to haul equipment is 9 feet tall (2.75  meters). This typically exceeds the height of most parking garages. Special parking accommodations close to the loading/unloading area must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
 
 The trailer will need to have access close to the area designated for the band to load/unload equipment. This may require the use of parking cones to reserve the space until the band arrives. Please notify the band beforehand if there are special accommodations made for parking.
 
@@ -62,4 +79,3 @@ We offer two splitting options to accommodate various PA setups.
 A full 16 channel splitter can be provided. The band will need to know about this requirement before the event date.
 
 ![Snake and PA list](./Input%20List/Acoustic/Snake%20+%20PA.png)
-
