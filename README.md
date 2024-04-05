@@ -26,24 +26,17 @@ This is the general layout of the band. It includes the people, microphones, equ
 
 **Note:**  In a situation where the band is not in charge of the PA, the speakers on the left and right sides of the stage should be omitted from consideration. There will still need to be crowd mics included. If the PS provider already has crows mics set up, they can patch them in to 16 (Right) and 32 (Left) of the bands IEM mix.
 
-### Drum Set
-
-This is the layout of the drum set.
-
-![Drum Set Stage Diagram](./Stage%20Diagram/Drum%20Set/Drum%20Set.drawio.png)
-
-The drummer has everything contained within a marked [DW Large Drum Rug](https://www.sweetwater.com/store/detail/DWCPRUG2--dw-dwcprug2-large-drum-rug). The only spillover will be some of the legs for the overhead mic stands.
-
 ## Input List
 
 This is a list of inputs needed by the band. It includes the input description, type of equipment (such as microphone), if 48v Phantom Power is required, and other notes related to the input channel. Typically, 48V phantom power and gain control are managed on stage by the band's IEM mixing rig.
 
-### Input + Equipment
+### Full Band
 
-![Input and equipment list](./Input%20List/Input%20+%20Equipment.png)
+#### Input + Equipment
 
+![Input and equipment list](./Input%20List/Full%20Band/Input%20+%20Equipment.png)
 
-### Snake, PA, and Split
+#### Snake, PA, and Split
 
 We offer two splitting options to accommodate various PA setups.
   * **Options 1 - 16 channel split**: This split includes the band, but omits the following from the drummer:
@@ -53,6 +46,20 @@ We offer two splitting options to accommodate various PA setups.
       * Tom 2
       * Tom 3
       * Tom 4
-  * **Options 1 - 24 channel split**: This includes all vocal and instrument mics, including the drummer's vocals, hi-hat, and tom mics that are omitted in the 16 channel split.
+      * Bongos
+  * **Options 2 - 24 channel split**: This includes all channels from Option 1, along with the drummer's vocals, hi-hat, bongos, and tom mics that are omitted in the 16 channel split.
 
-![Snake and PA list](./Input%20List/Snake%20+%20PA.png)
+![Snake and PA list](./Input%20List/Full%20Band/Snake%20+%20PA.png)
+
+### Acoustic
+
+#### Input + Equipment
+
+![Input and equipment list](./Input%20List/Acoustic/Input%20+%20Equipment.png)
+
+#### Snake, PA, and Split
+
+A full 16 channel splitter can be provided. The band will need to know about this requirement before the event date.
+
+![Snake and PA list](./Input%20List/Acoustic/Snake%20+%20PA.png)
+
