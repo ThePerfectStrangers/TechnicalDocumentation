@@ -21,13 +21,9 @@ All techical documentation related to [The Perfect Strangers](https://ThePerfect
 
 ## Document Style
 
-Most of the graphics use the following color convention for the band members:
+The graphics in this repository use the following color convention for the band members:
 
-<div style="background-color: green;"><b>Green</b> - Chad - Drums, Vocals</div>
-<div style="background-color: magenta; color: black"><b>Magenta</b> - Kenzi - Keys, Guitar, Vocals</div>
-<div style="background-color: yellow; color: black"><b>Yellow</b> - Jessica - Guitar, Vocals</div>
-<div style="background-color: cyan; color: black"><b>Cyan</b> - John - Bass, Vocals</div>
-<div style="background-color: blue"><b>Blue</b> - Paul - Guitar, Vocals</div>
+![Full Band Stage Diagram](./Assets/BandColorConvention.png)
 
 ## Stage Diagram
 
