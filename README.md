@@ -23,7 +23,7 @@ All techical documentation related to [The Perfect Strangers](https://ThePerfect
 
 The graphics in this repository use the following color convention for the band members:
 
-![Full Band Stage Diagram](./Assets/BandColorConvention.png)
+<img src="./Assets/BandColorConvention.png" width=75%>
 
 ## Stage Diagram
 
