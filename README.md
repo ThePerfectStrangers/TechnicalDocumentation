@@ -5,9 +5,7 @@
 All techical documentation related to [The Perfect Strangers](https://ThePerfectStrangers.band).
 
 - [The Perfect Strangers -  Technical Documentation](#the-perfect-strangers----technical-documentation)
-  - [Parking](#parking)
-    - [Band Member Vehicles](#band-member-vehicles)
-    - [Equipment Trailer](#equipment-trailer)
+  - [Document Style](#document-style)
   - [Stage Diagram](#stage-diagram)
     - [Full Band](#full-band)
   - [Input List](#input-list)
@@ -17,19 +15,19 @@ All techical documentation related to [The Perfect Strangers](https://ThePerfect
     - [Acoustic](#acoustic)
       - [Input + Equipment](#input--equipment-1)
       - [Snake, PA, and Split](#snake-pa-and-split-1)
+  - [Parking](#parking)
+    - [Band Member Vehicles](#band-member-vehicles)
+    - [Equipment Trailer](#equipment-trailer)
 
+## Document Style
 
-## Parking
+Most of the graphics use the following color convention for the band members:
 
-### Band Member Vehicles
-
-The band may need as many as 3 parking spots for members and one extended space for the equipment truck adn trailer, totaling 4 spaces.
-
-### Equipment Trailer
-
-The trailer the band uses to haul equipment is 9 feet tall (2.75  meters). This typically exceeds the height of most parking garages. Special parking accommodations close to the loading/unloading area must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
-
-The trailer will need to have access close to the area designated for the band to load/unload equipment. This may require the use of parking cones to reserve the space until the band arrives. Please notify the band beforehand if there are special accommodations made for parking.
+<div style="background-color: green;"><b>Green</b> - Chad - Drums, Vocals</div>
+<div style="background-color: magenta; color: black"><b>Magenta</b> - Kenzi - Keys, Guitar, Vocals</div>
+<div style="background-color: yellow; color: black"><b>Yellow</b> - Jessica - Guitar, Vocals</div>
+<div style="background-color: cyan; color: black"><b>Cyan</b> - John - Bass, Vocals</div>
+<div style="background-color: blue"><b>Blue</b> - Paul - Guitar, Vocals</div>
 
 ## Stage Diagram
 
@@ -79,3 +77,15 @@ We offer two splitting options to accommodate various PA setups.
 A full 16 channel splitter can be provided. The band will need to know about this requirement before the event date.
 
 ![Snake and PA list](./Input%20List/Acoustic/Snake%20+%20PA.png)
+
+## Parking
+
+### Band Member Vehicles
+
+The band may need as many as 3 parking spots for members and one extended space for the equipment truck adn trailer, totaling 4 spaces.
+
+### Equipment Trailer
+
+For a full band set up, the band uses a covered trailer to transport equipment. The trailer is approximatley 9 feet tall (2.75  meters) and 6 feet wide (1.85 meters). This typically exceeds the height of most parking garages. Special parking accommodations close to the loading/unloading area must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
+
+The trailer will need to have access close to the area designated for the band to load/unload equipment. This may require the use of parking cones to reserve the space until the band arrives. Please notify the band beforehand if there are special accommodations made for parking.
