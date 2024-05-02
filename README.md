@@ -35,11 +35,17 @@ This is the general layout of the band. It includes the people, microphones, equ
 
 ![Full Band Stage Diagram](./Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.png)
 
-**Note:**  In a situation where the band is not in charge of the PA, the speakers on the left and right sides of the stage should be omitted from consideration. There will still need to be crowd mics included. If the PS provider already has crows mics set up, they can patch them in to 16 (Right) and 32 (Left) of the bands IEM mix.
+**Note:**  In a situation where the band is not in charge of the PA, the speakers on the left and right sides of the stage should be omitted from consideration.
 
 ## Input List
 
-This is a list of inputs needed by the band. It includes the input description, type of equipment (such as microphone), if 48v Phantom Power is required, and other notes related to the input channel. Typically, 48V phantom power and gain control are managed on stage by the band's IEM mixing rig.
+This is a list of inputs needed by the band. It includes:
+  * The input description
+  * Type of equipment (such as microphone)
+  * If 48V Phantom Power is required
+  * Other notes related to the input channel
+  
+48V phantom power and gain control are managed on stage by the band's IEM mixing rig. A split is used to send a line-level signal to FOH. More information can be found below regarding the split.
 
 ### Full Band
 
