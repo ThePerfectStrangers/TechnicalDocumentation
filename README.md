@@ -1,5 +1,5 @@
 <!-- omit from toc -->
-# Technical Documentation 
+# Technical Documentation
 
 [![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://theperfectstrangers.band/)  [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.patreon.com/ThePerfectStrangers) [![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@theperfectstangers) [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/theperfectstrangersrock) [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.facebook.com/ThePerfectStrangersRock)
 
@@ -15,9 +15,12 @@ All techical documentation related to band, [The Perfect Strangers](https://TheP
   - [Acoustic](#acoustic)
     - [Input + Equipment](#input--equipment-1)
     - [Snake, PA, and Split](#snake-pa-and-split-1)
-- [Parking](#parking)
-  - [Band Member Vehicles](#band-member-vehicles)
-  - [Equipment Trailer](#equipment-trailer)
+  - [Venue Requirements](#venue-requirements)
+    - [Personnel](#personnel)
+    - [Equipment](#equipment)
+    - [Parking](#parking)
+      - [Band Member Vehicles](#band-member-vehicles)
+      - [Equipment Trailer](#equipment-trailer)
 
 
 # Document Style
@@ -45,7 +48,7 @@ This is a list of inputs needed by the band. It includes:
   * Type of equipment (such as microphone)
   * If 48V Phantom Power is required
   * Other notes related to the input channel
-  
+
 48V phantom power and gain control are managed on stage by the band's IEM mixing rig. A split is used to send a line-level signal to FOH. More information can be found below regarding the split.
 
 ## Full Band
@@ -81,13 +84,27 @@ A full 16 channel splitter can be provided. The band will need to know about thi
 
 ![Snake and PA list](./Input%20List/Acoustic/Snake%20+%20PA.png)
 
-# Parking
+## Venue Requirements
 
-## Band Member Vehicles
+These are the requirements each venue that hosts the band must provide.
+
+### Personnel
+
+If a cover charge is required where the band gets 100% of the cover, the band will provide someone to take up money. If the cover charge is being split with the venue, then the venus will need to provide someone as well to observe the money.
+
+If the venue is 21+ or has house rules to enforce, the venue will need to provide someone to ID individuals and enforce the rules. Personnel provided by the band are only responsible for band related activities, such as taking up moeny at the door.
+
+### Equipment
+
+The band requires 4 breakers for band equipment, sound, and lighting. If the venue is providing lighting, then only 3 breakers are required. If the venue is providing PA sound and lighting, then only 2 breakers are required. This agreement needs to be worked out with the band before the date of the event.
+
+### Parking
+
+#### Band Member Vehicles
 
 The band may need as many as 3 parking spots for members and one extended space for the equipment truck adn trailer, totaling 4 spaces.
 
-## Equipment Trailer
+#### Equipment Trailer
 
 For a full band set up, the band uses a covered trailer to transport equipment. The trailer is approximatley 9 feet tall (2.75  meters) and 6 feet wide (1.85 meters). This typically exceeds the height of most parking garages. Special parking accommodations close to the loading/unloading area must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
 
