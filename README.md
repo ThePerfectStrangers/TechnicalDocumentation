@@ -9,6 +9,7 @@ All techical documentation related to band, [The Perfect Strangers](https://TheP
 - [Venue Requirements](#venue-requirements)
   - [Personnel](#personnel)
   - [Equipment](#equipment)
+    - [Electrical](#electrical)
   - [Parking](#parking)
     - [Band Member Vehicles](#band-member-vehicles)
     - [Equipment Trailer](#equipment-trailer)
@@ -37,11 +38,24 @@ These are the requirements each venue that hosts the band must provide.
 
 If a cover charge is required where the band gets 100% of the cover, the band will provide someone to take up money. If the cover charge is being split with the venue, then the venus will need to provide someone as well to observe the money.
 
-If the venue is 21+ or has house rules to enforce, the venue will need to provide someone to ID individuals and enforce the rules. Personnel provided by the band are only responsible for band related activities, such as taking up moeny at the door.
+If the venue is 21+ or has house rules to enforce, the venue will need to provide someone to ID individuals and enforce the rules. Personnel provided by the band are only responsible for band related activities, such as taking up money at the door.
 
 ## Equipment
 
-The band requires 4 breakers for band equipment, sound, and lighting. If the venue is providing lighting, then only 3 breakers are required. If the venue is providing PA sound and lighting, then only 2 breakers are required. This agreement needs to be worked out with the band before the date of the event.
+### Electrical
+
+The band will provide power conditioners and surge protectors for their equipment. We require the venue to provide enough dedicated breakers for our equipment to operate without issue. 
+
+  * PA Speakers
+    * 2 x 15 amp breakers
+      * One to the left of the stage.
+      * One to the right of the stage.
+    * If the venue is providing PA sound, then these are not required.
+  * IEM box & Amps
+    * 2 x 15 amp breakers
+      * One in the back of the stage to the left of the drums.
+      * One in the back of the stage to the right of the drums.
+    * These are always required.
 
 ## Parking
 
@@ -51,7 +65,7 @@ The band may need as many as 3 parking spots for members and one extended space 
 
 ### Equipment Trailer
 
-For a full band set up, the band uses a covered trailer to transport equipment. The trailer is approximatley 9 feet tall (2.75  meters) and 6 feet wide (1.85 meters). This typically exceeds the height of most parking garages. Special parking accommodations close to the loading/unloading area must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
+For a full band set up, the band uses a covered trailer to transport equipment. The trailer is approximately 9 feet tall (2.75  meters) and 6 feet wide (1.85 meters). This typically exceeds the height of most parking garages. Special parking accommodations close to the loading/unloading area must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
 
 The trailer will need to have access close to the area designated for the band to load/unload equipment. This may require the use of parking cones to reserve the space until the band arrives. Please notify the band beforehand if there are special accommodations made for parking.
 
