@@ -6,7 +6,7 @@
 All techical documentation related to band, [The Perfect Strangers](https://ThePerfectStrangers.band).
 
 - [Document Style](#document-style)
-- [Venue Requirements](#venue-requirements)
+- [Venue Requirements (Rider)](#venue-requirements-rider)
   - [Personnel](#personnel)
   - [Equipment](#equipment)
     - [Electrical](#electrical)
@@ -30,7 +30,7 @@ The graphics in this repository use the following color convention for the band 
 
 <img src="./Assets/BandColorConvention.png" width=75%>
 
-# Venue Requirements
+# Venue Requirements (Rider)
 
 These are the requirements each venue that hosts the band must provide.
 
@@ -44,7 +44,7 @@ If the venue is 21+ or has house rules to enforce, the venue will need to provid
 
 ### Electrical
 
-The band will provide power conditioners and surge protectors for their equipment. We require the venue to provide enough dedicated breakers for our equipment to operate without issue. 
+The band will provide power conditioners and surge protectors for their equipment. We require the venue to provide enough dedicated breakers for our equipment to operate without issue.
 
   * PA Speakers
     * 2 x 15 amp breakers
