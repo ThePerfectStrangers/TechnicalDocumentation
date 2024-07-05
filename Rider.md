@@ -5,7 +5,7 @@ These are the requirements each venue that hosts the band must provide.
 
 - [Personnel](#personnel)
   - [Entourage](#entourage)
-  - [Entry Fee PErsonnel](#entry-fee-personnel)
+  - [Personnel for collecting entry fee](#personnel-for-collecting-entry-fee)
 - [Equipment](#equipment)
   - [Stage area](#stage-area)
   - [Electrical](#electrical)
@@ -20,9 +20,9 @@ These are the requirements each venue that hosts the band must provide.
 
 Each band member may have an additional person in their entourage (total 10 for the band; 5 members plus 5 in the entourage). This is typically a significant other or spouse. These people should allowed the same access as the band members and be exempt from being charged any admission or access fee to a venue.
 
-### Entry Fee PErsonnel
+### Personnel for collecting entry fee
 
-If a cover charge is required where the band gets 100% of the cover, the band will provide someone to take up money. If the cover charge is being split with the venue, then the venus must also provide someone as well to observe the handling of the money. This helps to ensure everyone is satisfied that the money was handled properly at the end of the night.
+If an entry fee/cover charge is required where the band gets 100% of the cover, the band will provide someone to take up money. If the cover charge is being split with the venue, then the venus must ALSO provide someone as well to observe the handling of the money. This helps to ensure everyone is satisfied that the money was handled properly at the end of the night. If the venue fails to provide someone, then they forfeit their rights to dispute anything regarding the handling of entry fee money.
 
 If the venue is 21+ or has house rules to enforce (such as rules governing a liquor license), the venue must provide someone to ID individuals and enforce the house rules. Personnel provided by the band are only responsible for band related activities, such as taking up money at the door.
 
