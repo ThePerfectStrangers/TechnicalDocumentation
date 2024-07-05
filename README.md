@@ -1,18 +1,12 @@
-<!-- omit from toc -->
-# Technical Documentation
+<!-- title: The Perfect Strangers - Technical Documentation -->
+# Technical Documentation <!-- omit from toc -->
 
 [![Website](https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white)](https://theperfectstrangers.band/)  [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.patreon.com/ThePerfectStrangers) [![Youtube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@theperfectstangers) [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/theperfectstrangersrock) [![Patreon](https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white)](https://www.facebook.com/ThePerfectStrangersRock)
 
-All techical documentation related to band, [The Perfect Strangers](https://ThePerfectStrangers.band).
+All technical documentation related to band, [The Perfect Strangers](https://ThePerfectStrangers.band).
 
 - [Document Style](#document-style)
-- [Venue Requirements (Rider)](#venue-requirements-rider)
-  - [Personnel](#personnel)
-  - [Equipment](#equipment)
-    - [Electrical](#electrical)
-  - [Parking](#parking)
-    - [Band Member Vehicles](#band-member-vehicles)
-    - [Equipment Trailer](#equipment-trailer)
+- [Rider](#rider)
 - [Stage Diagram](#stage-diagram)
   - [Full Band](#full-band)
 - [Input List](#input-list)
@@ -30,44 +24,9 @@ The graphics in this repository use the following color convention for the band 
 
 <img src="./Assets/BandColorConvention.png" width=75%>
 
-# Venue Requirements (Rider)
+# Rider
 
-These are the requirements each venue that hosts the band must provide.
-
-## Personnel
-
-If a cover charge is required where the band gets 100% of the cover, the band will provide someone to take up money. If the cover charge is being split with the venue, then the venus will need to provide someone as well to observe the money.
-
-If the venue is 21+ or has house rules to enforce, the venue will need to provide someone to ID individuals and enforce the rules. Personnel provided by the band are only responsible for band related activities, such as taking up money at the door.
-
-## Equipment
-
-### Electrical
-
-The band will provide power conditioners and surge protectors for their equipment. We require the venue to provide enough dedicated breakers for our equipment to operate without issue.
-
-  * PA Speakers
-    * 2 x 15 amp breakers
-      * One to the left of the stage.
-      * One to the right of the stage.
-    * If the venue is providing PA sound, then these are not required.
-  * IEM box & Amps
-    * 2 x 15 amp breakers
-      * One in the back of the stage to the left of the drums.
-      * One in the back of the stage to the right of the drums.
-    * These are always required.
-
-## Parking
-
-### Band Member Vehicles
-
-The band may need as many as 3 parking spots for members and one extended space for the equipment truck adn trailer, totaling 4 spaces.
-
-### Equipment Trailer
-
-For a full band set up, the band uses a covered trailer to transport equipment. The trailer is approximately 9 feet tall (2.75  meters) and 6 feet wide (1.85 meters). This typically exceeds the height of most parking garages. Special parking accommodations close to the loading/unloading area must be made for the trailer if your venue/event utilizes a parking structure where the trailer will not meet the clearance.
-
-The trailer will need to have access close to the area designated for the band to load/unload equipment. This may require the use of parking cones to reserve the space until the band arrives. Please notify the band beforehand if there are special accommodations made for parking.
+The band uses a simple rider to ensure the safety of the band members and their equipment. [Click here to view the band Rider](Rider.md).
 
 # Stage Diagram
 
