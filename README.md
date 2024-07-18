@@ -40,7 +40,7 @@ This is the general layout of the band. It includes the people, microphones, equ
 
 **Note:**  In a situation where the band is not in charge of the PA, the speakers on the left and right sides of the stage should be omitted from consideration.
 
-[Click here to download the Stage Diagram as a PDF.](Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.pdf)
+[Click here to download the Stage Diagram as a PDF.](Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.pdf "Doownload")
 
 # Input List
 
