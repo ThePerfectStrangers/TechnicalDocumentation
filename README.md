@@ -38,9 +38,11 @@ This is the general layout of the band. It includes the people, microphones, equ
 
 ![Full Band Stage Diagram](./Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.png)
 
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.pdf">![Static Badge](https://img.shields.io/badge/PDF-Stage%20Diagram-EC1C24?logo=adobeacrobatreader)
+</a>
+
 **Note:**  In a situation where the band is not in charge of the PA, the speakers on the left and right sides of the stage should be omitted from consideration.
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.pdf">Click here to download the Stage Diagram as a PDF.</a>
 
 # Input List
 
@@ -58,6 +60,9 @@ This is a list of inputs needed by the band. It includes:
 
 ![Input and equipment list](./Input%20List/Full%20Band/Input%20+%20Equipment.png)
 
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Setup-EC1C24?logo=adobeacrobatreader)
+</a>
+
 ### Snake, PA, and Split
 
 We offer two splitting options to accommodate various PA setups.
@@ -73,14 +78,23 @@ We offer two splitting options to accommodate various PA setups.
 
 ![Snake and PA list](./Input%20List/Full%20Band/Snake%20+%20PA.png)
 
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Setup-EC1C24?logo=adobeacrobatreader)
+</a>
+
 ## Acoustic
 
 ### Input + Equipment
 
 ![Input and equipment list](./Input%20List/Acoustic/Input%20+%20Equipment.png)
 
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Acoustic\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Setup-EC1C24?logo=adobeacrobatreader)
+</a>
+
 ### Snake, PA, and Split
 
 A full 16 channel splitter can be provided. The band will need to know about this requirement before the event date.
 
 ![Snake and PA list](./Input%20List/Acoustic/Snake%20+%20PA.png)
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Acoustic\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Setup-EC1C24?logo=adobeacrobatreader)
+</a>
