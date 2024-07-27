@@ -12,10 +12,9 @@ All technical documentation related to band, [The Perfect Strangers](https://The
 - [Input List](#input-list)
   - [Full Band](#full-band-1)
     - [Input + Equipment](#input--equipment)
-    - [Snake, PA, and Split](#snake-pa-and-split)
+    - [Split](#split)
   - [Acoustic](#acoustic)
     - [Input + Equipment](#input--equipment-1)
-    - [Snake, PA, and Split](#snake-pa-and-split-1)
 
 
 # Document Style
@@ -63,38 +62,24 @@ This is a list of inputs needed by the band. It includes:
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Setup-EC1C24?logo=adobeacrobatreader)
 </a>
 
-### Snake, PA, and Split
+### Split
 
-We offer two splitting options to accommodate various PA setups.
-  * **Option 1 - 24 channel split**: This includes all channels actively used by the band.
-  * **Option 2 - 16 channel split**: This split includes the band, but omits the following from the drummer:
-      * Vocals
-      * Hi-Hat
-      * Tom 1
-      * Tom 2
-      * Tom 3
-      * Tom 4
-      * Bongos
+The band requires a 24-channel split. The band can provide 15 feet of cabling (XLR) from the IEM box if needed.
 
-![Snake and PA list](./Input%20List/Full%20Band/Snake%20+%20PA.png)
+Here is a breakdown of the splitter. All ports are XLR male, so a gender changer may be required for certain ports.
+* **1 - 24:** Outputs from the band. This includes vocals and instruments.
+* **25 - 29:** Band IEMs. The band brings their own IEMs.
+* **30 - 31:** Crows mic inputs.
+* **32:** Talk-back input from front-of-house.
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Setup-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
 </a>
 
 ## Acoustic
 
+The band can perform in smaller venues with an acoustic set up. This setup replaces the full drum set with a smaller percussion setup, removes the need for IEMs and the IEM box, and shrinks the overall stage footprint.
+
 ### Input + Equipment
-
-![Input and equipment list](./Input%20List/Acoustic/Input%20+%20Equipment.png)
-
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Acoustic\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Setup-EC1C24?logo=adobeacrobatreader)
-</a>
-
-### Snake, PA, and Split
-
-A full 16 channel splitter can be provided. The band will need to know about this requirement before the event date.
-
-![Snake and PA list](./Input%20List/Acoustic/Snake%20+%20PA.png)
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Acoustic\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Setup-EC1C24?logo=adobeacrobatreader)
 </a>
