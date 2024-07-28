@@ -21,7 +21,7 @@ All technical documentation related to band, [The Perfect Strangers](https://The
 
 The graphics in this repository use the following color convention for the band members:
 
-<img src="./Assets/BandColorConvention.png" width=75%>
+<img src="./Assets/BandColorConvention/BandColorConvention.png" width=75%>
 
 # Rider
 
@@ -83,3 +83,4 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Acoustic\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Setup-EC1C24?logo=adobeacrobatreader)
 </a>
+
