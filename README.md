@@ -25,7 +25,10 @@ The graphics in this repository use the following color convention for the band 
 
 # Rider
 
-The band uses a simple rider to ensure the safety of the band members and their equipment. [Click here to view the band Rider](Rider/Rider.md).
+The band uses a rider to ensure the safety of the band members and their equipment.
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Rider/Rider.pdf">![Static Badge](https://img.shields.io/badge/PDF-Rider-EC1C24?logo=adobeacrobatreader)
+</a>
 
 # Stage Diagram
 

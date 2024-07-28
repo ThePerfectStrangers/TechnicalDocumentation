@@ -1,6 +1,6 @@
 # .github/workflows/convert-to-pdf.yml
 
-name: Docs to PDF
+name: Convert Rider.md to PDF
 # This workflow is triggered on pushes to the repository.
 on:
   push:
