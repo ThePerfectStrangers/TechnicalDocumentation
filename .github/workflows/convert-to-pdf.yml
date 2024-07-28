@@ -23,20 +23,20 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: Rider/Rider.md
-          output_dir: pdf
+          output_dir: Rider
           images_dir: Assets
           build_html: false
       - uses: actions/upload-artifact@v4
         with:
           name: Rider.pdf
-          path: pdf
+          path: Rider
           overwrite: 'true'
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Automatically uploaded supporting files (PDF)
-          file_pattern: 'Rider/Rider.pdf'
+          # file_pattern: 'Rider/Rider.pdf'
           commit_user_name: Chad Birch (Automated)
           commit_user_email: chadbirch@hotmail.com
           commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
           push_options: '--force'
-          skip_dirty_check: true
+          # skip_dirty_check: true
