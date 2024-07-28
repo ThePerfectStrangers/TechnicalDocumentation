@@ -14,19 +14,29 @@ jobs:
   converttopdf:
     name: Build PDF
     runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: Rider
+          input_dir: Rider/Rider.md
           output_dir: Rider
-        #   images_dir: Assets
-        #   # for example <img src="./images/file-name.png">
-        #   image_import: ./images
-          # Default is true, can set to false to only get PDF files
+          images_dir: Assets
           build_html: false
       - uses: actions/upload-artifact@v4
         with:
-          name: Rider.pdf
+          name: Rider/Rider.pdf
           path: Rider
           overwrite: 'true'
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Automatically uploaded supporting files (PDF)
+          file_pattern: 'Rider/Rider.pdf'
+          commit_user_name: Chad Birch (Automated)
+          commit_user_email: chadbirch@hotmail.com
+          commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
+          push_options: '--force'
+          skip_dirty_check: true
