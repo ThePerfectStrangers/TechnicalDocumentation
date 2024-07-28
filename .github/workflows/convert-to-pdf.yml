@@ -23,13 +23,13 @@ jobs:
       - uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: Rider/Rider.md
-          output_dir: Rider
+          output_dir: pdf
           images_dir: Assets
           build_html: false
       - uses: actions/upload-artifact@v4
         with:
           name: Rider.pdf
-          path: Rider
+          path: pdf
           overwrite: 'true'
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
