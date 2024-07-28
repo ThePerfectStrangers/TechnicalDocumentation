@@ -71,3 +71,4 @@ The band reserves the right to refuse to perform for any reason regarding band m
   * etc.
 
 We hope to never refuse to perform, but the safety of our band members is our number one priority, followed by the safety of our equipment.
+
