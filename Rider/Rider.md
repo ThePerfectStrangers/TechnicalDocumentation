@@ -5,7 +5,7 @@
   </td>
   <td float="right" style="border: none; text-align: center;">
     <div>
-      <img src="../Assets/QRCodes/Website.png" />
+      <img src="../Assets/QRCodes/Website.png" width="200"/>
     </div>
     <div>
       theperfectstrangers.band
@@ -48,7 +48,7 @@ If the venue is 21+ or has house rules to enforce (such as rules governing a liq
 
 The band requires a dedicated stage area of at least 20' wide by 20' deep. This should be a dedicated area where through traffic is restricted. This is for the safety of the band members and their equipment.
 
-If a drum riser is to be used, it needs to be at least 10' wide by 10' deep. If the elevation of the rider is greater than 4 feet from the ground, railing should be installed in the rear of the riser for safety. 
+If a drum riser is to be used, it needs to be at least 10' wide by 10' deep. If the elevation of the rider is greater than 4 feet from the ground, railing should be installed in the rear of the riser for safety.
 
 ### Electrical
 
