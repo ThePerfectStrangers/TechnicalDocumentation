@@ -1,3 +1,19 @@
+<table>
+  <tr style="border: none;">
+  <td float="left" style="border: none;">
+    <img src="../Assets/BandColorConvention/Logo/Logo-16-9-B-T.png" width="400" />
+  </td>
+  <td float="right" style="border: none; text-align: center;">
+    <div>
+      <img src="../Assets/QRCodes/Website.png" width="200" />
+    </div>
+    <div>
+      theperfectstrangers.band
+    </div>
+      </td>
+  </tr>
+</table>
+
 <!-- title: The Perfect Strangers - Rider -->
 # Rider <!-- omit from toc -->
 
