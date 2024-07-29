@@ -26,6 +26,7 @@ jobs:
           output_dir: Rider/
           images_dir: Assets
           build_html: false
+          image_import: ../Assets
       # - uses: actions/upload-artifact@v4
       #   with:
       #     name: Rider.pdf
