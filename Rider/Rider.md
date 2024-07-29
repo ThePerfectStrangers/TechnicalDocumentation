@@ -34,7 +34,7 @@ These are the requirements each venue that hosts the band must provide.
 
 ### Entourage
 
-Each band member may have an additional person in their entourage (total 10 for the band; 5 members plus 5 in the entourage). This is typically a significant other or spouse. These people should allowed the same access as the band members and be exempt from being charged any admission or access fee to a venue.
+Each band member may have an additional person in their entourage (total 10 for the band; 5 members plus 5 in the entourage). This is typically a significant other or spouse. These people should be allowed the same access as the band members and be exempt from being charged any admission or access fee to a venue.
 
 ### Personnel for collecting entry fee
 
@@ -46,9 +46,9 @@ If the venue is 21+ or has house rules to enforce (such as rules governing a liq
 
 ### Stage area
 
-The band requires a dedicated stage area of at least 20' wide by 12' deep. This should be a dedicated area where through traffic is restricted. This is for the safety of the band members and their equipment.
+The band requires a dedicated stage area of at least 20' wide by 20' deep. This should be a dedicated area where through traffic is restricted. This is for the safety of the band members and their equipment.
 
-If a drum riser is to be used, it needs to be at least 8' wide by 4' deep.
+If a drum riser is to be used, it needs to be at least 10' wide by 10' deep. If the elevation of the rider is greater than 4 feet from the ground, railing should be installed in the rear of the riser for safety. 
 
 ### Electrical
 
