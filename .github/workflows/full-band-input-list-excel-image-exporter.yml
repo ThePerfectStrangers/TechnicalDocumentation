@@ -1,0 +1,33 @@
+# .github/workflows/full-band-input-list-excel-image-exporter.yml
+
+name: Full Band Input List Excel Image Exporter
+# This workflow is triggered on pushes to the repository.
+on:
+  push:
+    branches:
+      - main
+    # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
+    paths:
+      - 'Input List/Full Band/Input List.xlsx'
+
+jobs:
+  converttopdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - run: full-band-input-list-excel-image-exporter.py
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Automatically uploaded 'Input List/Full Band/Input + Equipment.png'
+          commit_user_name: Chad Birch (Automated)
+          commit_user_email: chadbirch@hotmail.com
+          commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
+          push_options: '--force'
