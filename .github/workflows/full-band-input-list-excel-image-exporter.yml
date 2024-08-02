@@ -21,7 +21,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install Office
-        run: choco install office365business --forcex86 --params "'/productid:O365HomePremRetail /exclude:Word Access Groove Lync OneDrive OneNote Outlook Publisher /updates:FALSE'"
+        run: choco install office365business --params "'/productid:ExcelRetail /updates:FALSE'"
       # - name: Activate Office
       #   working-directory: C:\Program Files (x86)\Microsoft Office\Office16
       #   run: cscript ospp.vbs /inpkey:$OFFICE_ACTIVATION_CODE
