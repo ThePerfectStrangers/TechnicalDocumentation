@@ -1,6 +1,6 @@
-# .github/workflows/full-band-input-list-excel-image-exporter/full-band-input-list-excel-image-exporter.yml
+# .github/workflows/full-band-input-list-workflow/full-band-input-list-workflow.yml
 
-name: Convert 'Input + Equipment' sheet in 'Full Band/Input List.xlsx' to 'Input + Equipment.png'
+name: Workflow of post-save actions for 'Full Band/Input List.xlsx'
 # This workflow is triggered on pushes to the repository.
 on:
   push:
@@ -11,7 +11,7 @@ on:
       - 'Input List/Full Band/Input List.xlsx'
 
 jobs:
-  converttopdf:
+  postsaveworkflow:
     name: Export image from Excel spreadsheet
     runs-on: windows-latest
     permissions:
@@ -29,7 +29,7 @@ jobs:
       - name: Install Python dependencies
         run: pip install excel2img
       - name: Capture image from Excel
-        run: python .github/workflows/full-band-input-list-excel-image-exporter/full-band-input-list-excel-image-exporter.py
+        run: python .github/workflows/full-band-input-list-workflow/full-band-input-list-workflow.py
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:

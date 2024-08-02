@@ -1,6 +1,6 @@
-# .github/workflows/rider-markdown-to-pdf/rider-markdown-to-pdf.yml
+# .github/workflows/rider-workflow/rider-workflow.yml
 
-name: Convert 'Rider.md' to 'Rider.pdf'
+name: Workflow of post-save actions for 'Rider.md'
 # This workflow is triggered on pushes to the repository.
 on:
   push:
@@ -11,7 +11,7 @@ on:
       - 'Rider/Rider.md'
 
 jobs:
-  converttopdf:
+  postsaveworkflow:
     name: Build PDF
     runs-on: ubuntu-latest
     permissions:
