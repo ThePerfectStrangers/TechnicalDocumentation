@@ -25,11 +25,10 @@ jobs:
         with:
           python-version: '3.6.15'
       - name: Install Python dependencies
-        run: pip install excel2img
+        run: pip install excel2img pywin32
       - run: ls -la
       - name: Capture image from Excel
-        run: python excel2img.py "../../Input List/Full Band/Input List.xlsx" "../../Input List/Full Band/Input + Equipment.png" -p "Input + Equipment"
-        # run: python .github/workflows/full-band-input-list-excel-image-exporter.py
+        run: python .github/workflows/full-band-input-list-excel-image-exporter.py
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
