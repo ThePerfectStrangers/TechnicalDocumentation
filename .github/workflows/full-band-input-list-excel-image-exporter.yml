@@ -20,11 +20,18 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Setup Python 3.10
+        uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-      - run: .github/workflows/full-band-input-list-excel-image-exporter.yml
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Install Python dependencies
+        run: pip install
+      - name: Capture image from Excel
+        run: |
+          import excel2img
+          excel2img.export_img("../../Input List/Full Band/Input List.xlsx", "../../Input List/Full Band/Input + Equipment.png", "Input + Equipment", None)
+      - name: Commit files
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Automatically uploaded 'Input List/Full Band/Input + Equipment.png'
           commit_user_name: Chad Birch (Automated)
