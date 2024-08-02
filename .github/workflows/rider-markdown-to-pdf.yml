@@ -1,6 +1,6 @@
 # .github/workflows/rider-markdown-to-pdf/rider-markdown-to-pdf.yml
 
-name: Convert Rider.md to PDF
+name: Convert 'Rider.md' to 'Rider.pdf'
 # This workflow is triggered on pushes to the repository.
 on:
   push:
@@ -20,14 +20,16 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: baileyjm02/markdown-to-pdf@v1
+      - name: Convert Rider/Rider.md to Rider/Rider.pdf
+        uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: Rider/Rider.md
           output_dir: Rider/
           images_dir: Assets
           build_html: false
           image_import: ../../Assets
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - name: Commit changes to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Automatically uploaded Rider/Rider.pdf
           commit_user_name: Chad Birch (Automated)

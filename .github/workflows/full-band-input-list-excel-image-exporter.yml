@@ -1,6 +1,6 @@
 # .github/workflows/full-band-input-list-excel-image-exporter/full-band-input-list-excel-image-exporter.yml
 
-name: Full Band Input List Excel Image Exporter
+name: Convert 'Input + Equipment' sheet in 'Full Band/Input List.xlsx' to 'Input + Equipment.png'
 # This workflow is triggered on pushes to the repository.
 on:
   push:
@@ -26,10 +26,8 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12.3'
-          cache: 'pip' # caching pip dependencies
-          cache-dependency-path: full-band-input-list-excel-image-exporter/requirements.txt
       - name: Install Python dependencies
-        run: pip install -r full-band-input-list-excel-image-exporter/requirements.txt
+        run: pip install excel2img
       - name: Capture image from Excel
         run: python .github/workflows/full-band-input-list-excel-image-exporter/full-band-input-list-excel-image-exporter.py
       - name: Commit files
