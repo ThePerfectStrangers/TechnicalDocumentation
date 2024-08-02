@@ -13,17 +13,17 @@ on:
 jobs:
   converttopdf:
     name: Export image from Excel spreadsheet
-    runs-on: ubuntu-20.04
+    runs-on: windows-latest
     permissions:
       # Give the default GITHUB_TOKEN write permission to commit and push the
       # added or changed files to the repository.
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Setup Python 3.7.1
+      - name: Setup Python 3.12.3
         uses: actions/setup-python@v5
         with:
-          python-version: '3.7.1'
+          python-version: '3.12.3'
       - name: Install Python dependencies
         run: pip install excel2img
       - name: Capture image from Excel
