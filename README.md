@@ -5,8 +5,8 @@
 
 All technical documentation related to band, [The Perfect Strangers](https://ThePerfectStrangers.band).
 
-- [Document Style](#document-style)
 - [Rider](#rider)
+- [Document Style](#document-style)
 - [Stage Diagram](#stage-diagram)
   - [Full Band](#full-band)
 - [Input List](#input-list)
@@ -16,19 +16,18 @@ All technical documentation related to band, [The Perfect Strangers](https://The
   - [Acoustic](#acoustic)
     - [Input + Equipment](#input--equipment-1)
 
+# Rider
+
+The band uses a rider to ensure the safety of the the public, band members, and their equipment.
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Rider/Rider.pdf">![Static Badge](https://img.shields.io/badge/PDF-Rider-EC1C24?logo=adobeacrobatreader)
+</a>
 
 # Document Style
 
 The graphics in this repository use the following color convention for the band members:
 
 <img src="./Assets/BandColorConvention/BandColorConvention.png" width=75%>
-
-# Rider
-
-The band uses a rider to ensure the safety of the band members and their equipment.
-
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Rider/Rider.pdf">![Static Badge](https://img.shields.io/badge/PDF-Rider-EC1C24?logo=adobeacrobatreader)
-</a>
 
 # Stage Diagram
 
@@ -67,13 +66,15 @@ This is a list of inputs needed by the band. It includes:
 
 ### Split
 
-The band requires a 24-channel split. The band can provide 15 feet of cabling (XLR) from the IEM box if needed.
+The band requires a 24-channel split. The band can provide 15 feet of labeled splt tails  (XLR) from the band's IEM box if needed.
 
-Here is a breakdown of the splitter. All ports are XLR male, so a gender changer may be required for certain ports.
+Here is a breakdown of the splitter. All ports are XLR male, so a gender changer may be required for certain input ports.
 * **1 - 24:** Outputs from the band. This includes vocals and instruments.
 * **25 - 29:** Band IEMs. The band brings their own IEMs.
 * **30 - 31:** Crows mic inputs.
 * **32:** Talk-back input from front-of-house.
+
+**Note:** All outputs are set as `Input/LC` from the band's mixer. You can find out more details regarding the split labels on the Split Map: 
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
 </a>
