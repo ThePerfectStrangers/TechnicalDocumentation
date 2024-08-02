@@ -7,8 +7,8 @@ on:
     branches:
       - main
     # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
-    paths:
-      - 'Input List/Full Band/Input List.xlsx'
+    # paths:
+    #   - 'Input List/Full Band/Input List.xlsx'
 
 jobs:
   converttopdf:
@@ -28,10 +28,7 @@ jobs:
         run: |
           pip install excel2img
       - name: Capture image from Excel
-        run: |
-          #!/usr/bin/env python3
-          import excel2img
-          excel2img.export_img("../../Input List/Full Band/Input List.xlsx", "../../Input List/Full Band/Input + Equipment.png", "Input + Equipment", None)
+        run: full-band-input-list-excel-image-exporter.py
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
