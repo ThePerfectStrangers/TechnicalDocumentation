@@ -6,12 +6,12 @@ from pywintypes import com_error
 
 EXCEL_FILE_PATH = 'Input List/Full Band/Input List.xlsx'
 
-INPUT_EQUIPMENT_NAME_RANGE = 'InputEquipmnetExportRange'
+INPUT_EQUIPMENT_RANGE = 'Input + Equipment!$A$3:$I$35'
 PATH_TO_INPUT_EQUIPMENT_PNG = 'Input List/Full Band/Input + Equipment.png'
 
 PATH_TO_PDF = 'Input List/Full Band/Input List.pdf'
 
-excel2img.export_img(EXCEL_FILE_PATH, PATH_TO_INPUT_EQUIPMENT_PNG, "", INPUT_EQUIPMENT_NAME_RANGE)
+excel2img.export_img(EXCEL_FILE_PATH, PATH_TO_INPUT_EQUIPMENT_PNG, "", INPUT_EQUIPMENT_RANGE)
 
 excel = win32com.client.Dispatch("Excel.Application")
 excel.Visible = False
