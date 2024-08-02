@@ -26,7 +26,6 @@ jobs:
           python-version: '3.7.1'
       - name: Install Python dependencies
         run: pip install excel2img
-      - run: ls -la
       - name: Capture image from Excel
         run: python .github/workflows/full-band-input-list-excel-image-exporter.py
       - name: Commit files
