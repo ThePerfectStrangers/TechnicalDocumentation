@@ -25,8 +25,8 @@ jobs:
         with:
           python-version: '3.6.15'
       - name: Install Python dependencies
-        run: |
-          pip install excel2img
+        run: pip install excel2img
+      - run: ls
       - name: Capture image from Excel
         run: python full-band-input-list-excel-image-exporter.py
       - name: Commit files
