@@ -4,12 +4,12 @@ import excel2img
 import win32com.client
 from pywintypes import com_error
 
-EXCEL_FILE_PATH = r'Input List/Full Band/Input List.xlsx'
+EXCEL_FILE_PATH = 'Input List/Full Band/Input List.xlsx'
 
-INPUT_EQUIPMENT_NAME_RANGE = r'InputEquipmnetExportRange'
-PATH_TO_INPUT_EQUIPMENT_PNG = r'Input List/Full Band/Input + Equipment.png'
+INPUT_EQUIPMENT_NAME_RANGE = 'InputEquipmnetExportRange'
+PATH_TO_INPUT_EQUIPMENT_PNG = 'Input List/Full Band/Input + Equipment.png'
 
-PATH_TO_PDF = r'Input List/Full Band/Input List.pdf'
+PATH_TO_PDF = 'Input List/Full Band/Input List.pdf'
 
 excel2img.export_img(EXCEL_FILE_PATH, PATH_TO_INPUT_EQUIPMENT_PNG, "", INPUT_EQUIPMENT_NAME_RANGE)
 
