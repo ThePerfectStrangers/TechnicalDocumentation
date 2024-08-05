@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.12.3'
       - name: Install Python dependencies
-        run: pip install excel2img
+        run: pip install excel2img pandas pdfkit openpyxl
       - name: Capture image from Excel
         run: python .github/workflows/full-band-input-list-workflow/full-band-input-list-workflow.py
       - name: Commit files
