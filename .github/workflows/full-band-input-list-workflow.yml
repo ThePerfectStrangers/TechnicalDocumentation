@@ -24,11 +24,8 @@ jobs:
         run: choco install office365business --params "'/productid:ExcelRetail /updates:FALSE'"
       - name: Add Trust Center Location
         run: |
-          $trustCenterPath = "HKCU:\Software\Microsoft\Office\16.0\Excel\Security\Trusted Locations\LocationX"
-          New-Item -Path $trustCenterPath -Force
           $WORKING_DIRECTORY = Get-Location
-          Set-ItemProperty -Path $trustCenterPath -Name "Path" -Value $WORKING_DIRECTORY.Path
-          Set-ItemProperty -Path $trustCenterPath -Name "AllowSubfolders" -Value 1
+          ./common/Add-Directory-To-Trust-Center-Locations.ps1 -Path $WORKING_DIRECTORY
       - name: Setup Python 3.12.3
         uses: actions/setup-python@v5
         with:
