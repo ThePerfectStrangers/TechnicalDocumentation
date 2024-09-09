@@ -27,8 +27,8 @@ jobs:
         with:
           python-version: '3.12.3'
       - name: Install Python dependencies
-        run: pip install excel2img
-      - name: Capture image from Excel
+        run: pip install pywin32
+      - name: Export image & PDF from Excel
         run: python .github/workflows/full-band-input-list-workflow/full-band-input-list-workflow.py
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
