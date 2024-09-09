@@ -12,6 +12,11 @@ env:
   EXCEL_FILE_PATH: 'Input List/Full Band/Input List.xlsx'
   INPUT_EQUIPMENT_PNG_PATH: 'Input List/Full Band/Input + Equipment.png'
   PDF_FILE_PATH: 'Input List/Full Band/Input List.pdf'
+
+  ABSOLUTE_EXCEL_FILE_PATH: '' # These will get set in a later step
+  ABSOLUTE_INPUT_EQUIPMENT_PNG_PATH: '' # These will get set in a later step
+  ABSOLUTE_PDF_FILE_PATH: '' # These will get set in a later step
+
   INPUT_EQUIPMENT_SHEET: 'Input + Equipment'
   INPUT_EQUIPMENT_RANGE: '$$A$$3:$$I$$35'
 
@@ -25,11 +30,20 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Set Absolute Path - EXCEL_FILE_PATH
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.EXCEL_FILE_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
+
+      - name: Set Absolute Path - INPUT_EQUIPMENT_PNG_PATH
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.INPUT_EQUIPMENT_PNG_PATH }}" -VariableName "ABSOLUTE_INPUT_EQUIPMENT_PNG_PATH"
+
+      - name: Set Absolute Path - PDF_FILE_PATH
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PDF_FILE_PATH }}" -VariableName "ABSOLUTE_PDF_FILE_PATH"
+
       - name: Install Office
         run: choco install office365business --params "'/productid:ExcelRetail /updates:FALSE'"
 
       - name: Add Excel Trusted Location
-        run: pwsh .github/workflows/lib/Add-Excel-Trusted-Location.ps1 -Path "${{ env.EXCEL_FILE_PATH }}"
+        run: pwsh .github/workflows/lib/Add-Excel-Trusted-Location.ps1 -Path "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}"
 
       - name: Setup Python 3.12.3
         uses: actions/setup-python@v5
@@ -40,10 +54,10 @@ jobs:
         run: pip install pywin32 ImageGrab pillow
 
       - name: Export PNG from Excel
-        run: python .github/workflows/lib/export-png.py "${{ env.EXCEL_FILE_PATH }}" "${{ env.INPUT_EQUIPMENT_PNG_PATH }}" "${{ env.INPUT_EQUIPMENT_SHEET }}" "${{ env.INPUT_EQUIPMENT_RANGE}}"
+        run: python .github/workflows/lib/export-png.py "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" "${{ env.ABSOLUTE_INPUT_EQUIPMENT_PNG_PATH }}" "${{ env.INPUT_EQUIPMENT_SHEET }}" "${{ env.INPUT_EQUIPMENT_RANGE}}"
 
       - name: Export PDF from Excel
-        run: python .github/workflows/lib/export-pdf.py "${{ env.EXCEL_FILE_PATH }}" "${{ env.PDF_FILE_PATH }}"
+        run: python .github/workflows/lib/export-pdf.py "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" "${{ env.ABSOLUTE_PDF_FILE_PATH }}"
 
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
