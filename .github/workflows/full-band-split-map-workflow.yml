@@ -11,8 +11,8 @@ on:
       - 'Input List/Full Band/Split Map.xlsx'
 
 env:
-  EXCEL_FILE_PATH: '../../Input List/Full Band/Split Map.xlsx'
-  PDF_FILE_PATH: '../../Input List/Full Band/Split Map.pdf'
+  EXCEL_FILE_PATH: 'Input List/Full Band/Split Map.xlsx'
+  PDF_FILE_PATH: 'Input List/Full Band/Split Map.pdf'
 
 jobs:
   postsaveworkflow:

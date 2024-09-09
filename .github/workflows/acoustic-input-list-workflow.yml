@@ -11,8 +11,8 @@ on:
       - 'Input List/Acoustic/Input List.xlsx'
 
 env:
-  EXCEL_FILE_PATH: '../../Input List/Acoustic/Input List.xlsx'
-  PDF_FILE_PATH: '../../Input List/Acoustic/Input List.pdf'
+  EXCEL_FILE_PATH: 'Input List/Acoustic/Input List.xlsx'
+  PDF_FILE_PATH: 'Input List/Acoustic/Input List.pdf'
 
 jobs:
   postsaveworkflow:

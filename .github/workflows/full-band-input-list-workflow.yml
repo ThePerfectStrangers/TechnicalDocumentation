@@ -7,8 +7,8 @@ on:
     branches:
       - main
     # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
-    # paths:
-    #   - 'Input List/Full Band/Input List.xlsx'
+    paths:
+      - 'Input List/Full Band/Input List.xlsx'
 
 env:
   EXCEL_FILE_PATH: 'Input List/Full Band/Input List.xlsx'
