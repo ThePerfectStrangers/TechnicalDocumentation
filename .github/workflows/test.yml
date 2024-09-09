@@ -19,8 +19,12 @@ jobs:
     steps:
       - name: Test Script
         run: |
-          echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}
-          echo EXCEL_FILE_PATH: ${EXCEL_FILE_PATH}
+          echo "GITHUB_WORKSPACE: ${{ github.workspace }}"
+          echo "EXCEL_FILE_PATH: ${{ env.EXCEL_FILE_PATH }}"
+          echo "ABSOLUTE_EXCEL_FILE_PATH: ${{ github.workspace }}\${{ env.EXCEL_FILE_PATH }}"
 
-          echo GITHUB_WORKSPACE: ${{ github.workspace }}
-          echo EXCEL_FILE_PATH: ${{ env.EXCEL_FILE_PATH }}
+          echo "ABSOLUTE_EXCEL_FILE_PATH=${{ github.workspace }}\${{ env.EXCEL_FILE_PATH }}" >> $GITHUB_ENV
+
+      - name: Test Script 2
+        run: |
+          echo "ABSOLUTE_EXCEL_FILE_PATH: ${{ env.ABSOLUTE_EXCEL_FILE_PATH }}"
