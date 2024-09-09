@@ -10,8 +10,9 @@ env:
   INPUT_EQUIPMENT_PNG_PATH: 'Input List/Full Band/Input + Equipment.png'
   PDF_FILE_PATH: 'Input List/Full Band/Input List.pdf'
 
-  ABSOLUTE_EXCEL_FILE_PATH: ''
-
+  ABSOLUTE_EXCEL_FILE_PATH: '' # These will get set in a later step
+  ABSOLUTE_INPUT_EQUIPMENT_PNG_PATH: '' # These will get set in a later step
+  ABSOLUTE_PDF_FILE_PATH: '' # These will get set in a later step
 
   INPUT_EQUIPMENT_SHEET: 'Input + Equipment'
   INPUT_EQUIPMENT_RANGE: '$$A$$3:$$I$$35'
@@ -22,7 +23,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Run script
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.EXCEL_FILE_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
+        run: pwsh ./.github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.EXCEL_FILE_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
 
       # - name: Test Script
       #   run: |
