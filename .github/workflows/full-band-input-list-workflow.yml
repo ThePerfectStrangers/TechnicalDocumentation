@@ -10,6 +10,13 @@ on:
     paths:
       - 'Input List/Full Band/Input List.xlsx'
 
+env:
+  EXCEL_FILE_PATH: 'Input List/Full Band/Input List.xlsx'
+  INPUT_EQUIPMENT_PNG_PATH: 'Input List/Full Band/Input + Equipment.png'
+  PDF_FILE_PATH: 'Input List/Full Band/Input List.pdf'
+  INPUT_EQUIPMENT_SHEET: 'Input + Equipment'
+  INPUT_EQUIPMENT_RANGE: '$A$3:$I$35'
+
 jobs:
   postsaveworkflow:
     name: Export image from Excel spreadsheet
@@ -28,8 +35,10 @@ jobs:
           python-version: '3.12.3'
       - name: Install Python dependencies
         run: pip install pywin32 ImageGrab pillow
-      - name: Export image & PDF from Excel
-        run: python .github/workflows/full-band-input-list-workflow/full-band-input-list-workflow.py
+      - name: Export image from Excel
+        run: python .github/workflows/lib/export-png.py $INPUT_EQUIPMENT_RANGE $INPUT_EQUIPMENT_SHEET $INPUT_EQUIPMENT_PNG_PATH $INPUT_EQUIPMENT_RANGE
+      - name: Export PDF from Excel
+        run: python .github/workflows/lib/export-pdf.py $EXCEL_FILE_PATH $PDF_FILE_PATH
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
