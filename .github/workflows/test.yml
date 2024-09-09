@@ -19,6 +19,6 @@ jobs:
     steps:
       - name: Test Script
         run: |
-          set -x
-          echo  GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}
+          echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}
+          echo GITHUB_WORKSPACE: ${{ github.workspace }}
           echo EXCEL_FILE_PATH: ${EXCEL_FILE_PATH}
