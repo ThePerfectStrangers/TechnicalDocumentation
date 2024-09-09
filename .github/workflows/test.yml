@@ -29,3 +29,7 @@ jobs:
       - name: Test Script 2
         run: |
           echo "ABSOLUTE_EXCEL_FILE_PATH: ${{ env.ABSOLUTE_EXCEL_FILE_PATH }}"
+
+      - name: Test Script 3
+        run: |
+          cat $GITHUB_ENV
