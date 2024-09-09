@@ -26,8 +26,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set Absolute Path - EXCEL_FILE_PATH
-        run: pwsh ./Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.EXCEL_FILE_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
-        working-directory: .github\workflows\lib
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.EXCEL_FILE_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
 
       # - name: Test Script
       #   run: |
