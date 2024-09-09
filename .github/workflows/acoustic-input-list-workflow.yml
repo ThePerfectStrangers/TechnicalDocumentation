@@ -1,6 +1,6 @@
-# .github/workflows/full-band-input-list-workflow.yml
+# .github/workflows/acoustic-input-list-workflow.yml
 
-name: Workflow of post-save actions for 'Full Band/Input List.xlsx'
+name: Workflow of post-save actions for 'Acoustic/Input List.xlsx'
 # This workflow is triggered on pushes to the repository.
 on:
   push:
@@ -8,14 +8,11 @@ on:
       - main
     # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
     paths:
-      - 'Input List/Full Band/Input List.xlsx'
+      - 'Input List/Acoustic/Input List.xlsx'
 
 env:
-  EXCEL_FILE_PATH: '../../Input List/Full Band/Input List.xlsx'
-  INPUT_EQUIPMENT_PNG_PATH: '../../Input List/Full Band/Input + Equipment.png'
-  PDF_FILE_PATH: '../../Input List/Full Band/Input List.pdf'
-  INPUT_EQUIPMENT_SHEET: 'Input + Equipment'
-  INPUT_EQUIPMENT_RANGE: '$A$3:$I$35'
+  EXCEL_FILE_PATH: '../../Input List/Acoustic/Input List.xlsx'
+  PDF_FILE_PATH: '../../Input List/Acoustic/Input List.pdf'
 
 jobs:
   postsaveworkflow:
@@ -36,13 +33,11 @@ jobs:
       - name: Install Python dependencies
         run: pip install pywin32 ImageGrab pillow
       - name: Export PNG from Excel
-        run: python .github/workflows/lib/export-png.py "${{ env.EXCEL_FILE_PATH }}" "${{ env.INPUT_EQUIPMENT_PNG_PATH }}" "${{ env.INPUT_EQUIPMENT_SHEET }}" "${{ env.INPUT_EQUIPMENT_RANGE}}"
-      - name: Export PDF from Excel
         run: python .github/workflows/lib/export-pdf.py "${{ env.EXCEL_FILE_PATH }}" "${{ env.PDF_FILE_PATH }}"
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Automatically uploaded 'Input List/Full Band/Input + Equipment.png'
+          commit_message: Automatically uploaded 'Input List/Acoustic/Input + Equipment.png'
           commit_user_name: Chad Birch (Automated)
           commit_user_email: chadbirch@hotmail.com
           commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
