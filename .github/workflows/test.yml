@@ -20,5 +20,7 @@ jobs:
       - name: Test Script
         run: |
           echo GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}
-          echo GITHUB_WORKSPACE: ${{ github.workspace }}
           echo EXCEL_FILE_PATH: ${EXCEL_FILE_PATH}
+
+          echo GITHUB_WORKSPACE: ${{ github.workspace }}
+          echo EXCEL_FILE_PATH: ${{ env.EXCEL_FILE_PATH }}
