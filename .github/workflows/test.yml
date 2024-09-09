@@ -32,4 +32,4 @@ jobs:
 
       - name: Test Script 3
         run: |
-          cat $GITHUB_ENV
+          cat $Env:GITHUB_ENV
