@@ -9,22 +9,28 @@ env:
   EXCEL_FILE_PATH: 'Input List/Full Band/Input List.xlsx'
   INPUT_EQUIPMENT_PNG_PATH: 'Input List/Full Band/Input + Equipment.png'
   PDF_FILE_PATH: 'Input List/Full Band/Input List.pdf'
+
+  ABSOLUTE_EXCEL_FILE_PATH: ''
+
+
   INPUT_EQUIPMENT_SHEET: 'Input + Equipment'
   INPUT_EQUIPMENT_RANGE: '$$A$$3:$$I$$35'
-  ABSOLUTE_EXCEL_FILE_PATH: ''
 
 jobs:
   postsaveworkflow:
     name: Export image from Excel spreadsheet
     runs-on: windows-latest
     steps:
-      - name: Test Script
-        run: |
-          echo "GITHUB_WORKSPACE: ${{ github.workspace }}"
-          echo "EXCEL_FILE_PATH: ${{ env.EXCEL_FILE_PATH }}"
-          echo "ABSOLUTE_EXCEL_FILE_PATH: ${{ github.workspace }}\${{ env.EXCEL_FILE_PATH }}"
+      - name: Run script
+        run: pwsh .github/workflows/lib/\Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.EXCEL_FILE_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
 
-          echo "ABSOLUTE_EXCEL_FILE_PATH=${{ github.workspace }}\${{ env.EXCEL_FILE_PATH }}" | Out-File -FilePath $Env:GITHUB_ENV -Encoding utf8 -Append
+      # - name: Test Script
+      #   run: |
+      #     echo "GITHUB_WORKSPACE: ${{ github.workspace }}"
+      #     echo "EXCEL_FILE_PATH: ${{ env.EXCEL_FILE_PATH }}"
+      #     echo "ABSOLUTE_EXCEL_FILE_PATH: ${{ github.workspace }}\${{ env.EXCEL_FILE_PATH }}"
+
+      #     echo "ABSOLUTE_EXCEL_FILE_PATH=${{ github.workspace }}\${{ env.EXCEL_FILE_PATH }}" | Out-File -FilePath $Env:GITHUB_ENV -Encoding utf8 -Append
 
       - name: Test Script 2
         run: |
