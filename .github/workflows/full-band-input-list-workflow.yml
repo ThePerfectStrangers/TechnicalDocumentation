@@ -1,6 +1,6 @@
 # .github/workflows/full-band-input-list-workflow.yml
 
-name: Workflow of post-save actions for 'Full Band/Input List.xlsx'
+name: Full Band/Input List.xlsx Workflow
 # This workflow is triggered on pushes to the repository.
 on:
   push:

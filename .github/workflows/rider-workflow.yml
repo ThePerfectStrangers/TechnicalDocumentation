@@ -1,6 +1,6 @@
 # .github/workflows/rider-workflow/rider-workflow.yml
 
-name: Workflow of post-save actions for 'Rider.md'
+name: Rider.md Workflow
 # This workflow is triggered on pushes to the repository.
 on:
   push:

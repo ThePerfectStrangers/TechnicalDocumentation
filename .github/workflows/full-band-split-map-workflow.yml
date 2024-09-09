@@ -1,6 +1,6 @@
 # .github/workflows/split-map-workflow.yml
 
-name: Workflow of post-save actions for 'Full Band/Split Map.xlsx'
+name: Full Band/Split Map.xlsx Workflow
 # This workflow is triggered on pushes to the repository.
 on:
   push:

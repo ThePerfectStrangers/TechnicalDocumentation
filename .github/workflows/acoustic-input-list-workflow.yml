@@ -1,6 +1,6 @@
 # .github/workflows/acoustic-input-list-workflow.yml
 
-name: Workflow of post-save actions for 'Acoustic/Input List.xlsx'
+name: Acoustic/Input List.xlsx Workflow
 # This workflow is triggered on pushes to the repository.
 on:
   push:
