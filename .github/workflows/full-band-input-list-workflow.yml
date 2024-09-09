@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.12.3'
       - name: Install Python dependencies
-        run: pip install pywin32
+        run: pip install pywin32 ImageGrab
       - name: Export image & PDF from Excel
         run: python .github/workflows/full-band-input-list-workflow/full-band-input-list-workflow.py
       - name: Commit files
