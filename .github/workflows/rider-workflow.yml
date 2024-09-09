@@ -23,7 +23,9 @@ jobs:
       # added or changed files to the repository.
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Convert Markdown to PDF
         uses: baileyjm02/markdown-to-pdf@v1
         with:
@@ -32,6 +34,7 @@ jobs:
           images_dir: Assets
           build_html: false
           image_import: ../Assets
+
       - name: Commit changes to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
