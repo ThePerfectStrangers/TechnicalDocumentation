@@ -24,10 +24,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Convert $PATH_TO_MARKDOWN to $PATH_TO_PDF
+      - name: Convert Markdown to PDF
         uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: $PATH_TO_MARKDOWN
+          input_dir: ${{ env.PATH_TO_MARKDOWN }}
           output_dir: Rider/
           images_dir: Assets
           build_html: false
@@ -35,7 +35,7 @@ jobs:
       - name: Commit changes to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Automatically uploaded $PATH_TO_PDF
+          commit_message: Automatically uploaded ${{ env.PATH_TO_PDF }}
           commit_user_name: Chad Birch (Automated)
           commit_user_email: chadbirch@hotmail.com
           commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
