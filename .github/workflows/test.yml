@@ -1,0 +1,24 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  EXCEL_FILE_PATH: 'Input List/Full Band/Input List.xlsx'
+  INPUT_EQUIPMENT_PNG_PATH: 'Input List/Full Band/Input + Equipment.png'
+  PDF_FILE_PATH: 'Input List/Full Band/Input List.pdf'
+  INPUT_EQUIPMENT_SHEET: 'Input + Equipment'
+  INPUT_EQUIPMENT_RANGE: '$$A$$3:$$I$$35'
+
+jobs:
+  postsaveworkflow:
+    name: Export image from Excel spreadsheet
+    runs-on: windows-latest
+    steps:
+      - name: Test Script
+        run: |
+          set -x
+          echo  GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}
+          echo EXCEL_FILE_PATH: ${EXCEL_FILE_PATH}
