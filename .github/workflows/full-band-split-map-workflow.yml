@@ -34,7 +34,7 @@ jobs:
       - name: Install Office
         run: choco install office365business --params "'/productid:ExcelRetail /updates:FALSE'"
 
-      - name: Setup Python 3.12.3
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12.3'

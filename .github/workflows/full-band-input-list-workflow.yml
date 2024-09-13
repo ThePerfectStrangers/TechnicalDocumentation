@@ -45,7 +45,7 @@ jobs:
       - name: Add Excel Trusted Location
         run: pwsh .github/workflows/lib/Add-Excel-Trusted-Location.ps1 -Path "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}"
 
-      - name: Setup Python 3.12.3
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12.3'
