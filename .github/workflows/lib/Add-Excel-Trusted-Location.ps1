@@ -1,9 +1,11 @@
 param(
     [Parameter(Mandatory)]
-    [String]$Path
+    [String]$Path,
+    [Parameter(Mandatory)]
+    [String]$Version
 )
 
-$baseRegistryPath = "HKCU:\Software\Microsoft\Office\16.0\Excel\Security\Trusted Locations\"
+$baseRegistryPath = "HKCU:\Software\Microsoft\Office\${Version}\Excel\Security\Trusted Locations\"
 
 Write-Output "Adding Excel Trusted Location: ${Path}"
 Write-Output "Base Target Trusted Location Key: ${baseRegistryPath}"

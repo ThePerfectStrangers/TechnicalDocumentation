@@ -42,8 +42,8 @@ jobs:
       - name: Install Office
         run: choco install office365business --params "'/productid:ExcelRetail /updates:FALSE'"
 
-      - name: Add Excel Trusted Location
-        run: pwsh .github/workflows/lib/Add-Excel-Trusted-Location.ps1 -Path "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}"
+      - name: Add Excel Trusted Location - 17.0
+        run: pwsh .github/workflows/lib/Add-Excel-Trusted-Location.ps1 -Path "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" -Version "17.0"
 
       - name: Setup Python
         uses: actions/setup-python@v5
