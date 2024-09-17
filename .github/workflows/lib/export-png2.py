@@ -38,6 +38,8 @@ try:
 
     OUTPUT_PNG_FILE_PATH2 = OUTPUT_PNG_FILE_PATH + "2"
     excel2img.export_img(EXCEL_FILE_PATH, OUTPUT_PNG_FILE_PATH2, WORKSHEET, RANGE)
+    print("Bonus: {OUTPUT_PNG_FILE_PATH2}")
+
 
 except Exception as e:
     print('Image Export Failed!')
