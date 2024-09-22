@@ -13,6 +13,7 @@ All technical documentation related to band, [The Perfect Strangers](https://The
   - [Full Band](#full-band-1)
     - [Input + Equipment](#input--equipment)
     - [Split](#split)
+    - [Wireless Operating Frequencies](#wireless-operating-frequencies)
   - [Acoustic](#acoustic)
     - [Input + Equipment](#input--equipment-1)
 
@@ -74,10 +75,22 @@ Here is a breakdown of the splitter. All ports are XLR male, so a gender changer
 * **30 - 31:** Crows mic inputs.
 * **32:** Talk-back input from front-of-house.
 
-**Note:** All outputs are set as `Input/LC` from the band's mixer. You can find out more details regarding the split labels on the Split Map: 
+**Note:** All outputs are set as `Input/LC` from the band's mixer. You can find out more details regarding the split labels on the Split Map:
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
 </a>
+
+### Wireless Operating Frequencies
+
+The band uses multiple devices that operate wirelessly. These devices, along with their operating frequencies, are listed here:
+
+| Device                    | Model         | Location | Operating Frequencies |
+|---------------------------|---------------|----------|-----------------------|
+| Chad's IEM transmitter    | Shure PSM 200 | IEM Box  |  518 - 554 MHz        |
+| Paul's IEM transmitter    | Shure PSM 200 | IEM Box  |  518 - 554 MHz        |
+| Jessica's IEM transmitter | Shure PSM 200 | IEM Box  |  518 - 554 MHz        |
+| Kenzi's IEM transmitter   | Shure PSM 300 | IEM Box  | 488–937.5 MHz         |
+| John's IEM transmitter    | Xvive U4      | IEM Box  | 2.4 Ghz               |
 
 ## Acoustic
 
