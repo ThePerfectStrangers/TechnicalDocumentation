@@ -31,7 +31,7 @@ jobs:
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PDF_FILE_PATH }}" -VariableName "ABSOLUTE_PDF_FILE_PATH"
 
       - name: Install Office
-        run: choco install office365business --params "'/productid:ExcelRetail /updates:FALSE'"
+        run: choco install office365business --params "'/productid:O365HomePremRetail /exclude:Access Groove Lync OneDrive OneNote Outlook Publisher Word Powerpoint /updates:FALSE /eula:TRUE'"
 
       - name: Setup Python
         uses: actions/setup-python@v5
