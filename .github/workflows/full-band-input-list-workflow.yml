@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'Input List/Full Band/Input List.xlsx'
+      - '.github/workflows/full-band-input-list-workflow.yml'
 
 env:
   EXCEL_FILE_PATH: 'Input List/Full Band/Input List.xlsx'

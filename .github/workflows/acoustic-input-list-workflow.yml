@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'Input List/Acoustic/Input List.xlsx'
+      - '.github/workflows/acoustic-input-list-workflow.yml'
 
 env:
   EXCEL_FILE_PATH: 'Input List/Acoustic/Input List.xlsx'
@@ -41,7 +42,7 @@ jobs:
       - name: Install Python dependencies
         run: pip install pywin32 ImageGrab pillow
 
-      - name: Export PNG from Excel
+      - name: Export PDF from Excel
         run: python .github/workflows/lib/export-pdf.py "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" "${{ env.ABSOLUTE_PDF_FILE_PATH }}"
 
       - name: Commit files

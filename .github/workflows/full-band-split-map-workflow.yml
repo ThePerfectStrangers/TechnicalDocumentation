@@ -7,6 +7,7 @@ on:
 
     paths:
       - 'Input List/Full Band/Split Map.xlsx'
+      - '.github/workflows/full-band-split-map-workflow.yml'
 
 env:
   EXCEL_FILE_PATH: 'Input List/Full Band/Split Map.xlsx'
