@@ -67,14 +67,6 @@ This is a list of inputs needed by the band. It includes:
 
 ### Split
 
-The band requires a 24-channel split. The band can provide 15 feet of labeled splt tails  (XLR) from the band's IEM box if needed.
-
-Here is a breakdown of the splitter. All ports are XLR male, so a gender changer may be required for certain input ports.
-* **1 - 24:** Outputs from the band. This includes vocals and instruments.
-* **25 - 29:** Band IEMs. The band brings their own IEMs.
-* **30 - 31:** Crows mic inputs.
-* **32:** Talk-back input from front-of-house.
-
 **Note:** All outputs are set as `Input/LC` from the band's mixer. You can find out more details regarding the split labels on the Split Map:
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
