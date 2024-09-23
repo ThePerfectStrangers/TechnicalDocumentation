@@ -56,13 +56,13 @@ The band will provide power conditioners and surge protectors for their equipmen
 
   * PA Speakers
     * 2 x 15 amp breakers
-      * One to the left of the stage.
-      * One to the right of the stage.
+      * One near Downstage Left.
+      * One near Downstage Right.
     * If the venue is providing PA sound, then these are not required.
   * IEM box & Amps
     * 2 x 15 amp breakers
-      * One in the back of the stage to the left of the drums.
-      * One in the back of the stage to the right of the drums.
+      * One new Upstage Right.
+      * One new Upstage Left.
     * These are always required.
 
 ## Parking
