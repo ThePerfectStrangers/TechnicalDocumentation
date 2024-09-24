@@ -42,7 +42,7 @@ This is the general layout of the band. It includes the people, microphones, equ
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.pdf">![Static Badge](https://img.shields.io/badge/PDF-Stage%20Diagram-EC1C24?logo=adobeacrobatreader)
 </a>
 
-**Note:**  In a situation where the band is not in charge of the PA, the speakers on the left and right sides of the stage should be omitted from consideration.
+**Note:**  In a situation where the band is not in charge of the PA, the PA speakers located Downstage Right and Downstage Left should be omitted from consideration.
 
 
 # Input List
@@ -53,7 +53,7 @@ This is a list of inputs needed by the band. It includes:
   * If 48V Phantom Power is required
   * Other notes related to the input channel
 
-48V phantom power and gain control are managed on stage by the band's IEM mixing rig. A split is used to send a line-level signal to FOH. More information can be found below regarding the split.
+48V phantom power and gain control are managed on stage by the band's IEM mixing rig. All channels are targetd for a gain of -18.5. A split is used to send a line-level signal to FOH. More information can be found below regarding the split.
 
 ## Full Band
 
