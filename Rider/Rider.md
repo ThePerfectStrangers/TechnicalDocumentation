@@ -36,7 +36,7 @@ These are the requirements each venue that hosts the band must provide.
 
 ### Entourage
 
-Each band member may have an additional person in their entourage (total 10 for the band; 5 members plus 5 in the entourage). This is typically a significant other or spouse. These people should be allowed the same access as the band members and be exempt from being charged any admission or access fee to a venue.
+Each band member may have an additional person in their entourage (typically a significant other). In addition, the band may also employ up to 2 sound engineers/stage hands. These people should be allowed the same access as the band members and be exempt from being charged any admission or access fee to a venue.
 
 ### Personnel for collecting entry fee
 
