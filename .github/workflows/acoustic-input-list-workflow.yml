@@ -23,10 +23,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set Absolute Path - EXCEL_FILE_PATH
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "$ACOUSTIC_INPUT_LIST_XLSX_PATH" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.ACOUSTIC_INPUT_LIST_XLSX_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
 
       - name: Set Absolute Path - PDF_FILE_PATH
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "$ACOUSTIC_INPUT_LIST_PDF_PATH" -VariableName "ABSOLUTE_PDF_FILE_PATH"
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.ACOUSTIC_INPUT_LIST_PDF_PATH }}" -VariableName "ABSOLUTE_PDF_FILE_PATH"
 
       - name: Install Office
         run: choco install office365business --params "'/productid:O365HomePremRetail /exclude:Access Groove Lync OneDrive OneNote Outlook Publisher Word Powerpoint /updates:FALSE /eula:TRUE'"
