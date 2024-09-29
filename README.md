@@ -21,7 +21,7 @@ All technical documentation related to band, [The Perfect Strangers](https://The
 
 For a complete PDF that includes the Rider, Stage Diagram, and Input List, click the link below:
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Complete%20Technical%20Documentation\The%20Perfect%20Strangers%20-%20Technical%20Documentation.pdf.pdf">![Static Badge](https://img.shields.io/badge/PDF-Complete%20Technical%20Documentation-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Complete%20Technical%20Documentation/The%20Perfect%20Strangers%20-%20Technical%20Documentation.pdf">![Static Badge](https://img.shields.io/badge/PDF-Complete%20Technical%20Documentation-EC1C24?logo=adobeacrobatreader)
 </a>
 
 # Rider
