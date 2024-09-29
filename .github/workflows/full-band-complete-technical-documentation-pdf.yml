@@ -25,6 +25,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: PWD
+        run: pwd
+
       - name: Tree
         run: tree .
 
