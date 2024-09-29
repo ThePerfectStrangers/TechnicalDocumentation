@@ -33,16 +33,16 @@ jobs:
       - name: Install Python dependencies
         run: pip install pdfrw
 
-      - name: Set Absolute Path - EXCEL_FILE_PATH
+      - name: Set Absolute Path - OUTPUT_PATH_PDF
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.OUTPUT_PATH_PDF }}" -VariableName "ABSOLUTE_OUTPUT_PATH_PDF"
 
-      - name: Set Absolute Path - INPUT_EQUIPMENT_PNG_PATH
+      - name: Set Absolute Path - PATH_TO_RIDER_PDF
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_RIDER_PDF }}" -VariableName "ABSOLUTE_PATH_TO_RIDER_PDF"
 
-      - name: Set Absolute Path - PDF_FILE_PATH
+      - name: Set Absolute Path - PATH_TO_STAGE_DIAGRAM_PDF
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_STAGE_DIAGRAM_PDF }}" -VariableName "ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF"
 
-      - name: Set Absolute Path - PDF_FILE_PATH
+      - name: Set Absolute Path - PATH_TO_INPUT_LIST_PDF
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_INPUT_LIST_PDF }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
 
       - name: Export PNG from Excel
