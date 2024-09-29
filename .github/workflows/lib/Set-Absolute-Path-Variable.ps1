@@ -13,14 +13,16 @@ Write-Output "BasePath: ${BasePath}"
 Write-Output "RelativePath: ${RelativePath}"
 Write-Output "VariableName: ${VariableName}"
 
+$FinalPath = "${BasePath}\${UpdatedRelativePath}"
+
 if ($IsLinux) {
-    $UpdatedRelativePath = ${RelativePath}.Replace('\','/')
+    $FinalPath = ${FinalPath}.Replace('\','/')
 } else {
-    $UpdatedRelativePath = ${RelativePath}.Replace('/','\')
+    $FinalPath = ${FinalPath}.Replace('/','\')
 }
 
-Write-Output "Setting ${VariableName}: ${BasePath}\${UpdatedRelativePath}"
+Write-Output "Setting ${VariableName}: ${FinalPath}"
 
-Write-Output "${VariableName}=${BasePath}\${UpdatedRelativePath}" | Out-File -FilePath $Env:GITHUB_ENV -Encoding utf8 -Append
+Write-Output "${VariableName}=${FinalPath}" | Out-File -FilePath $Env:GITHUB_ENV -Encoding utf8 -Append
 
-Write-Output "Set ${VariableName}: ${BasePath}\${UpdatedRelativePath}"
+Write-Output "Set ${VariableName}: ${FinalPath}"
