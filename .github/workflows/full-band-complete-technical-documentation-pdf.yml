@@ -10,7 +10,7 @@ env:
   AUTHOR: Chad Birch (chad@theperfectstrangers.band)
   SUBJECT: Rider, Input Lists, and Stage Diagram for The Perfect Strangers
   OUTPUT_PATH_PDF: Complete Technical Documentation/Techical Documentation.pdf
-  PATH_TO_RIDER_PDF: Rider/Rider.md
+  PATH_TO_RIDER_PDF: Rider/Rider.pdf
   PATH_TO_STAGE_DIAGRAM_PDF: Stage Diagram/Full Band/Stage Diagram.drawio.pdf
   PATH_TO_INPUT_LIST_PDF: Input List/Full Band/Input List.pdf
 
