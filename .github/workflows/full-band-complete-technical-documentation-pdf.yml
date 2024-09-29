@@ -9,10 +9,11 @@ env:
   TITLE: The Perfect Strangers - Technical Documentation
   AUTHOR: Chad Birch (chad@theperfectstrangers.band)
   SUBJECT: Rider, Input Lists, and Stage Diagram for The Perfect Strangers
-  OUTPUT_PATH_PDF: Complete Technical Documentation/The Perfect Strangers - Technical Documentation.pdf
-  PATH_TO_RIDER_PDF: Rider/Rider.pdf
-  PATH_TO_STAGE_DIAGRAM_PDF: Stage Diagram/Full Band/Stage Diagram.drawio.pdf
-  PATH_TO_INPUT_LIST_PDF: Input List/Full Band/Input List.pdf
+
+  ABSOLUTE_OUTPUT_PATH_PDF: '' # These will get set in a later step
+  ABSOLUTE_PATH_TO_RIDER_PDF: '' # These will get set in a later step
+  ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF: '' # These will get set in a later step
+  ABSOLUTE_PATH_TO_INPUT_LIST_PDF: '' # These will get set in a later step
 
 jobs:
   on-success:
@@ -33,17 +34,17 @@ jobs:
       - name: Install Python dependencies
         run: pip install pdfrw
 
-      - name: Set Absolute Path - OUTPUT_PATH_PDF
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.OUTPUT_PATH_PDF }}" -VariableName "ABSOLUTE_OUTPUT_PATH_PDF"
+      - name: Set Absolute Path - ${{ vars.COMPLETE_TECHNICAL_DOCUMENTATION_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.COMPLETE_TECHNICAL_DOCUMENTATION_PDF_PATH }}" -VariableName "ABSOLUTE_OUTPUT_PATH_PDF"
 
-      - name: Set Absolute Path - PATH_TO_RIDER_PDF
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_RIDER_PDF }}" -VariableName "ABSOLUTE_PATH_TO_RIDER_PDF"
+      - name: Set Absolute Path - ${{ vars.RIDER_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.RIDER_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_RIDER_PDF"
 
-      - name: Set Absolute Path - PATH_TO_STAGE_DIAGRAM_PDF
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_STAGE_DIAGRAM_PDF }}" -VariableName "ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF"
+      - name: Set Absolute Path - ${{ vars.STAGE_DIAGRAM_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.STAGE_DIAGRAM_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF"
 
-      - name: Set Absolute Path - PATH_TO_INPUT_LIST_PDF
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_INPUT_LIST_PDF }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
+      - name: Set Absolute Path - ${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
 
       - name: Export PNG from Excel
         run: python .github/workflows/lib/combine-pdfs.py "${{ env.ABSOLUTE_OUTPUT_PATH_PDF }}" "${{ env.TITLE }}" "${{ env.AUTHOR }}" "${{ env.SUBJECT }}" "${{ env.ABSOLUTE_PATH_TO_RIDER_PDF }}" "${{ env.ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF }}" "${{ env.ABSOLUTE_PATH_TO_INPUT_LIST_PDF }}"
@@ -51,8 +52,8 @@ jobs:
       - name: Commit changes to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Automatically uploaded ${{ env.OUTPUT_PATH_PDF }}
-          commit_user_name: Chad Birch (Automated)
-          commit_user_email: chadbirch@hotmail.com
-          commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
+          commit_message: Automatically uploaded '${{ env.OUTPUT_PATH_PDF }}'
+          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+          commit_author: ${{ vars.COMMIT_AUTHOR }}
           push_options: '--force'

@@ -22,10 +22,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set Absolute Path - EXCEL_FILE_PATH
+      - name: Set Absolute Path - ${{ vars.ACOUSTIC_INPUT_LIST_XLSX_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.ACOUSTIC_INPUT_LIST_XLSX_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
 
-      - name: Set Absolute Path - PDF_FILE_PATH
+      - name: Set Absolute Path - ${{ vars.ACOUSTIC_INPUT_LIST_PDF_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.ACOUSTIC_INPUT_LIST_PDF_PATH }}" -VariableName "ABSOLUTE_PDF_FILE_PATH"
 
       - name: Install Office
@@ -45,8 +45,8 @@ jobs:
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Automatically uploaded 'Input List/Acoustic/Input + Equipment.png'
-          commit_user_name: Chad Birch (Automated)
-          commit_user_email: chadbirch@hotmail.com
-          commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
+          commit_message: Automatically uploaded '${{ vars.ACOUSTIC_INPUT_LIST_PDF_PATH }}'
+          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+          commit_author: ${{ vars.COMMIT_AUTHOR }}
           push_options: '--force'

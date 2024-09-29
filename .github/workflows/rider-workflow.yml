@@ -7,10 +7,6 @@ on:
       - 'Rider/Rider.md'
       - '.github/workflows/rider-workflow.yml'
 
-env:
-  PATH_TO_MARKDOWN: Rider/Rider.md
-  PATH_TO_PDF: Rider/Rider.md
-
 jobs:
   postsaveworkflow:
     name: Build PDF
@@ -24,7 +20,7 @@ jobs:
       - name: Convert Markdown to PDF
         uses: baileyjm02/markdown-to-pdf@v1
         with:
-          input_dir: ${{ env.PATH_TO_MARKDOWN }}
+          input_dir: ${{ vars.RIDER_MARKDOWN_PATH }}
           output_dir: Rider/
           images_dir: Assets
           build_html: false
@@ -33,8 +29,7 @@ jobs:
       - name: Commit changes to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Automatically uploaded ${{ env.PATH_TO_PDF }}
-          commit_user_name: Chad Birch (Automated)
-          commit_user_email: chadbirch@hotmail.com
-          commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
-          push_options: '--force'
+          commit_message: Automatically uploaded '${{ vars.RIDER_PDF_PATH }}'
+          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+          commit_author: ${{ vars.COMMIT_AUTHOR }}

@@ -10,9 +10,6 @@ on:
       - '.github/workflows/full-band-split-map-workflow.yml'
 
 env:
-  EXCEL_FILE_PATH: 'Input List/Full Band/Split Map.xlsx'
-  PDF_FILE_PATH: 'Input List/Full Band/Split Map.pdf'
-
   ABSOLUTE_EXCEL_FILE_PATH: '' # These will get set in a later step
   ABSOLUTE_PDF_FILE_PATH: '' # These will get set in a later step
 
@@ -26,11 +23,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set Absolute Path - EXCEL_FILE_PATH
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.EXCEL_FILE_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
+      - name: Set Absolute Path - ${{ vars.FULL_BAND_SPLIT_MAP_XLSX_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_SPLIT_MAP_XLSX_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
 
-      - name: Set Absolute Path - PDF_FILE_PATH
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PDF_FILE_PATH }}" -VariableName "ABSOLUTE_PDF_FILE_PATH"
+      - name: Set Absolute Path - ${{ vars.FULL_BAND_SPLIT_MAP_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_SPLIT_MAP_PDF_PATH }}" -VariableName "ABSOLUTE_PDF_FILE_PATH"
 
       - name: Install Office
         run: choco install office365business --params "'/productid:O365HomePremRetail /exclude:Access Groove Lync OneDrive OneNote Outlook Publisher Word Powerpoint /updates:FALSE /eula:TRUE'"
@@ -49,8 +46,8 @@ jobs:
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Automatically uploaded 'Input List/Full Band/Input + Equipment.png'
-          commit_user_name: Chad Birch (Automated)
-          commit_user_email: chadbirch@hotmail.com
-          commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
+          commit_message: Automatically uploaded '${{ vars.FULL_BAND_SPLIT_MAP_PDF_PATH }}'
+          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+          commit_author: ${{ vars.COMMIT_AUTHOR }}
           push_options: '--force'
