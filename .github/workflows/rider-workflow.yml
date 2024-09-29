@@ -33,3 +33,4 @@ jobs:
           commit_user_name: ${{ vars.COMMIT_USER_NAME }}
           commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
           commit_author: ${{ vars.COMMIT_AUTHOR }}
+          push_options: '--force'
