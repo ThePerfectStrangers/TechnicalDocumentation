@@ -1,4 +1,4 @@
-name: Complete Technical Documentation PDF
+name: Complete Technical Documentation PDF Workflow
 
 on:
   workflow_run:
@@ -31,7 +31,7 @@ jobs:
           python-version: '3.12.3'
 
       - name: Install Python dependencies
-        run: pip install PdfReader PdfWriter
+        run: pip install pdfrw
 
       - name: Set Absolute Path - EXCEL_FILE_PATH
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.OUTPUT_PATH_PDF }}" -VariableName "ABSOLUTE_OUTPUT_PATH_PDF"
