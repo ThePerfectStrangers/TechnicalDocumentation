@@ -1,5 +1,4 @@
-
-name: Full Band/Input List.xlsx Workflow
+name: Full Band/Input List Workflow
 
 on:
   push:

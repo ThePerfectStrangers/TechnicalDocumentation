@@ -1,0 +1,58 @@
+name: Complete Technical Documentation PDF
+
+on:
+  workflow_run:
+    workflows: [Rider Workflow, Full Band/Input List Workflow, Stage Diagram Workflow]
+    types: [completed]
+
+env:
+  TITLE: The Perfect Strangers - Technical Documentation
+  AUTHOR: Chad Birch (chad@theperfectstrangers.band)
+  SUBJECT: Rider, Input Lists, and Stage Diagram for The Perfect Strangers
+  OUTPUT_PATH_PDF: Complete Technical Documentation/Techical Documentation.pdf
+  PATH_TO_RIDER_PDF: Rider/Rider.md
+  PATH_TO_STAGE_DIAGRAM_PDF: Stage Diagram/Full Band/Stage Diagram.drawio.pdf
+  PATH_TO_INPUT_LIST_PDF: Input List/Full Band/Input List.pdf
+
+jobs:
+  on-success:
+    name: Merge PDFs
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.3'
+
+      - name: Install Python dependencies
+        run: pip install PdfReader PdfWriter
+
+      - name: Set Absolute Path - EXCEL_FILE_PATH
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.OUTPUT_PATH_PDF }}" -VariableName "ABSOLUTE_OUTPUT_PATH_PDF"
+
+      - name: Set Absolute Path - INPUT_EQUIPMENT_PNG_PATH
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_RIDER_PDF }}" -VariableName "ABSOLUTE_PATH_TO_RIDER_PDF"
+
+      - name: Set Absolute Path - PDF_FILE_PATH
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_STAGE_DIAGRAM_PDF }}" -VariableName "ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF"
+
+      - name: Set Absolute Path - PDF_FILE_PATH
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ env.PATH_TO_INPUT_LIST_PDF }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
+
+      - name: Export PNG from Excel
+        run: python .github/workflows/lib/combine-pdfs.py "${{ env.ABSOLUTE_OUTPUT_PATH_PDF }}" "${{ env.TITLE }}" "${{ env.AUTHOR }}" "${{ env.SUBJECT }}" "${{ env.ABSOLUTE_PATH_TO_RIDER_PDF }}" "${{ env.ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF }}" "${{ env.ABSOLUTE_PATH_TO_INPUT_LIST_PDF }}"
+
+      - name: Commit changes to repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Automatically uploaded ${{ env.OUTPUT_PATH_PDF }}
+          commit_user_name: Chad Birch (Automated)
+          commit_user_email: chadbirch@hotmail.com
+          commit_author: Chad Birch (Automated) <chadbirch@hotmail.com>
+          push_options: '--force'

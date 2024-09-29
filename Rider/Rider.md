@@ -82,7 +82,7 @@ The trailer will need to have access close to the area designated for the band t
 ## Refusal to Perform
 
 The band reserves the right to refuse to perform for any reason regarding band member or equipment safety. Such reasons are, but not limited to:
-  * Unstable building or performance area
+  * Unstable or unsafe building or performance area
   * Volatile or threatening crowd
   * Excessive moisture in the air
   * Threat of severe rain or lightning

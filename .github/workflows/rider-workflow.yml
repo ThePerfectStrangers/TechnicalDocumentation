@@ -1,12 +1,8 @@
-# .github/workflows/rider-workflow/rider-workflow.yml
-
-name: Rider.md Workflow
-# This workflow is triggered on pushes to the repository.
+name: Rider Workflow
 on:
   push:
     branches:
       - main
-    # Paths can be used to only trigger actions when you have edited certain files, such as a file within the /docs directory
     paths:
       - 'Rider/Rider.md'
       - '.github/workflows/rider-workflow.yml'
@@ -20,8 +16,6 @@ jobs:
     name: Build PDF
     runs-on: ubuntu-latest
     permissions:
-      # Give the default GITHUB_TOKEN write permission to commit and push the
-      # added or changed files to the repository.
       contents: write
     steps:
       - name: Checkout repository

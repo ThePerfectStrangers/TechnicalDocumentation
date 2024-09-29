@@ -2,7 +2,6 @@
 
 import sys
 import win32com.client
-import os
 
 EXCEL_FILE_PATH = sys.argv[1]
 PDF_FILE_PATH = sys.argv[2]

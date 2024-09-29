@@ -5,6 +5,7 @@
 
 All technical documentation related to band, [The Perfect Strangers](https://ThePerfectStrangers.band).
 
+- [Complete Technical Documentation](#complete-technical-documentation)
 - [Rider](#rider)
 - [Document Style](#document-style)
 - [Stage Diagram](#stage-diagram)
@@ -15,6 +16,13 @@ All technical documentation related to band, [The Perfect Strangers](https://The
     - [Split](#split)
   - [Acoustic](#acoustic)
     - [Input + Equipment](#input--equipment-1)
+
+# Complete Technical Documentation
+
+For a complete PDF that includes the Rider, Stage Diagram, and Input List, click the link below:
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Complete%20Technical%20Documentation\Technical%20 Documentation.pdf">![Static Badge](https://img.shields.io/badge/PDF-Complete%20Technical%20Documentation-EC1C24?logo=adobeacrobatreader)
+</a>
 
 # Rider
 
@@ -87,4 +95,3 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Acoustic\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Setup-EC1C24?logo=adobeacrobatreader)
 </a>
-

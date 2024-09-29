@@ -1,4 +1,4 @@
-name: Full Band/Split Map.xlsx Workflow
+name: Full Band/Split Map Workflow
 
 on:
   push:

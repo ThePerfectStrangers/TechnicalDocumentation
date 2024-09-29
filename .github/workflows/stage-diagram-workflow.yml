@@ -1,0 +1,16 @@
+# This workflow is used to trigger other workflows
+name: Stage Diagram Workflow
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'Stage Diagram/Full Band/Stage Diagram.drawio.pdf'
+
+jobs:
+  echo:
+    name: Echo Stage Diagram Change
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo Success
+        run: echo "Stage Diagram Updated!"
