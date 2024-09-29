@@ -13,7 +13,11 @@ Write-Output "BasePath: ${BasePath}"
 Write-Output "RelativePath: ${RelativePath}"
 Write-Output "VariableName: ${VariableName}"
 
-$UpdatedRelativePath = ${RelativePath}.Replace('/','\')
+if ($IsLinux) {
+    $UpdatedRelativePath = ${RelativePath}.Replace('\','/')
+} else {
+    $UpdatedRelativePath = ${RelativePath}.Replace('/','\')
+}
 
 Write-Output "Setting ${VariableName}: ${BasePath}\${UpdatedRelativePath}"
 
