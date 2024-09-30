@@ -1,4 +1,4 @@
-name: Acoustic/Input List.xlsx Workflow
+name: Acoustic/Input List Workflow
 
 on:
   push:
