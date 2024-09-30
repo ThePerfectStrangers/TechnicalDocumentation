@@ -14,7 +14,7 @@
   </tr>
 </table>
 
-Updated: 2024.09.23
+Rider Updated: 2024.09.29
 
 <!-- title: The Perfect Strangers - Rider -->
 # Rider <!-- omit from toc -->
