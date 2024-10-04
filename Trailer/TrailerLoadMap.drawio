@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0" version="24.7.17">
   <diagram name="Page-1" id="X5lvkgiN3U133mV6QOkO">
-    <mxGraphModel dx="1683" dy="924" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2019" dy="1109" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -217,6 +217,16 @@
         <mxCell id="nhZHOeeMNoCa2xDWZXQW-68" value="&lt;b&gt;Hanging Mic Stand Bases&lt;/b&gt;&lt;div&gt;&lt;b&gt;Band XLR Cable Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Snake Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Drum Equipment Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Drum XLR Cable Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Power Stip Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Drum Throne, Hardware, Fan&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;" vertex="1" parent="nhZHOeeMNoCa2xDWZXQW-58">
           <mxGeometry x="28" y="350.75" width="300" height="100" as="geometry" />
         </mxCell>
+        <object label="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;&amp;nbsp;%date{yyyy-mm-dd}%&lt;/b&gt;&lt;/span&gt;" placeholders="1" id="nhZHOeeMNoCa2xDWZXQW-69">
+          <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=none;labelBackgroundColor=none;" vertex="1" connectable="0" parent="1">
+            <mxGeometry x="493.34665339866694" y="990.0042316197382" as="geometry" />
+          </mxCell>
+        </object>
+        <object label="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Date Updated:&lt;/b&gt;&lt;/span&gt;" placeholders="1" id="nhZHOeeMNoCa2xDWZXQW-70">
+          <mxCell style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=none;labelBackgroundColor=none;" vertex="1" connectable="0" parent="1">
+            <mxGeometry x="339.9966533986669" y="990.0042316197382" as="geometry" />
+          </mxCell>
+        </object>
       </root>
     </mxGraphModel>
   </diagram>
