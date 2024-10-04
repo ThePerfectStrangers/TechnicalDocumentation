@@ -3,7 +3,8 @@
 
 The trailer load map for [The Perfect Strangers](https://ThePerfectStrangers.band).
 
-- [Complete Technical Documentation](#complete-technical-documentation)
+- [Overview](#overview)
+- [Map](#map)
 
 # Overview
 
