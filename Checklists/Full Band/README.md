@@ -65,7 +65,7 @@
 - [ ] Bongos
 - [ ] Bongo Stand
 
-## John (Bass)
+## Gordon (Bass)
 - [ ] Bass Case
 - [ ] Amp
 - [ ] Aux Pedal
