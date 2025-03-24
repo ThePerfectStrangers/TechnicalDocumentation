@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'Assets/BandColorConvention.xlsx'
+      - 'Assets/BandColorConvention/BandColorConvention.xlsx'
       - '.github/workflows/band-color-convention-workflow.yml'
 
 env:
