@@ -16,6 +16,7 @@ All technical documentation related to band, [The Perfect Strangers](https://The
     - [Split](#split)
   - [Acoustic](#acoustic)
     - [Input + Equipment](#input--equipment-1)
+- [Repository Health](#repository-health)
 
 # Complete Technical Documentation
 
@@ -95,3 +96,22 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Acoustic\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Setup-EC1C24?logo=adobeacrobatreader)
 </a>
+
+# Repository Health
+
+This is the status of the backing workflows that automate the creation of repository artifacts, such as PDFs and images. If any of these are failing, then their related artifacts may be out-of-date.
+
+
+[![Acoustic/Input List Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/acoustic-input-list-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/acoustic-input-list-workflow.yml)
+
+[![Band Color Convention Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/band-color-convention-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/band-color-convention-workflow.yml)
+
+[![Complete Technical Documentation PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml)
+
+[![Full Band/Input List Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-input-list-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-input-list-workflow.yml)
+
+[![Full Band/Split Map Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-split-map-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-split-map-workflow.yml)
+
+[![Rider Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml)
+
+[![Stage Diagram Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/stage-diagram-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/stage-diagram-workflow.yml)
