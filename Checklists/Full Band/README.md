@@ -65,7 +65,7 @@
 - [ ] Bongos
 - [ ] Bongo Stand
 
-## Gordon (Bass)
+## Pending (Bass)
 - [ ] Bass Case
 - [ ] Amp
 - [ ] Aux Pedal
