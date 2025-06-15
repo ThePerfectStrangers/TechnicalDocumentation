@@ -65,10 +65,9 @@
 - [ ] Bongos
 - [ ] Bongo Stand
 
-## Pending (Bass)
+## Billy (Bass)
 - [ ] Bass Case
 - [ ] Amp
-- [ ] Aux Pedal
 - [ ] Pedal Board
 - [ ] In-Ear Transmitter
 - [ ] In-Ear Receiver
