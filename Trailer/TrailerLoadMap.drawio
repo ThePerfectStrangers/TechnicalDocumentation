@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="28.0.7">
   <diagram name="Page-1" id="X5lvkgiN3U133mV6QOkO">
-    <mxGraphModel dx="2891" dy="1118" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1156" dy="447" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -200,7 +200,7 @@
             <mxPoint x="486.43216080402016" y="80.25127885215221" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nhZHOeeMNoCa2xDWZXQW-59" value="&lt;b&gt;IEM Box&lt;/b&gt;&lt;div&gt;&lt;b&gt;Drum Trunk&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;Subwoofers&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;PA Speakers&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;opacity=50;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+        <mxCell id="nhZHOeeMNoCa2xDWZXQW-59" value="&lt;div&gt;&lt;b&gt;Drum Trunk&lt;/b&gt;&lt;/div&gt;&lt;b&gt;IEM/Band Mixer Box&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Subwoofers&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;PA Speakers&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;opacity=50;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="235.17587939698493" y="720.326943231441" width="376.88442211055275" height="125.62819713038054" as="geometry" />
         </mxCell>
         <mxCell id="nhZHOeeMNoCa2xDWZXQW-63" value="&lt;b&gt;Drum Rack&lt;/b&gt;&lt;div&gt;&lt;b&gt;Drum Rug&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Miscellaneous&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;" parent="1" vertex="1">
@@ -215,16 +215,16 @@
         <mxCell id="nhZHOeeMNoCa2xDWZXQW-64" value="" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="235.17587939698493" y="155.62819713038056" width="376.88442211055275" height="62.81409856519027" as="geometry" />
         </mxCell>
-        <mxCell id="nhZHOeeMNoCa2xDWZXQW-65" value="&lt;b&gt;Keyboard Stand&lt;/b&gt;&lt;div&gt;&lt;b&gt;Keyboard Throne&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Keyboards&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;" parent="1" vertex="1">
+        <mxCell id="nhZHOeeMNoCa2xDWZXQW-65" value="&lt;div&gt;&lt;b&gt;Keyboards&lt;/b&gt;&lt;b&gt;&lt;/b&gt;&lt;/div&gt;&lt;b&gt;Keyboard Stand&lt;/b&gt;&lt;div&gt;&lt;b&gt;Keyboard Throne&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="235.17587939698493" y="217.8141547099189" width="376.88442211055275" height="125.62819713038054" as="geometry" />
         </mxCell>
-        <mxCell id="nhZHOeeMNoCa2xDWZXQW-66" value="&lt;b&gt;Microphone Case&lt;/b&gt;&lt;div&gt;&lt;b&gt;Utility Case&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Mallory DI Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Mallory IEM Box&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;opacity=50;" parent="1" vertex="1">
+        <mxCell id="nhZHOeeMNoCa2xDWZXQW-66" value="&lt;b&gt;Microphone Case (Black)&lt;/b&gt;&lt;div&gt;&lt;b&gt;Utility Case (Black)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Mallory DI Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Mallory IEM Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Jessica IEM Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Billy IEM Box&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="235.17587939698493" y="343.4423518402994" width="376.88442211055275" height="125.62819713038054" as="geometry" />
         </mxCell>
-        <mxCell id="nhZHOeeMNoCa2xDWZXQW-67" value="&lt;b&gt;Guitar Cases&lt;/b&gt;&lt;div&gt;&lt;b&gt;Bass Case&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Guitar Stand Case&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Pedal Cases&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=50;" parent="1" vertex="1">
+        <mxCell id="nhZHOeeMNoCa2xDWZXQW-67" value="&lt;b&gt;Guitar Cases&lt;/b&gt;&lt;div&gt;&lt;b&gt;Guitar Amps&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;Bass Case&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Guitar Stand Case&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Pedal Cases&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="235.17587939698493" y="595.9550280723644" width="376.88442211055275" height="125.62819713038054" as="geometry" />
         </mxCell>
-        <mxCell id="nhZHOeeMNoCa2xDWZXQW-68" value="&lt;b&gt;Hanging Mic Stand Bases&lt;/b&gt;&lt;div&gt;&lt;b&gt;Band XLR Cable Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Snake Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Drum Equipment Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Drum XLR Cable Box&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Power Strip Box&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;" parent="1" vertex="1">
+        <mxCell id="nhZHOeeMNoCa2xDWZXQW-68" value="&lt;b&gt;Hanging Mic Stand Bases&lt;/b&gt;&lt;div&gt;&lt;b&gt;Band XLR Cable Box (Clear)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Snake Box&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;(Clear)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Drum Equipment Box&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;(Clear)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Power Strip Box&lt;/b&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;(Clear)&lt;/b&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;opacity=50;" parent="1" vertex="1">
           <mxGeometry x="235.17587939698493" y="470.64090143480973" width="376.88442211055275" height="125.62819713038054" as="geometry" />
         </mxCell>
       </root>
