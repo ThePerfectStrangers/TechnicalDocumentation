@@ -14,6 +14,10 @@ All technical documentation related to band, [The Perfect Strangers](https://The
   - [Full Band](#full-band-1)
     - [Input + Equipment](#input--equipment)
     - [Split](#split)
+      - [Modes](#modes)
+      - [Splitter Assignments](#splitter-assignments)
+        - [Order](#order)
+        - [Ports](#ports)
   - [Acoustic](#acoustic)
     - [Input + Equipment](#input--equipment-1)
 - [Repository Health](#repository-health)
@@ -75,15 +79,38 @@ This is a list of inputs needed by the band. It includes:
 
 ### Split
 
-The band requires a 24-channel split. The band can provide 15 feet of labeled splt tails  (XLR) from the band's IEM box if needed.
+#### Modes
 
-Here is a breakdown of the splitter. All ports are XLR male, so a gender changer may be required for certain input ports.
+The band requires a 24-channel split. The band can provide 15 feet of labeled split tails (XLR) from the band's IEM box if needed.
+
+When splitting is required, we can support two modes:
+1. (Preferred) We run all mics into our IEM box and send a split to the front-of-house (FOH). We will control all gain (staged to -18.5). This is preferred because it reduces the amount of time each band member must spend recalibrating their mix.
+2. All mics run to FOH and FOH sends us a split to our IEM box. This method is not preferred as it creates the added burden of each band member recalibrating their mix.
+
+#### Splitter Assignments
+
+All ports are XLR male, so a gender changer may be required for certain input ports, such as crowd mics and the talk-back port.
+
+##### Order
+
+The splitter ports are ordered as follows:
+1. Drums
+2. Vocals
+3. Keyboards
+4. Guitars
+5. Bass
+
+##### Ports
+
 * **1 - 24:** Outputs from the band. This includes vocals and instruments.
+  * The snake coming from the split is banded into groups of 4 wires. Each band is represented by a unique color. These colors can be found in the numbering section of the Split Map.
 * **25 - 29:** Band IEMs. The band brings their own IEMs.
 * **30 - 31:** Crows mic inputs.
 * **32:** Talk-back input from front-of-house.
 
-**Note:** All outputs are set as `Input/LC` from the band's mixer. You can find out more details regarding the split labels on the Split Map:
+**Note:** All outputs are set as [Input/LC (IN/LC)](https://drewbrashler.com/2017/x32-output-tap/) from the band's mixer. You can find out more details regarding the split labels on the Split Map:
+
+![Split Map](./Input%20List/Full%20Band/Split%20Map.png)
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
 </a>
@@ -100,7 +127,6 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 # Repository Health
 
 This is the status of the backing workflows that automate the creation of repository artifacts, such as PDFs and images. If any of these are failing, then their related artifacts may be out-of-date.
-
 
 [![Acoustic/Input List Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/acoustic-input-list-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/acoustic-input-list-workflow.yml)
 
