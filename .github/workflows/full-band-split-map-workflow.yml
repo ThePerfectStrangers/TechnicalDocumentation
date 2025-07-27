@@ -14,8 +14,8 @@ env:
   ABSOLUTE_PDF_FILE_PATH: '' # These will get set in a later step
   ABSOLUTE_PNG_FILE_PATH: '' # These will get set in a later step
 
-  INPUT_EQUIPMENT_SHEET: 'Split Map'
-  INPUT_EQUIPMENT_RANGE: '$$A$$1:$$Q$$8'
+  SPLIT_SHEET: 'Split Map'
+  SPLIT_RANGE: '$$A$$1:$$Q$$8'
 
 jobs:
   postsaveworkflow:
@@ -29,6 +29,9 @@ jobs:
 
       - name: Set Absolute Path - ${{ vars.FULL_BAND_SPLIT_MAP_XLSX_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_SPLIT_MAP_XLSX_PATH }}" -VariableName "ABSOLUTE_EXCEL_FILE_PATH"
+
+      - name: Set Absolute Path - ${{ vars.FULL_BAND_SPLIT_MAP_XLSX_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_SPLIT_MAP_PNG_PATH }}" -VariableName "ABSOLUTE_PNG_FILE_PATH"
 
       - name: Set Absolute Path - ${{ vars.FULL_BAND_SPLIT_MAP_PDF_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_SPLIT_MAP_PDF_PATH }}" -VariableName "ABSOLUTE_PDF_FILE_PATH"
