@@ -13,8 +13,8 @@ env:
   ABSOLUTE_INPUT_EQUIPMENT_PNG_PATH: '' # These will get set in a later step
   ABSOLUTE_PDF_FILE_PATH: '' # These will get set in a later step
 
-  INPUT_EQUIPMENT_SHEET: 'Input + Equipment'
-  INPUT_EQUIPMENT_RANGE: '$$A$$3:$$I$$35'
+  INPUT_EQUIPMENT_SHEET: 'Channels'
+  INPUT_EQUIPMENT_RANGE: '$$A$$3:$$H$$43'
 
 jobs:
   postsaveworkflow:
