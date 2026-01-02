@@ -85,28 +85,27 @@ The band requires a 24-channel split. The band can provide 15 feet of labeled sp
 
 When splitting is required, we can support two modes:
 1. (Preferred) We run all mics into our IEM box and send a split to the front-of-house (FOH). We will control all gain (staged to -18.5). This is preferred because it reduces the amount of time each band member must spend recalibrating their mix.
-2. All mics run to FOH and FOH sends us a split to our IEM box. This method is not preferred as it creates the added burden of each band member recalibrating their mix.
+2. All mics run to FOH and FOH sends us a split to our IEM box. This method requires the venue/sound company to provide the split.
 
 #### Splitter Assignments
 
-All ports are XLR male, so a gender changer may be required for certain input ports, such as crowd mics and the talk-back port.
+All ports are XLR male.
 
-##### Order
+##### Order & Ports
 
 The splitter ports are ordered as follows:
-1. Drums
-2. Vocals
-3. Keyboards
-4. Guitars
-5. Bass
+1. **Drums**: 1-9
+2. **Vocals**: 10-16
+  * Vocals 6 & 7 may not be required for every show as they are for guest vocalists.
+3. **Piano/Keyboards**: 17-18
+4. **Guitars**: 19-22
+  * (E): Electric
+  * (A): Acoustic
+5. **Bass**: 23
 
-##### Ports
+##### Snake Tails
 
-* **1 - 24:** Outputs from the band. This includes vocals and instruments.
-  * The snake coming from the split is banded into groups of 4 wires. Each band is represented by a unique color. These colors can be found in the numbering section of the Split Map.
-* **25 - 29:** Band IEMs. The band brings their own IEMs.
-* **30 - 31:** Crows mic inputs.
-* **32:** Talk-back input from front-of-house.
+The snake coming from the split is banded into groups of 4 wires, ordered Green, Blue, Yellow, and Red. Each bundle is represented by a unique color. These colors can be found in the numbering section of the Split Map.
 
 **Note:** All outputs are set as [Input/LC (IN/LC)](https://drewbrashler.com/2017/x32-output-tap/) from the band's mixer. You can find out more details regarding the split labels on the Split Map:
 
@@ -123,7 +122,7 @@ You can view the mixer configuration by using the WING EDIT software provided by
 
 ## Acoustic
 
-The band can perform in smaller venues with an acoustic set up. This setup replaces the full drum set with a smaller percussion setup, removes the need for IEMs and the IEM box, and shrinks the overall stage footprint.
+The band can perform in smaller venues with an acoustic set up. This setup replaces the full drum set with a smaller percussion setup, removes the need for IEMs and the IEM box, and shrinks the overall stage footprint. This configuration differs per show as it aligns more closely with the set list. For any documentation or requirements, please contact the band directly at [technical@theperfectstrangers.band](mailto:technical@theperfectstrangers.band?subject=Acoustic Set Up for The Perfect Strangers).
 
 ### Input + Equipment
 
