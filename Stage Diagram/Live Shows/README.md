@@ -2,9 +2,9 @@
 
 Going from the practice space to the live show can be daunting. This guide should help ensure things run as smooth as possible.
 
-## Pack-up and Transpoort
+## Pack-up and Transport
 
-Transporting loose items is chaotic and ill-advised. Everything that can fit in a case needs to fit in a case.
+Transporting loose items is chaotic and ill-advised. Everything that can fit in a case needs to fit in a case or the trunk.
 
 ### Guidelines
 
@@ -13,24 +13,28 @@ The following outlines possibilities for transporting things from the practice s
 * Live Sound
   * Speakers & Subs
     * Pack in their soft cases
-    * The poles that support the speakers on the subwookfers do not currently fit in any case. They need to be transported loosely, but care needs to be taken to ensure they don't get too scratch up or scratch something around them.
+    * The poles that support the speakers on the subwoofers need to be transported in the trunk.
   * Mixer Box/Snake Boxes/IEM boxes
-    * Ensure all latches are latched correctly
+    * Ensure all latches are latched correctly and flaps are down.
     * When removing cases, try and keep the cases grouped together. We have 3U, 4U, and 6U cases.
   * Microphones
-    * Place all microphones in the case labled `Microphone Case`
-  * Wireless Router
-    * Place all networking equipment in the case labled `Utility Case`
+    * Place all microphones in the case labeled `Microphone Case`
 * Drums
   * Drums
-    * All drums have a case which latch. There should be 4 tom cases, 1 snare case, and 1 bass drum case. They may be stored inside each other while not in use.
+    * All drums have a labeled case which latch. There should be 4 tom cases, 1 snare case, and 1 bass drum case. They may be stored inside each other while not in use.
     * Cymbals
-      * There are 2 hard cymbal packs. All cymbals except for the Zil-Bel can be packed in the cases.
-      * The Zil-Bel is transported in the clear case labled `Percussion Equipment` along with the clamps, shakers, etc.
+      * There are 2 hard cymbal packs. All cymbals except for the Zil-Bels can be packed in the cases.
+      * The Zil-Bel is transported in the clear case labeled `Percussion Equipment` along with the clamps, shakers, etc.
     * Rack
-      * The preferred method for transporting the rack is to leave it connected. If this is not possible, then disconnect the middle rack first. The two side racks should be able to stand on their own. After that,remove the legs from the side racks and transport. Be sure to remove all cymbals and percussion equipment before transporting. **DO NOT REMOVE THE CYMBAL ARMS FROM THE RACK**.
+      * The preferred method for transporting the rack is to leave it connected. If this is not possible, then:
+        1. Disconnect the middle rack first. The two side racks should be able to stand on their own. 
+        2. After that,remove the legs from the side racks and transport. 
+        3. Be sure to remove all cymbals and percussion equipment before transporting. **DO NOT REMOVE THE CYMBAL ARMS FROM THE RACK**.
+
 * Guitars
+
 * Bass
+
 * Keyboards
 
 ### Cases
@@ -85,4 +89,4 @@ The following outlines possibilities for transporting things from the practice s
 
 ## Stage Teardown
 
-Typically, the reverse the order of seting up the stage to tear it down.
+Typically, reverse the order of setting up the stage to tear it down.
