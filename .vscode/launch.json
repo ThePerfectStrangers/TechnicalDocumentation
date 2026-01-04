@@ -1,0 +1,52 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: export-png.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\.github\\workflows\\lib\\export-png.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "${input:excelFilePath}",
+                "${input:outputPngPath}",
+                "${input:worksheet}",
+                "${input:firstCell}",
+                "${input:lastCell}"
+            ]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "excelFilePath",
+            "type": "promptString",
+            "description": "Enter the Excel file path",
+            "default": "path\\to\\your\\file.xlsx"
+        },
+        {
+            "id": "outputPngPath",
+            "type": "promptString",
+            "description": "Enter the output PNG file path",
+            "default": "path\\to\\output\\file.png"
+        },
+        {
+            "id": "worksheet",
+            "type": "promptString",
+            "description": "Enter the worksheet name",
+            "default": "Split Map"
+        },
+        {
+            "id": "firstCell",
+            "type": "promptString",
+            "description": "Enter the first cell of the area to capture",
+            "default": "A1"
+        },
+        {
+            "id": "lastCell",
+            "type": "promptString",
+            "description": "Enter the last cell of the area to capture",
+            "default": "Q8"
+        }
+    ]
+}

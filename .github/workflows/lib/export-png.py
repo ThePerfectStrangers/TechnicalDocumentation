@@ -8,12 +8,14 @@ EXCEL_FILE_PATH = sys.argv[1]
 OUTPUT_PNG_FILE_PATH = sys.argv[2]
 
 WORKSHEET = sys.argv[3]
-RANGE = sys.argv[4]
+FIRST_CELL = sys.argv[4]
+LAST_CELL = sys.argv[5]
 
 print(f"Excel File Path: {EXCEL_FILE_PATH}")
 print(f"Output PNG File Path: {OUTPUT_PNG_FILE_PATH}")
 print(f"WORKSHEET: {WORKSHEET}")
-print(f"RANGE: {RANGE}")
+print(f"FIRST_CELL: {FIRST_CELL}")
+print(f"LAST_CELL: {LAST_CELL}")
 
 print(f"Absolute Excel File Path: {EXCEL_FILE_PATH}")
 print(f"Absolute PNG File Path: {OUTPUT_PNG_FILE_PATH}")
@@ -23,7 +25,7 @@ try:
     o.Visible = False
     wb = o.Workbooks.Open(EXCEL_FILE_PATH)
     worksheet = wb.Worksheets(WORKSHEET)
-    used_range = worksheet.UsedRange
+    used_range = worksheet.Range(FIRST_CELL, LAST_CELL)
     used_range.CopyPicture(Format=2)
 
     wb.Close(True)

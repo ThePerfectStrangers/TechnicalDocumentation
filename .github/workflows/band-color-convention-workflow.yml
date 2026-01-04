@@ -13,7 +13,8 @@ env:
   ABSOLUTE_PNG_FILE_PATH: '' # These will get set in a later step
 
   EXCEL_TARGET_SHEET: 'Document Style'
-  EXCEL_TARGET_RANGE: '$$A$$1:$$E$$6'
+  SPLIT_FIRST_CELL: 'A1'
+  SPLIT_LAST_CELL: 'E6'
 
 jobs:
   postsaveworkflow:
@@ -43,7 +44,7 @@ jobs:
         run: pip install pywin32 ImageGrab pillow excel2img
 
       - name: Export PNG from Excel
-        run: python .github/workflows/lib/export-png.py "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" "${{ env.ABSOLUTE_PNG_FILE_PATH }}" "${{ env.EXCEL_TARGET_SHEET }}" "${{ env.EXCEL_TARGET_RANGE}}"
+        run: python .github/workflows/lib/export-png.py "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" "${{ env.ABSOLUTE_PNG_FILE_PATH }}" "${{ env.EXCEL_TARGET_SHEET }}" "${{ env.SPLIT_FIRST_CELL}}" "${{ env.SPLIT_LAST_CELL}}"
 
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v5

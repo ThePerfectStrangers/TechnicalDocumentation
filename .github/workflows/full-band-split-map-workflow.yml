@@ -15,7 +15,8 @@ env:
   ABSOLUTE_PNG_FILE_PATH: '' # These will get set in a later step
 
   SPLIT_SHEET: 'Split Map'
-  SPLIT_RANGE: '$$A$$1:$$Q$$8'
+  SPLIT_FIRST_CELL: 'A1'
+  SPLIT_LAST_CELL: 'Q8'
 
 jobs:
   postsaveworkflow:
@@ -48,7 +49,7 @@ jobs:
         run: pip install pywin32 ImageGrab pillow
 
       - name: Export PNG from Excel
-        run: python .github/workflows/lib/export-png.py "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" "${{ env.ABSOLUTE_PNG_FILE_PATH }}" "${{ env.SPLIT_SHEET }}" "${{ env.SPLIT_RANGE}}"
+        run: python .github/workflows/lib/export-png.py "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" "${{ env.ABSOLUTE_PNG_FILE_PATH }}" "${{ env.SPLIT_SHEET }}" "${{ env.SPLIT_FIRST_CELL}}" "${{ env.SPLIT_LAST_CELL}}"
 
       - name: Export PDF from Excel
         run: python .github/workflows/lib/export-pdf.py "${{ env.ABSOLUTE_EXCEL_FILE_PATH }}" "${{ env.ABSOLUTE_PDF_FILE_PATH }}"
