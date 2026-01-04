@@ -118,7 +118,7 @@ The snake coming from the split is banded into groups of 4 wires, ordered Green,
 
 The band uses a Behringer WING RACK mixer for mixing all IEMs and front-of-house when necessary. If you will be working with the band and using their mixer, you can download the latest configuration from the [Mixer folder](Mixer).
 
-You can view the mixer configuration by using the WING EDIT software provided by Behringer. You can [download it from their websote](https://www.behringer.com/wing/wing-rack#documentations).
+You can view the mixer configuration by using the WING EDIT software provided by Behringer. You can [download it from their website](https://www.behringer.com/wing/wing-rack#documentations).
 
 ## Acoustic
 
