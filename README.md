@@ -73,7 +73,7 @@ This is a list of inputs needed by the band. It includes:
 
 ### Input + Equipment
 
-![Input and equipment list](./Assets/Input%20List/Full%20Band/Input%20+%20Equipment.png)
+![Input and equipment list](./Assets/InputList/FullBand/Input%20+%20Equipment.png)
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Setup-EC1C24?logo=adobeacrobatreader)
 </a>
