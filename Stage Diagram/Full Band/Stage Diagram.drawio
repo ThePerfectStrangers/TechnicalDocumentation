@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="hYlaiTehcVsQXE26dI48-70" parent="1" style="whiteSpace=wrap;html=1;fontSize=8;fillColor=#CCCCCC;" value="" vertex="1">
-          <mxGeometry height="630" width="1060" x="14.270000000000001" as="geometry" />
+          <mxGeometry height="630" width="1060" x="14.270000000000001" y="4" as="geometry" />
         </mxCell>
         <mxCell id="2EZrR9Lx6Leo_fO-bju2-36" connectable="0" parent="1" style="group;aspect=fixed;" value="" vertex="1">
           <mxGeometry height="160" width="67.69" x="37" y="460" as="geometry" />
@@ -92,7 +92,7 @@
           <mxGeometry x="1049.996653398667" y="231.75423161973822" as="geometry" />
         </mxCell>
         <mxCell id="VYcRWiDOMUu1Hdh1bP71-3" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Upstage&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry x="563.996653398667" y="20.00423161973822" as="geometry" />
+          <mxGeometry x="563.996653398667" y="30.00423161973822" as="geometry" />
         </mxCell>
         <mxCell id="VYcRWiDOMUu1Hdh1bP71-6" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="102" width="450" x="325" y="729" as="geometry" />
