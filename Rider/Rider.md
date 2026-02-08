@@ -1,7 +1,7 @@
 <table>
   <tr style="border: none;">
   <td float="left" style="border: none;">
-    <img src="../Assets/BandColorConvention/Logo/Logo-16-9-B-T.png" />
+    <img src="../Assets/Logo/Logo-16-9-B-T.png" />
   </td>
   <td float="right" style="border: none; text-align: center;">
     <div>
