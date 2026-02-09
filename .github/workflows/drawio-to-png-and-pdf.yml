@@ -3,7 +3,11 @@ name: Draw.io to PNG & PDF Workflow
 on:
   push:
     paths:
-      - ./**/*.drawio
+      - '**/*.drawio'
+      - .github/workflows/drawio-to-png-and-pdf-map.csv
+  pull_request:
+    paths:
+      - '**/*.drawio'
       - .github/workflows/drawio-to-png-and-pdf-map.csv
 
 concurrency:
