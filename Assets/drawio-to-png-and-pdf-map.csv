@@ -1,4 +1,4 @@
-input_drawio,output_png,output_pdf
-Mixer-IEM Rack\WiringDiagram.drawio,Assets\Mixer-IEM Rack\WiringDiagram.drawio.png,Assets\Mixer-IEM Rack\WiringDiagram.drawio.pdf
-Stage Diagram\Full Band\Stage Diagram.drawio,Assets\Stage Diagram\Full Band\Stage Diagram.drawio.png,Assets\Stage Diagram\Full Band\Stage Diagram.drawio.pdf
-Trailer\TrailerLoadMap.drawio,Assets\Trailer\TrailerLoadMap.drawio.png,Assets\Trailer\TrailerLoadMap.drawio.pdf
+input,png,pdf
+Mixer-IEM Rack/WiringDiagram.drawio,Assets/Mixer-IEM Rack/WiringDiagram.drawio.png,Assets/Mixer-IEM Rack/WiringDiagram.drawio.pdf
+Stage Diagram/Full Band/Stage Diagram.drawio,Assets/Stage Diagram/Full Band/Stage Diagram.drawio.png,Assets/Stage Diagram/Full Band/Stage Diagram.drawio.pdf
+Trailer/TrailerLoadMap.drawio,Assets/Trailer/TrailerLoadMap.drawio.png,Assets/Trailer/TrailerLoadMap.drawio.pdf
