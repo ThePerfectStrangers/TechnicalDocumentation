@@ -4,11 +4,11 @@ on:
   push:
     paths:
       - '**/*.drawio'
-      - .github/workflows/drawio-to-png-and-pdf-map.csv
+      - Assets/drawio-to-png-and-pdf-map.csv
   pull_request:
     paths:
       - '**/*.drawio'
-      - .github/workflows/drawio-to-png-and-pdf-map.csv
+      - Assets/drawio-to-png-and-pdf-map.csv
 
 concurrency:
   group: drawio-export
@@ -27,7 +27,7 @@ jobs:
 
           tree
 
-          tail -n +2 .github/workflows/drawio-to-png-and-pdf-map.csv | while IFS=',' read -r input png pdf; do
+          tail -n +2 Assets/drawio-to-png-and-pdf-map.csv | while IFS=',' read -r input png pdf; do
             mkdir -p "$(dirname "$png")"
             mkdir -p "$(dirname "$pdf")"
 
