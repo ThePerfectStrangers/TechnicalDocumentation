@@ -27,7 +27,7 @@ jobs:
 
           tree
 
-          tail -n +2 Assets/drawio-to-png-and-pdf-map.csv | while IFS=',' read -r input png pdf; do
+          tail -n +2 ./Assets/drawio-to-png-and-pdf-map.csv | while IFS=',' read -r input png pdf; do
             mkdir -p "$(dirname "$png")"
             mkdir -p "$(dirname "$pdf")"
 
