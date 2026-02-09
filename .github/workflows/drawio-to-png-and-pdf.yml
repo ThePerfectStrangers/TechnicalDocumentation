@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  export:
+  drawio-to-png-and-pdf-map:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +25,7 @@ jobs:
         run: |
           set -e
 
-          tree | sort
+          tree
 
           tail -n +2 .github/workflows/drawio-to-png-and-pdf-map.csv | while IFS=',' read -r input png pdf; do
             mkdir -p "$(dirname "$png")"
