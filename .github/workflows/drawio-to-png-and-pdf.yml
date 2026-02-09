@@ -10,6 +10,9 @@ on:
       - '**/*.drawio'
       - Assets/drawio-to-png-and-pdf-map.csv
 
+permissions:
+  contents: write
+
 concurrency:
   group: drawio-export
   cancel-in-progress: false
@@ -28,6 +31,14 @@ jobs:
           tree
 
           tail -n +2 ./Assets/drawio-to-png-and-pdf-map.csv | while IFS=',' read -r input png pdf; do
+            # Remove surrounding quotes from CSV fields
+            input="${input%\"}"
+            input="${input#\"}"
+            png="${png%\"}"
+            png="${png#\"}"
+            pdf="${pdf%\"}"
+            pdf="${pdf#\"}"
+
             mkdir -p "$(dirname "$png")"
             mkdir -p "$(dirname "$pdf")"
 
