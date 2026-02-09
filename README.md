@@ -140,6 +140,8 @@ This is the status of the backing workflows that automate the creation of reposi
 
 [![Complete Technical Documentation PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml)
 
+[![Draw.io to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml.yml)
+
 [![Full Band/Input List Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-input-list-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-input-list-workflow.yml)
 
 [![Full Band/Split Map Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-split-map-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-split-map-workflow.yml)
