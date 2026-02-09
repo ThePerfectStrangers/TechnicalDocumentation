@@ -1,9 +1,9 @@
-name: Export drawio diagrams
+name: Draw.io to PNG & PDF Workflow
 
 on:
   push:
     paths:
-      - /**/*.drawio
+      - ./**/*.drawio
       - .github/workflows/drawio-to-png-and-pdf-map.csv
 
 concurrency:
@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Export drawio diagrams
+      - name: Draw.io to PNG & PDF Workflow
         run: |
           set -e
 
