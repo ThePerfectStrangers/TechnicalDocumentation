@@ -1,0 +1,41 @@
+name: Export drawio diagrams
+
+on:
+  push:
+    paths:
+      - /**/*.drawio
+      - .github/workflows/drawio-to-png-and-pdf-map.csv
+
+concurrency:
+  group: drawio-export
+  cancel-in-progress: false
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Export drawio diagrams
+        run: |
+          set -e
+
+          tail -n +2 .github/workflows/drawio-to-png-and-pdf-map.csv | while IFS=',' read -r input png pdf; do
+            mkdir -p "$(dirname "$png")"
+            mkdir -p "$(dirname "$pdf")"
+
+            docker run --rm \
+              -v "$PWD:/data" \
+              rlespinasse/drawio-export \
+              "$input" \
+              --format png \
+              --output "$png"
+
+            docker run --rm \
+              -v "$PWD:/data" \
+              rlespinasse/drawio-export \
+              "$input" \
+              --format pdf \
+              --output "$pdf"
+          done
