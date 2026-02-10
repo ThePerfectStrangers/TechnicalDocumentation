@@ -153,3 +153,4 @@ jobs:
           commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
           commit_author: ${{ vars.COMMIT_AUTHOR }}
           push_options: '--force'
+          
