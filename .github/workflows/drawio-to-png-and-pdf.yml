@@ -46,8 +46,6 @@ jobs:
 
             # Get the base filename from input (without path)
             input_basename=$(basename "$input")
-            # Strip .drawio extension if present
-            input_basename_no_ext="${input_basename%.drawio}"
             # Get the directory containing the input file
             input_dir=$(dirname "$input")
 
@@ -57,25 +55,34 @@ jobs:
               if [[ "$png" == */ ]]; then
                 # Resolve the output directory path relative to input directory
                 png_dir=$(cd "$input_dir" && realpath "$png")
-                png_output="${png_dir}/${input_basename_no_ext}.png"
               else
                 # Resolve the full output path relative to input directory  
-                png_output=$(cd "$input_dir" && realpath "$png")
+                png_dir=$(cd "$input_dir" && dirname "$(realpath "$png")")
               fi
               
-              # Convert to relative path from PWD for logging
-              png_output_rel=$(realpath --relative-to="$PWD" "$png_output")
+              # Final output filename (keeping .drawio in the name)
+              final_png="${png_dir}/${input_basename}.png"
+              final_png_rel=$(realpath --relative-to="$PWD" "$final_png")
               
-              mkdir -p "$(dirname "$png_output")"
-              echo "Converting to PNG: $png_output_rel"
+              mkdir -p "$png_dir"
+              echo "Converting to PNG: $final_png_rel"
               
-              # Use absolute path from container's perspective (/data prefix)
+              # Export to directory (tool will create <name>-<page>.png files)
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 --format png \
-                --output "/data/$png_output_rel" \
+                --output "/data/$png_dir" \
                 "/data/$input"
+              
+              # Rename the generated file to the expected filename
+              # The tool creates files like: WiringDiagram-Page-1.png
+              # We want: WiringDiagram.drawio.png
+              generated_file=$(find "$png_dir" -maxdepth 1 -name "*.png" -type f | head -n 1)
+              if [ -n "$generated_file" ] && [ -f "$generated_file" ]; then
+                mv "$generated_file" "$final_png"
+                echo "Renamed to: $final_png_rel"
+              fi
             else
               echo "PNG config not specified, skipping PNG conversion"
             fi
@@ -86,25 +93,32 @@ jobs:
               if [[ "$pdf" == */ ]]; then
                 # Resolve the output directory path relative to input directory
                 pdf_dir=$(cd "$input_dir" && realpath "$pdf")
-                pdf_output="${pdf_dir}/${input_basename_no_ext}.pdf"
               else
                 # Resolve the full output path relative to input directory
-                pdf_output=$(cd "$input_dir" && realpath "$pdf")
+                pdf_dir=$(cd "$input_dir" && dirname "$(realpath "$pdf")")
               fi
               
-              # Convert to relative path from PWD for logging
-              pdf_output_rel=$(realpath --relative-to="$PWD" "$pdf_output")
+              # Final output filename (keeping .drawio in the name)
+              final_pdf="${pdf_dir}/${input_basename}.pdf"
+              final_pdf_rel=$(realpath --relative-to="$PWD" "$final_pdf")
               
-              mkdir -p "$(dirname "$pdf_output")"
-              echo "Converting to PDF: $pdf_output_rel"
+              mkdir -p "$pdf_dir"
+              echo "Converting to PDF: $final_pdf_rel"
               
-              # Use absolute path from container's perspective (/data prefix)
+              # Export to directory (tool will create <name>-<page>.pdf files)
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 --format pdf \
-                --output "/data/$pdf_output_rel" \
+                --output "/data/$pdf_dir" \
                 "/data/$input"
+              
+              # Rename the generated file to the expected filename
+              generated_file=$(find "$pdf_dir" -maxdepth 1 -name "*.pdf" -type f | head -n 1)
+              if [ -n "$generated_file" ] && [ -f "$generated_file" ]; then
+                mv "$generated_file" "$final_pdf"
+                echo "Renamed to: $final_pdf_rel"
+              fi
             else
               echo "PDF config not specified, skipping PDF conversion"
             fi
