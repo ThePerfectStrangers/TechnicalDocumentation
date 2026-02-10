@@ -12,7 +12,7 @@ The key concept of the trailer load map is to enable the band to unpack things f
 
 # Map
 
-<img src="./TrailerLoadMap.drawio.png" width=75% text-align="middle">
+<img src="./../Assets/Trailer/The%20Perfect%20Strangers%20-%20Trailer%20Load%20Map.png" width=75% text-align="middle">
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Trailer/TrailerLoadMap.drawio.pdf">![Static Badge](https://img.shields.io/badge/PDF-TrailerLoadMap-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/Trailer/The%20Perfect%20Strangers%20-%20Trailer%20Load%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Trailer%20Load%20Map-EC1C24?logo=adobeacrobatreader)
 </a>

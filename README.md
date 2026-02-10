@@ -51,9 +51,9 @@ These are diagrams relating to the configuration and placement of people and/or 
 
 This is the general layout of the band. It includes the people, microphones, equipment, cable routes, where power is needed, mixing equipment, and speaker placement.
 
-![Full Band Stage Diagram](./Assets/StageDiagram/FullBand/StageDiagram.drawio.png)
+![Full Band Stage Diagram](./Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png)
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/StageDiagram.drawio.pdf">![Static Badge](https://img.shields.io/badge/PDF-StageDiagram-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf">![Static Badge](https://img.shields.io/badge/PDF-StageDiagram-EC1C24?logo=adobeacrobatreader)
 </a>
 
 **Note:**  In a situation where the band is not in charge of the PA, the PA speakers located Downstage Right and Downstage Left should be omitted from consideration.
