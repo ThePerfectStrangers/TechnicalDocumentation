@@ -2,7 +2,7 @@ conversions:
   drawio:
     - input: ./MixerIEMRack/WiringDiagram.drawio
       png: ./../Assets/MixerIEMRack/
-    - input: ./Stage Diagram/FullBand/StageDiagram.drawio
+    - input: ./StageDiagram/FullBand/StageDiagram.drawio
       png: ./../../Assets/StageDiagram/FullBand/
       pdf: ./../../Assets/StageDiagram/FullBand/
     - input: ./Trailer/TrailerLoadMap.drawio
