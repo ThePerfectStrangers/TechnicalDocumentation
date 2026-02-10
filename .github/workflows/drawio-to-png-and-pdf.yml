@@ -40,26 +40,68 @@ jobs:
             png=$(echo "$line" | jq -r '.png')
             pdf=$(echo "$line" | jq -r '.pdf')
 
+            input_basename=$(basename "$input")
+            input_name_no_ext="${input_basename%.drawio}"
+
             echo "input: $input"
             echo "png: $png"
             echo "pdf: $pdf"
 
-            mkdir -p "$(dirname "$png")"
-            mkdir -p "$(dirname "$pdf")"
+            if [ -n "$png" ] && [ "$png" != "null" ]; then
+              if [[ "$png" == */ ]]; then
+                png_dir="${png%/}"
+                png_target="$png_dir/${input_basename}.png"
+              else
+                png_dir="$(dirname "$png")"
+                png_target="$png"
+              fi
 
-            docker run --rm \
-              -v "$PWD:/data" \
-              rlespinasse/drawio-export \
-              "$input" \
-              --format png \
-              --output "$png"
+              mkdir -p "$png_dir"
 
-            docker run --rm \
-              -v "$PWD:/data" \
-              rlespinasse/drawio-export \
-              "$input" \
-              --format pdf \
-              --output "$pdf"
+              docker run --rm \
+                -v "$PWD:/data" \
+                rlespinasse/drawio-export \
+                "$input" \
+                --format png \
+                --output "$png_dir"
+
+              generated_png="$png_dir/${input_name_no_ext}-Page-1.png"
+              if [ -f "$generated_png" ]; then
+                mv "$generated_png" "$png_target"
+              else
+                echo "Expected PNG $generated_png not found"
+              fi
+            else
+              echo "Skipping PNG export for $input (no png path configured)"
+            fi
+
+            if [ -n "$pdf" ] && [ "$pdf" != "null" ]; then
+              if [[ "$pdf" == */ ]]; then
+                pdf_dir="${pdf%/}"
+                pdf_target="$pdf_dir/${input_basename}.pdf"
+              else
+                pdf_dir="$(dirname "$pdf")"
+                pdf_target="$pdf"
+              fi
+
+              mkdir -p "$pdf_dir"
+
+              docker run --rm \
+                -v "$PWD:/data" \
+                rlespinasse/drawio-export \
+                "$input" \
+                --format pdf \
+                --output "$pdf_dir"
+
+              generated_pdf="$pdf_dir/${input_name_no_ext}-Page-1.pdf"
+              if [ -f "$generated_pdf" ]; then
+                mv "$generated_pdf" "$pdf_target"
+              else
+                echo "Expected PDF $generated_pdf not found"
+              fi
+            else
+              echo "Skipping PDF export for $input (no pdf path configured)"
+            fi
 
             tree
 
