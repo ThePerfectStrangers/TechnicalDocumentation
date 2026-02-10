@@ -46,6 +46,8 @@ jobs:
 
             # Get the base filename from input (without path)
             input_basename=$(basename "$input")
+            # Strip .drawio extension if present
+            input_basename_no_ext="${input_basename%.drawio}"
             # Get the directory containing the input file
             input_dir=$(dirname "$input")
 
@@ -55,7 +57,7 @@ jobs:
               if [[ "$png" == */ ]]; then
                 # Resolve the output directory path relative to input directory
                 png_dir=$(cd "$input_dir" && realpath "$png")
-                png_output="${png_dir}/${input_basename}.png"
+                png_output="${png_dir}/${input_basename_no_ext}.png"
               else
                 # Resolve the full output path relative to input directory  
                 png_output=$(cd "$input_dir" && realpath "$png")
@@ -82,7 +84,7 @@ jobs:
               if [[ "$pdf" == */ ]]; then
                 # Resolve the output directory path relative to input directory
                 pdf_dir=$(cd "$input_dir" && realpath "$pdf")
-                pdf_output="${pdf_dir}/${input_basename}.pdf"
+                pdf_output="${pdf_dir}/${input_basename_no_ext}.pdf"
               else
                 # Resolve the full output path relative to input directory
                 pdf_output=$(cd "$input_dir" && realpath "$pdf")
@@ -107,11 +109,11 @@ jobs:
 
           done
 
-      - name: Commit files
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Automatically converted all .drawio files to PNG and PDF and committed the results
-          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
-          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
-          commit_author: ${{ vars.COMMIT_AUTHOR }}
-          push_options: '--force'
+      # - name: Commit files
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     commit_message: Automatically converted all .drawio files to PNG and PDF and committed the results
+      #     commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+      #     commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+      #     commit_author: ${{ vars.COMMIT_AUTHOR }}
+      #     push_options: '--force'
