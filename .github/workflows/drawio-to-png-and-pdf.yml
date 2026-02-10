@@ -63,17 +63,19 @@ jobs:
                 png_output=$(cd "$input_dir" && realpath "$png")
               fi
               
-              # Convert to relative path from PWD for docker
+              # Convert to relative path from PWD for logging
               png_output_rel=$(realpath --relative-to="$PWD" "$png_output")
               
               mkdir -p "$(dirname "$png_output")"
               echo "Converting to PNG: $png_output_rel"
+              
+              # Use absolute path from container's perspective (/data prefix)
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
-                "$input" \
                 --format png \
-                --output "$png_output_rel"
+                --output "/data/$png_output_rel" \
+                "/data/$input"
             else
               echo "PNG config not specified, skipping PNG conversion"
             fi
@@ -90,17 +92,19 @@ jobs:
                 pdf_output=$(cd "$input_dir" && realpath "$pdf")
               fi
               
-              # Convert to relative path from PWD for docker
+              # Convert to relative path from PWD for logging
               pdf_output_rel=$(realpath --relative-to="$PWD" "$pdf_output")
               
               mkdir -p "$(dirname "$pdf_output")"
               echo "Converting to PDF: $pdf_output_rel"
+              
+              # Use absolute path from container's perspective (/data prefix)
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
-                "$input" \
                 --format pdf \
-                --output "$pdf_output_rel"
+                --output "/data/$pdf_output_rel" \
+                "/data/$input"
             else
               echo "PDF config not specified, skipping PDF conversion"
             fi
