@@ -5,10 +5,12 @@ on:
     paths:
       - '**/*.drawio'
       - Assets/asset-config-map.yaml
+      - .github/workflows/drawio-to-png-and-pdf.yml
   pull_request:
     paths:
       - '**/*.drawio'
       - Assets/asset-config-map.yaml
+      - .github/workflows/drawio-to-png-and-pdf.yml
 
 permissions:
   contents: write
@@ -58,6 +60,7 @@ jobs:
             tree
 
           done
+
 
       # - name: Commit files
       #   uses: stefanzweifel/git-auto-commit-action@v5
