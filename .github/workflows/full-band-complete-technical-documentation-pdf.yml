@@ -52,8 +52,9 @@ jobs:
       - name: Commit changes to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Automatically uploaded '${{ env.ABSOLUTE_OUTPUT_PATH_PDF }}'
+          commit_message: Automatically updated Complete Technical Documentation PDF
           commit_user_name: ${{ vars.COMMIT_USER_NAME }}
           commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
           commit_author: ${{ vars.COMMIT_AUTHOR }}
+          file_pattern: 'Assets/**'
           push_options: '--force'
