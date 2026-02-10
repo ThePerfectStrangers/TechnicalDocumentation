@@ -2,7 +2,7 @@ name: Complete Technical Documentation PDF Workflow
 
 on:
   workflow_run:
-    workflows: [Rider Workflow, Full Band/Input List Workflow, Stage Diagram Workflow]
+    workflows: [Rider Workflow, Excel to PNG & PDF Workflow, Draw.io to PNG & PDF Workflow]
     types: [completed]
 
 env:

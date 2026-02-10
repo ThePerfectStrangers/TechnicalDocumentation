@@ -3,11 +3,11 @@ conversions:
     - input: ./MixerIEMRack/WiringDiagram.drawio
       png: ./../Assets/MixerIEMRack/
     - input: ./StageDiagram/FullBand/StageDiagram.drawio
-      png: ./../../Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png
-      pdf: ./../../Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf
+      png: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Stage Diagram.png
+      pdf: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Stage Diagram.pdf
     - input: ./Trailer/TrailerLoadMap.drawio
-      png: ./../Assets/Trailer/The%20Perfect%20Strangers%20-%20Trailer%20Load%20Map.png
-      pdf: ./../Assets/Trailer/The%20Perfect%20Strangers%20-%20Trailer%20Load%20Map.pdf
+      png: ./../Assets/Trailer/The Perfect Strangers - Trailer Load Map.png
+      pdf: ./../Assets/Trailer/The Perfect Strangers - Trailer Load Map.pdf
   excel:
     - input: ./BandColorConvention/BandColorConvention.xlsx
       sheet: 'Document Style'
@@ -18,15 +18,15 @@ conversions:
       sheet: 'Channels'
       topLeftCell: 'A1'
       bottomRightCell: 'H19'
-      pdf: ./../../Assets/InputList/Acoustic/The%20Perfect%20Strangers%20-%20Acoustic%20Input%20List.pdf
+      pdf: ./../../Assets/InputList/Acoustic/The Perfect Strangers - Acoustic Input List.pdf
     - input: ./InputList/FullBand/InputList.xlsx
       sheet: 'Channels'
       topLeftCell: 'A1'
       bottomRightCell: 'I43'
-      png: ./../../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.png
-      pdf: ./../../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.pdf
+      png: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Input List.png
+      pdf: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Input List.pdf
     - input: ./InputList/FullBand/SplitMap.xlsx
       sheet: 'Split Map'
       topLeftCell: 'A1'
       bottomRightCell: 'Q8'
-      pdf: ./../../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.pdf
+      pdf: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Split Map.pdf
