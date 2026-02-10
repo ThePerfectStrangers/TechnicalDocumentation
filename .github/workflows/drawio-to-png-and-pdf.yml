@@ -70,15 +70,25 @@ jobs:
               mkdir -p "$png_dir_abs"
               echo "Converting to PNG: $final_png_rel"
               
-              # Export to specific file
+              # Remove existing file if present to avoid conflicts
+              rm -f "$final_png"
+              
+              # Export to directory (generates default-named file)
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 --format png \
-                --output "/data/$final_png_rel" \
+                --output "/data/$png_dir_rel" \
                 "/data/$input"
               
-              echo "Exported to: $final_png_rel"
+              # Rename the generated file to our desired name
+              generated_file=$(find "$png_dir_abs" -maxdepth 1 -name "*.png" -newer "$png_dir_abs" -type f | head -n 1)
+              if [ -n "$generated_file" ]; then
+                mv "$generated_file" "$final_png"
+                echo "Exported to: $final_png_rel"
+              else
+                echo "Warning: Could not find generated PNG file"
+              fi
             else
               echo "PNG config not specified, skipping PNG conversion"
             fi
@@ -104,15 +114,25 @@ jobs:
               mkdir -p "$pdf_dir_abs"
               echo "Converting to PDF: $final_pdf_rel"
               
-              # Export to specific file
+              # Remove existing file if present to avoid conflicts
+              rm -f "$final_pdf"
+              
+              # Export to directory (generates default-named file)
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 --format pdf \
-                --output "/data/$final_pdf_rel" \
+                --output "/data/$pdf_dir_rel" \
                 "/data/$input"
               
-              echo "Exported to: $final_pdf_rel"
+              # Rename the generated file to our desired name
+              generated_file=$(find "$pdf_dir_abs" -maxdepth 1 -name "*.pdf" -newer "$pdf_dir_abs" -type f | head -n 1)
+              if [ -n "$generated_file" ]; then
+                mv "$generated_file" "$final_pdf"
+                echo "Exported to: $final_pdf_rel"
+              else
+                echo "Warning: Could not find generated PDF file"
+              fi
             else
               echo "PDF config not specified, skipping PDF conversion"
             fi
