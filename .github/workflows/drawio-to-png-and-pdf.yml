@@ -121,11 +121,11 @@ jobs:
 
           done
 
-      - name: Commit files
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Automatically converted all .drawio files to PNG and PDF and committed the results
-          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
-          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
-          commit_author: ${{ vars.COMMIT_AUTHOR }}
-          push_options: '--force'
+      # - name: Commit files
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     commit_message: Automatically converted all .drawio files to PNG and PDF and committed the results
+      #     commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+      #     commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+      #     commit_author: ${{ vars.COMMIT_AUTHOR }}
+      #     push_options: '--force'
