@@ -73,7 +73,7 @@ This is a list of inputs needed by the band. It includes:
 
 ### Input + Equipment
 
-![Input and equipment list](./Assets/InputList/FullBand/Input+Equipment.png)
+![Input List](./Assets/InputList/FullBand/InputList.png)
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/InputList\FullBand\InputList.pdf">![Static Badge](https://img.shields.io/badge/PDF-FullBandSetup-EC1C24?logo=adobeacrobatreader)
 </a>
@@ -134,18 +134,10 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 
 This is the status of the backing workflows that automate the creation of repository artifacts, such as PDFs and images. If any of these are failing, then their related artifacts may be out-of-date.
 
-[![Acoustic/Input List Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/acoustic-input-list-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/acoustic-input-list-workflow.yml)
-
-[![Band Color Convention Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/band-color-convention-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/band-color-convention-workflow.yml)
-
 [![Complete Technical Documentation PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml)
 
 [![Draw.io to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml)
 
-[![Full Band/Input List Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-input-list-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-input-list-workflow.yml)
-
-[![Full Band/Split Map Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-split-map-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-split-map-workflow.yml)
+[![Excel to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml)
 
 [![Rider Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml)
-
-[![Stage Diagram Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/stage-diagram-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/stage-diagram-workflow.yml)
