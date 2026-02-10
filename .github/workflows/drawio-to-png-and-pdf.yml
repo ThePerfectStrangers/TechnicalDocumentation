@@ -67,7 +67,7 @@ jobs:
               mkdir -p "$png_dir"
               echo "Converting to PNG: $final_png_rel"
               
-              # Export to directory (tool will create <name>-<page>.png files)
+              # Export to directory
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
@@ -75,14 +75,7 @@ jobs:
                 --output "/data/$png_dir" \
                 "/data/$input"
               
-              # Rename the generated file to the expected filename
-              # The tool creates files like: WiringDiagram-Page-1.png
-              # We want: WiringDiagram.drawio.png
-              generated_file=$(find "$png_dir" -maxdepth 1 -name "*.png" -type f | head -n 1)
-              if [ -n "$generated_file" ] && [ -f "$generated_file" ]; then
-                mv "$generated_file" "$final_png"
-                echo "Renamed to: $final_png_rel"
-              fi
+              echo "Exported to: $final_png_rel"
             else
               echo "PNG config not specified, skipping PNG conversion"
             fi
@@ -105,7 +98,7 @@ jobs:
               mkdir -p "$pdf_dir"
               echo "Converting to PDF: $final_pdf_rel"
               
-              # Export to directory (tool will create <name>-<page>.pdf files)
+              # Export to directory
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
@@ -113,12 +106,7 @@ jobs:
                 --output "/data/$pdf_dir" \
                 "/data/$input"
               
-              # Rename the generated file to the expected filename
-              generated_file=$(find "$pdf_dir" -maxdepth 1 -name "*.pdf" -type f | head -n 1)
-              if [ -n "$generated_file" ] && [ -f "$generated_file" ]; then
-                mv "$generated_file" "$final_pdf"
-                echo "Renamed to: $final_pdf_rel"
-              fi
+              echo "Exported to: $final_pdf_rel"
             else
               echo "PDF config not specified, skipping PDF conversion"
             fi
