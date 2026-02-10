@@ -51,20 +51,20 @@ jobs:
 
             # Process PNG if configured
             if [ "$png" != "null" ] && [ -n "$png" ]; then
-              # If png ends with /, it's a directory - append the filename
+              # If png ends with /, it's a directory - auto-generate filename
+              # Otherwise, the last segment is a custom output filename
               if [[ "$png" == */ ]]; then
-                # Resolve the output directory path relative to input directory
                 png_dir_abs=$(cd "$input_dir" && realpath "$png")
+                final_png="${png_dir_abs}/${input_basename}.png"
               else
-                # Resolve the full output path relative to input directory  
-                png_dir_abs=$(cd "$input_dir" && dirname "$(realpath "$png")")
+                png_custom_filename=$(basename "$png")
+                png_dir_part=$(dirname "$png")
+                png_dir_abs=$(cd "$input_dir" && realpath "$png_dir_part")
+                final_png="${png_dir_abs}/${png_custom_filename}"
               fi
               
               # Convert to relative path for Docker
               png_dir_rel=$(realpath --relative-to="$PWD" "$png_dir_abs")
-              
-              # Final output filename (keeping .drawio in the name)
-              final_png="${png_dir_abs}/${input_basename}.png"
               final_png_rel=$(realpath --relative-to="$PWD" "$final_png")
               
               mkdir -p "$png_dir_abs"
@@ -98,20 +98,20 @@ jobs:
 
             # Process PDF if configured
             if [ "$pdf" != "null" ] && [ -n "$pdf" ]; then
-              # If pdf ends with /, it's a directory - append the filename
+              # If pdf ends with /, it's a directory - auto-generate filename
+              # Otherwise, the last segment is a custom output filename
               if [[ "$pdf" == */ ]]; then
-                # Resolve the output directory path relative to input directory
                 pdf_dir_abs=$(cd "$input_dir" && realpath "$pdf")
+                final_pdf="${pdf_dir_abs}/${input_basename}.pdf"
               else
-                # Resolve the full output path relative to input directory
-                pdf_dir_abs=$(cd "$input_dir" && dirname "$(realpath "$pdf")")
+                pdf_custom_filename=$(basename "$pdf")
+                pdf_dir_part=$(dirname "$pdf")
+                pdf_dir_abs=$(cd "$input_dir" && realpath "$pdf_dir_part")
+                final_pdf="${pdf_dir_abs}/${pdf_custom_filename}"
               fi
               
               # Convert to relative path for Docker
               pdf_dir_rel=$(realpath --relative-to="$PWD" "$pdf_dir_abs")
-              
-              # Final output filename (keeping .drawio in the name)
-              final_pdf="${pdf_dir_abs}/${input_basename}.pdf"
               final_pdf_rel=$(realpath --relative-to="$PWD" "$final_pdf")
               
               mkdir -p "$pdf_dir_abs"

@@ -3,30 +3,30 @@ conversions:
     - input: ./MixerIEMRack/WiringDiagram.drawio
       png: ./../Assets/MixerIEMRack/
     - input: ./StageDiagram/FullBand/StageDiagram.drawio
-      png: ./../../Assets/StageDiagram/FullBand/
-      pdf: ./../../Assets/StageDiagram/FullBand/
+      png: ./../../Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png
+      pdf: ./../../Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf
     - input: ./Trailer/TrailerLoadMap.drawio
-      png: ./../Assets/Trailer/
-      pdf: ./../Assets/Trailer/
+      png: ./../Assets/Trailer/The%20Perfect%20Strangers%20-%20Trailer%20Load%20Map.png
+      pdf: ./../Assets/Trailer/The%20Perfect%20Strangers%20-%20Trailer%20Load%20Map.pdf
   excel:
     - input: ./BandColorConvention/BandColorConvention.xlsx
       sheet: 'Document Style'
       topLeftCell: 'A1'
       bottomRightCell: 'E7'
-      png: ./../Assets/BandColorConvention/
+      png: ./../Assets/BandColorConvention/BandColorConvention.png
     - input: ./InputList/Acoustic/InputList.xlsx
       sheet: 'Channels'
       topLeftCell: 'A1'
       bottomRightCell: 'H19'
-      pdf: ./../../Assets/InputList/Acoustic/
+      pdf: ./../../Assets/InputList/Acoustic/The%20Perfect%20Strangers%20-%20Acoustic%20Input%20List.pdf
     - input: ./InputList/FullBand/InputList.xlsx
       sheet: 'Channels'
       topLeftCell: 'A1'
       bottomRightCell: 'I43'
-      png: ./../../Assets/InputList/FullBand/
-      pdf: ./../../Assets/InputList/FullBand/
+      png: ./../../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.png
+      pdf: ./../../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.pdf
     - input: ./InputList/FullBand/SplitMap.xlsx
       sheet: 'Split Map'
       topLeftCell: 'A1'
       bottomRightCell: 'Q8'
-      pdf: ./../../Assets/InputList/FullBand/
+      pdf: ./../../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.pdf

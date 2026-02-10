@@ -90,18 +90,24 @@ jobs:
 
             # --- PNG Export ---
             if ($pngOutput -and $pngOutput -ne 'null') {
-              # Resolve the PNG output directory relative to the input file's directory
               $inputDir = Split-Path $absoluteExcelPath -Parent
-              $pngDirResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pngOutput.Replace('/', '\'))))
+
+              # If path ends with /, it's a directory - auto-generate filename
+              # Otherwise, the last segment is a custom output filename
+              if ($pngOutput.EndsWith('/')) {
+                $pngDirResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pngOutput.Replace('/', '\'))))
+                $inputBaseName = [System.IO.Path]::GetFileNameWithoutExtension($absoluteExcelPath)
+                $absolutePngPath = Join-Path $pngDirResolved "${inputBaseName}.png"
+              } else {
+                $pngFullResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pngOutput.Replace('/', '\'))))
+                $pngDirResolved = Split-Path $pngFullResolved -Parent
+                $absolutePngPath = $pngFullResolved
+              }
 
               # Ensure the output directory exists
               if (-not (Test-Path $pngDirResolved)) {
                 New-Item -ItemType Directory -Path $pngDirResolved -Force | Out-Null
               }
-
-              # Build the output filename: <InputBaseName>.png
-              $inputBaseName = [System.IO.Path]::GetFileNameWithoutExtension($absoluteExcelPath)
-              $absolutePngPath = Join-Path $pngDirResolved "${inputBaseName}.png"
 
               Write-Output "  Exporting PNG to: $absolutePngPath"
               python .github/workflows/lib/export-png.py "$absoluteExcelPath" "$absolutePngPath" "$sheet" "$topLeftCell" "$bottomRightCell"
@@ -117,18 +123,24 @@ jobs:
 
             # --- PDF Export ---
             if ($pdfOutput -and $pdfOutput -ne 'null') {
-              # Resolve the PDF output directory relative to the input file's directory
               $inputDir = Split-Path $absoluteExcelPath -Parent
-              $pdfDirResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pdfOutput.Replace('/', '\'))))
+
+              # If path ends with /, it's a directory - auto-generate filename
+              # Otherwise, the last segment is a custom output filename
+              if ($pdfOutput.EndsWith('/')) {
+                $pdfDirResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pdfOutput.Replace('/', '\'))))
+                $inputBaseName = [System.IO.Path]::GetFileNameWithoutExtension($absoluteExcelPath)
+                $absolutePdfPath = Join-Path $pdfDirResolved "${inputBaseName}.pdf"
+              } else {
+                $pdfFullResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pdfOutput.Replace('/', '\'))))
+                $pdfDirResolved = Split-Path $pdfFullResolved -Parent
+                $absolutePdfPath = $pdfFullResolved
+              }
 
               # Ensure the output directory exists
               if (-not (Test-Path $pdfDirResolved)) {
                 New-Item -ItemType Directory -Path $pdfDirResolved -Force | Out-Null
               }
-
-              # Build the output filename: <InputBaseName>.pdf
-              $inputBaseName = [System.IO.Path]::GetFileNameWithoutExtension($absoluteExcelPath)
-              $absolutePdfPath = Join-Path $pdfDirResolved "${inputBaseName}.pdf"
 
               Write-Output "  Exporting PDF to: $absolutePdfPath"
               python .github/workflows/lib/export-pdf.py "$absoluteExcelPath" "$absolutePdfPath"
