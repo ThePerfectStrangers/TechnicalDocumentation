@@ -4,6 +4,9 @@ on:
   workflow_run:
     workflows: [Rider Workflow, Excel to PNG & PDF Workflow, Draw.io to PNG & PDF Workflow]
     types: [completed]
+  push:
+    paths:
+      - .github/workflows/full-band-complete-technical-documentation-pdf.yml  
 
 env:
   TITLE: The Perfect Strangers - Technical Documentation
