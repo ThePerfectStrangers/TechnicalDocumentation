@@ -40,6 +40,10 @@ jobs:
             png=$(echo "$line" | jq -r '.png')
             pdf=$(echo "$line" | jq -r '.pdf')
 
+            echo "input: $input"
+            echo "png: $png"
+            echo "pdf: $pdf"
+
             mkdir -p "$(dirname "$png")"
             mkdir -p "$(dirname "$pdf")"
 
