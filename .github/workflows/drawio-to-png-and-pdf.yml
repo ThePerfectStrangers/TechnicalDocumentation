@@ -4,11 +4,11 @@ on:
   push:
     paths:
       - '**/*.drawio'
-      - Assets/drawio-to-png-and-pdf-map.csv
+      - Assets/asset-config-map.yaml
   pull_request:
     paths:
       - '**/*.drawio'
-      - Assets/drawio-to-png-and-pdf-map.csv
+      - Assets/asset-config-map.yaml
 
 permissions:
   contents: write
@@ -28,16 +28,15 @@ jobs:
         run: |
           set -e
 
-          tree
+          # Install yq for YAML parsing
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
 
-          tail -n +2 ./Assets/drawio-to-png-and-pdf-map.csv | while IFS=',' read -r input png pdf; do
-            # Remove surrounding quotes from CSV fields
-            input="${input%\"}"
-            input="${input#\"}"
-            png="${png%\"}"
-            png="${png#\"}"
-            pdf="${pdf%\"}"
-            pdf="${pdf#\"}"
+          # Read YAML and process each conversion
+          yq -r '.drawio.conversions[] | @json' ./Assets/asset-config-map.yaml | while read -r line; do
+            input=$(echo "$line" | jq -r '.input')
+            png=$(echo "$line" | jq -r '.png')
+            pdf=$(echo "$line" | jq -r '.pdf')
 
             mkdir -p "$(dirname "$png")"
             mkdir -p "$(dirname "$pdf")"
@@ -55,13 +54,16 @@ jobs:
               "$input" \
               --format pdf \
               --output "$pdf"
+
+            tree
+
           done
 
-      - name: Commit files
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: Automatically converted all .drawio files to PNG and PDF and committed the results
-          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
-          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
-          commit_author: ${{ vars.COMMIT_AUTHOR }}
-          push_options: '--force'
+      # - name: Commit files
+      #   uses: stefanzweifel/git-auto-commit-action@v5
+      #   with:
+      #     commit_message: Automatically converted all .drawio files to PNG and PDF and committed the results
+      #     commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+      #     commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+      #     commit_author: ${{ vars.COMMIT_AUTHOR }}
+      #     push_options: '--force'

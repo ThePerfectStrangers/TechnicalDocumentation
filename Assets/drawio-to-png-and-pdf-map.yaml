@@ -1,0 +1,10 @@
+conversions:
+  - input: Mixer-IEM Rack/WiringDiagram.drawio
+    png: Assets/Mixer-IEM Rack/WiringDiagram.drawio.png
+    pdf: Assets/Mixer-IEM Rack/WiringDiagram.drawio.pdf
+  - input: Stage Diagram/Full Band/Stage Diagram.drawio
+    png: Assets/Stage Diagram/Full Band/Stage Diagram.drawio.png
+    pdf: Assets/Stage Diagram/Full Band/Stage Diagram.drawio.pdf
+  - input: Trailer/TrailerLoadMap.drawio
+    png: Assets/Trailer/TrailerLoadMap.drawio.png
+    pdf: Assets/Trailer/TrailerLoadMap.drawio.pdf
