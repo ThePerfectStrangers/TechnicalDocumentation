@@ -30,83 +30,46 @@ jobs:
         run: |
           set -e
 
-          sanitize() {
-            printf '%s' "$1" | tr -d '\r'
-          }
-
           # Install yq for YAML parsing
           sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
           sudo chmod +x /usr/local/bin/yq
 
           # Read YAML and process each conversion
           yq -r '.conversions.drawio[] | @json' ./Assets/asset-config-map.yaml | while read -r line; do
-            input=$(sanitize "$(echo "$line" | jq -r '.input')")
-            png=$(sanitize "$(echo "$line" | jq -r '.png')")
-            pdf=$(sanitize "$(echo "$line" | jq -r '.pdf')")
+            input=$(echo "$line" | jq -r '.input')
+            png=$(echo "$line" | jq -r '.png // "null"')
+            pdf=$(echo "$line" | jq -r '.pdf // "null"')
 
-            input_basename=$(basename "$input")
-            input_name_no_ext="${input_basename%.drawio}"
+            echo "Processing: $input"
+            echo "PNG config: $png"
+            echo "PDF config: $pdf"
 
-            echo "input: $input"
-            echo "png: $png"
-            echo "pdf: $pdf"
-
-            if [ -n "$png" ] && [ "$png" != "null" ]; then
-              if [[ "$png" == */ ]]; then
-                png_dir="${png%/}"
-                png_target="$png_dir/${input_basename}.png"
-              else
-                png_dir="$(dirname "$png")"
-                png_target="$png"
-              fi
-
-              mkdir -p "$png_dir"
-
+            # Process PNG if configured
+            if [ "$png" != "null" ] && [ -n "$png" ]; then
+              mkdir -p "$(dirname "$png")"
+              echo "Converting to PNG..."
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 "$input" \
                 --format png \
-                --output "$png_dir"
-
-              generated_png=$(find "$png_dir" -maxdepth 1 -type f -name "${input_name_no_ext}-*.png" -print -quit)
-              if [ -n "$generated_png" ] && [ -f "$generated_png" ]; then
-                mv "$generated_png" "$png_target"
-                find "$png_dir" -maxdepth 1 -type f -name "${input_name_no_ext}-*.png" -delete
-              else
-                echo "Expected PNG for $input not found in $png_dir"
-              fi
+                --output "$png"
             else
-              echo "Skipping PNG export for $input (no png path configured)"
+              echo "PNG config not specified, skipping PNG conversion"
             fi
 
-            if [ -n "$pdf" ] && [ "$pdf" != "null" ]; then
-              if [[ "$pdf" == */ ]]; then
-                pdf_dir="${pdf%/}"
-                pdf_target="$pdf_dir/${input_basename}.pdf"
-              else
-                pdf_dir="$(dirname "$pdf")"
-                pdf_target="$pdf"
-              fi
-
-              mkdir -p "$pdf_dir"
-
+            # Process PDF if configured
+            if [ "$pdf" != "null" ] && [ -n "$pdf" ]; then
+              mkdir -p "$(dirname "$pdf")"
+              echo "Converting to PDF..."
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 "$input" \
                 --format pdf \
-                --output "$pdf_dir"
-
-              generated_pdf=$(find "$pdf_dir" -maxdepth 1 -type f -name "${input_name_no_ext}-*.pdf" -print -quit)
-              if [ -n "$generated_pdf" ] && [ -f "$generated_pdf" ]; then
-                mv "$generated_pdf" "$pdf_target"
-                find "$pdf_dir" -maxdepth 1 -type f -name "${input_name_no_ext}-*.pdf" -delete
-              else
-                echo "Expected PDF for $input not found in $pdf_dir"
-              fi
+                --output "$pdf"
             else
-              echo "Skipping PDF export for $input (no pdf path configured)"
+              echo "PDF config not specified, skipping PDF conversion"
             fi
 
             tree
