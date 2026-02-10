@@ -82,12 +82,15 @@ jobs:
                 "/data/$input"
               
               # Rename the generated file to our desired name
-              generated_file=$(find "$png_dir_abs" -maxdepth 1 -name "*.png" -newer "$png_dir_abs" -type f | head -n 1)
+              # Docker creates files like "WiringDiagram-Page-1.png" or "Stage Diagram-Stage-Diagram.png"
+              # We need to find these and rename to "WiringDiagram.drawio.png"
+              input_name_without_ext="${input_basename%.drawio}"
+              generated_file=$(find "$png_dir_abs" -maxdepth 1 -type f -name "${input_name_without_ext}-*.png" | head -n 1)
               if [ -n "$generated_file" ]; then
                 mv "$generated_file" "$final_png"
                 echo "Exported to: $final_png_rel"
               else
-                echo "Warning: Could not find generated PNG file"
+                echo "Warning: Could not find generated PNG file matching pattern ${input_name_without_ext}-*.png"
               fi
             else
               echo "PNG config not specified, skipping PNG conversion"
@@ -126,12 +129,15 @@ jobs:
                 "/data/$input"
               
               # Rename the generated file to our desired name
-              generated_file=$(find "$pdf_dir_abs" -maxdepth 1 -name "*.pdf" -newer "$pdf_dir_abs" -type f | head -n 1)
+              # Docker creates files like "TrailerLoadMap-Page-1.pdf" or "Stage Diagram-Stage-Diagram.pdf"
+              # We need to find these and rename to "TrailerLoadMap.drawio.pdf"
+              input_name_without_ext="${input_basename%.drawio}"
+              generated_file=$(find "$pdf_dir_abs" -maxdepth 1 -type f -name "${input_name_without_ext}-*.pdf" | head -n 1)
               if [ -n "$generated_file" ]; then
                 mv "$generated_file" "$final_pdf"
                 echo "Exported to: $final_pdf_rel"
               else
-                echo "Warning: Could not find generated PDF file"
+                echo "Warning: Could not find generated PDF file matching pattern ${input_name_without_ext}-*.pdf"
               fi
             else
               echo "PDF config not specified, skipping PDF conversion"
