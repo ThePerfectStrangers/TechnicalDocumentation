@@ -54,17 +54,20 @@ jobs:
               # If png ends with /, it's a directory - append the filename
               if [[ "$png" == */ ]]; then
                 # Resolve the output directory path relative to input directory
-                png_dir=$(cd "$input_dir" && realpath "$png")
+                png_dir_abs=$(cd "$input_dir" && realpath "$png")
               else
                 # Resolve the full output path relative to input directory  
-                png_dir=$(cd "$input_dir" && dirname "$(realpath "$png")")
+                png_dir_abs=$(cd "$input_dir" && dirname "$(realpath "$png")")
               fi
               
+              # Convert to relative path for Docker
+              png_dir_rel=$(realpath --relative-to="$PWD" "$png_dir_abs")
+              
               # Final output filename (keeping .drawio in the name)
-              final_png="${png_dir}/${input_basename}.png"
+              final_png="${png_dir_abs}/${input_basename}.png"
               final_png_rel=$(realpath --relative-to="$PWD" "$final_png")
               
-              mkdir -p "$png_dir"
+              mkdir -p "$png_dir_abs"
               echo "Converting to PNG: $final_png_rel"
               
               # Export to directory
@@ -72,7 +75,7 @@ jobs:
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 --format png \
-                --output "/data/$png_dir" \
+                --output "/data/$png_dir_rel" \
                 "/data/$input"
               
               echo "Exported to: $final_png_rel"
@@ -85,17 +88,20 @@ jobs:
               # If pdf ends with /, it's a directory - append the filename
               if [[ "$pdf" == */ ]]; then
                 # Resolve the output directory path relative to input directory
-                pdf_dir=$(cd "$input_dir" && realpath "$pdf")
+                pdf_dir_abs=$(cd "$input_dir" && realpath "$pdf")
               else
                 # Resolve the full output path relative to input directory
-                pdf_dir=$(cd "$input_dir" && dirname "$(realpath "$pdf")")
+                pdf_dir_abs=$(cd "$input_dir" && dirname "$(realpath "$pdf")")
               fi
               
+              # Convert to relative path for Docker
+              pdf_dir_rel=$(realpath --relative-to="$PWD" "$pdf_dir_abs")
+              
               # Final output filename (keeping .drawio in the name)
-              final_pdf="${pdf_dir}/${input_basename}.pdf"
+              final_pdf="${pdf_dir_abs}/${input_basename}.pdf"
               final_pdf_rel=$(realpath --relative-to="$PWD" "$final_pdf")
               
-              mkdir -p "$pdf_dir"
+              mkdir -p "$pdf_dir_abs"
               echo "Converting to PDF: $final_pdf_rel"
               
               # Export to directory
@@ -103,7 +109,7 @@ jobs:
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 --format pdf \
-                --output "/data/$pdf_dir" \
+                --output "/data/$pdf_dir_rel" \
                 "/data/$input"
               
               echo "Exported to: $final_pdf_rel"
