@@ -75,7 +75,7 @@ This is a list of inputs needed by the band. It includes:
 
 ![Input List](./Assets/InputList/FullBand/InputList.png)
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/InputList.pdf">![Static Badge](https://img.shields.io/badge/PDF-FullBandSetup-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/InputList.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Input%20List-EC1C24?logo=adobeacrobatreader)
 </a>
 
 ### Split
@@ -112,7 +112,7 @@ The snake coming from the split is banded into groups of 4 wires, ordered Green,
 
 ![Split Map](./Assets/InputList/FullBand/SplitMap.png)
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/SplitMap.pdf">![Static Badge](https://img.shields.io/badge/PDF-SplitMap-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/SplitMap.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
 </a>
 
 ### Mixer Configuration
@@ -127,7 +127,7 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 
 ### Input + Equipment
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/Acoustic/InputList.pdf">![Static Badge](https://img.shields.io/badge/PDF-AcousticSetup-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/Acoustic/InputList.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Input%20List-EC1C24?logo=adobeacrobatreader)
 </a>
 
 # Repository Health
