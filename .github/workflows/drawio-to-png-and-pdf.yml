@@ -70,12 +70,12 @@ jobs:
               mkdir -p "$png_dir_abs"
               echo "Converting to PNG: $final_png_rel"
               
-              # Export to directory
+              # Export to specific file
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 --format png \
-                --output "/data/$png_dir_rel" \
+                --output "/data/$final_png_rel" \
                 "/data/$input"
               
               echo "Exported to: $final_png_rel"
@@ -104,12 +104,12 @@ jobs:
               mkdir -p "$pdf_dir_abs"
               echo "Converting to PDF: $final_pdf_rel"
               
-              # Export to directory
+              # Export to specific file
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 --format pdf \
-                --output "/data/$pdf_dir_rel" \
+                --output "/data/$final_pdf_rel" \
                 "/data/$input"
               
               echo "Exported to: $final_pdf_rel"
