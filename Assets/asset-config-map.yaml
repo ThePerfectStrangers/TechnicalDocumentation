@@ -29,4 +29,5 @@ conversions:
       sheet: 'Split Map'
       topLeftCell: 'A1'
       bottomRightCell: 'Q8'
+      png: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Split Map.png
       pdf: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Split Map.pdf
