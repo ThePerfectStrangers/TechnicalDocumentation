@@ -33,7 +33,7 @@ jobs:
           sudo chmod +x /usr/local/bin/yq
 
           # Read YAML and process each conversion
-          yq -r '.drawio.conversions[] | @json' ./Assets/asset-config-map.yaml | while read -r line; do
+          yq -r '.conversions.drawio[] | @json' ./Assets/asset-config-map.yaml | while read -r line; do
             input=$(echo "$line" | jq -r '.input')
             png=$(echo "$line" | jq -r '.png')
             pdf=$(echo "$line" | jq -r '.pdf')
