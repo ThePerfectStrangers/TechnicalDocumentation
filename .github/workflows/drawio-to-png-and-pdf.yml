@@ -65,11 +65,11 @@ jobs:
                 --format png \
                 --output "$png_dir"
 
-              generated_png="$png_dir/${input_name_no_ext}-Page-1.png"
-              if [ -f "$generated_png" ]; then
+              generated_png=$(find "$png_dir" -maxdepth 1 -type f -name "${input_name_no_ext}-*.png" -print -quit)
+              if [ -n "$generated_png" ] && [ -f "$generated_png" ]; then
                 mv "$generated_png" "$png_target"
               else
-                echo "Expected PNG $generated_png not found"
+                echo "Expected PNG for $input not found in $png_dir"
               fi
             else
               echo "Skipping PNG export for $input (no png path configured)"
@@ -93,11 +93,11 @@ jobs:
                 --format pdf \
                 --output "$pdf_dir"
 
-              generated_pdf="$pdf_dir/${input_name_no_ext}-Page-1.pdf"
-              if [ -f "$generated_pdf" ]; then
+              generated_pdf=$(find "$pdf_dir" -maxdepth 1 -type f -name "${input_name_no_ext}-*.pdf" -print -quit)
+              if [ -n "$generated_pdf" ] && [ -f "$generated_pdf" ]; then
                 mv "$generated_pdf" "$pdf_target"
               else
-                echo "Expected PDF $generated_pdf not found"
+                echo "Expected PDF for $input not found in $pdf_dir"
               fi
             else
               echo "Skipping PDF export for $input (no pdf path configured)"
