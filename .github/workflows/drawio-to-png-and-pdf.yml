@@ -44,30 +44,45 @@ jobs:
             echo "PNG config: $png"
             echo "PDF config: $pdf"
 
+            # Get the base filename from input
+            input_basename=$(basename "$input")
+
             # Process PNG if configured
             if [ "$png" != "null" ] && [ -n "$png" ]; then
-              mkdir -p "$(dirname "$png")"
-              echo "Converting to PNG..."
+              # If png ends with /, it's a directory - append the filename
+              if [[ "$png" == */ ]]; then
+                png_output="${png}${input_basename}.png"
+              else
+                png_output="$png"
+              fi
+              mkdir -p "$(dirname "$png_output")"
+              echo "Converting to PNG: $png_output"
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 "$input" \
                 --format png \
-                --output "$png"
+                --output "$png_output"
             else
               echo "PNG config not specified, skipping PNG conversion"
             fi
 
             # Process PDF if configured
             if [ "$pdf" != "null" ] && [ -n "$pdf" ]; then
-              mkdir -p "$(dirname "$pdf")"
-              echo "Converting to PDF..."
+              # If pdf ends with /, it's a directory - append the filename
+              if [[ "$pdf" == */ ]]; then
+                pdf_output="${pdf}${input_basename}.pdf"
+              else
+                pdf_output="$pdf"
+              fi
+              mkdir -p "$(dirname "$pdf_output")"
+              echo "Converting to PDF: $pdf_output"
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 "$input" \
                 --format pdf \
-                --output "$pdf"
+                --output "$pdf_output"
             else
               echo "PDF config not specified, skipping PDF conversion"
             fi
