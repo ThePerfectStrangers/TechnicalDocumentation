@@ -3,7 +3,7 @@ name: Full Band/Split Map Workflow
 on:
   push:
     branches:
-      - main
+      - not-main
 
     paths:
       - 'Input List/Full Band/Split Map.xlsx'

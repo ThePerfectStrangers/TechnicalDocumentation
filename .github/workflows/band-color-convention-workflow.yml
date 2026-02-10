@@ -3,7 +3,7 @@ name: Band Color Convention Workflow
 on:
   push:
     branches:
-      - main
+      - not-main
     paths:
       - 'BandColorConvention/BandColorConvention.xlsx'
       - '.github/workflows/band-color-convention-workflow.yml'

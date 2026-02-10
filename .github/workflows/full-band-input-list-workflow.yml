@@ -3,7 +3,7 @@ name: Full Band/Input List Workflow
 on:
   push:
     branches:
-      - main
+      - not-main
     paths:
       - 'Input List/Full Band/Input List.xlsx'
       - '.github/workflows/full-band-input-list-workflow.yml'

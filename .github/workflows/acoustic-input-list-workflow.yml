@@ -3,7 +3,7 @@ name: Acoustic/Input List Workflow
 on:
   push:
     branches:
-      - main
+      - not-main
     paths:
       - 'Input List/Acoustic/Input List.xlsx'
       - '.github/workflows/acoustic-input-list-workflow.yml'
