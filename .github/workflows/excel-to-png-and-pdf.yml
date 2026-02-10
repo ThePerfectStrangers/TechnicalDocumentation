@@ -165,4 +165,5 @@ jobs:
           commit_user_name: ${{ vars.COMMIT_USER_NAME }}
           commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
           commit_author: ${{ vars.COMMIT_AUTHOR }}
+          file_pattern: 'Assets/**'
           push_options: '--force'
