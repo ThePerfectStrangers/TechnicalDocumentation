@@ -1,10 +1,10 @@
 conversions:
   drawio:
-    - input: ./Mixer-IEM Rack/WiringDiagram.drawio
-      png: ./../Assets/Mixer-IEM Rack/
-    - input: ./Stage Diagram/Full Band/Stage Diagram.drawio
-      png: ./../../Assets/Stage Diagram/Full Band/
-      pdf: ./../../Assets/Stage Diagram/Full Band/
+    - input: ./MixerIEMRack/WiringDiagram.drawio
+      png: ./../Assets/MixerIEMRack/
+    - input: ./Stage Diagram/FullBand/StageDiagram.drawio
+      png: ./../../Assets/StageDiagram/FullBand/
+      pdf: ./../../Assets/StageDiagram/FullBand/
     - input: ./Trailer/TrailerLoadMap.drawio
       png: ./../Assets/Trailer/
       pdf: ./../Assets/Trailer/
