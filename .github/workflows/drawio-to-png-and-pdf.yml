@@ -44,25 +44,34 @@ jobs:
             echo "PNG config: $png"
             echo "PDF config: $pdf"
 
-            # Get the base filename from input
+            # Get the base filename from input (without path)
             input_basename=$(basename "$input")
+            # Get the directory containing the input file
+            input_dir=$(dirname "$input")
 
             # Process PNG if configured
             if [ "$png" != "null" ] && [ -n "$png" ]; then
               # If png ends with /, it's a directory - append the filename
               if [[ "$png" == */ ]]; then
-                png_output="${png}${input_basename}.png"
+                # Resolve the output directory path relative to input directory
+                png_dir=$(cd "$input_dir" && realpath "$png")
+                png_output="${png_dir}/${input_basename}.png"
               else
-                png_output="$png"
+                # Resolve the full output path relative to input directory  
+                png_output=$(cd "$input_dir" && realpath "$png")
               fi
+              
+              # Convert to relative path from PWD for docker
+              png_output_rel=$(realpath --relative-to="$PWD" "$png_output")
+              
               mkdir -p "$(dirname "$png_output")"
-              echo "Converting to PNG: $png_output"
+              echo "Converting to PNG: $png_output_rel"
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 "$input" \
                 --format png \
-                --output "$png_output"
+                --output "$png_output_rel"
             else
               echo "PNG config not specified, skipping PNG conversion"
             fi
@@ -71,18 +80,25 @@ jobs:
             if [ "$pdf" != "null" ] && [ -n "$pdf" ]; then
               # If pdf ends with /, it's a directory - append the filename
               if [[ "$pdf" == */ ]]; then
-                pdf_output="${pdf}${input_basename}.pdf"
+                # Resolve the output directory path relative to input directory
+                pdf_dir=$(cd "$input_dir" && realpath "$pdf")
+                pdf_output="${pdf_dir}/${input_basename}.pdf"
               else
-                pdf_output="$pdf"
+                # Resolve the full output path relative to input directory
+                pdf_output=$(cd "$input_dir" && realpath "$pdf")
               fi
+              
+              # Convert to relative path from PWD for docker
+              pdf_output_rel=$(realpath --relative-to="$PWD" "$pdf_output")
+              
               mkdir -p "$(dirname "$pdf_output")"
-              echo "Converting to PDF: $pdf_output"
+              echo "Converting to PDF: $pdf_output_rel"
               docker run --rm \
                 -v "$PWD:/data" \
                 rlespinasse/drawio-export \
                 "$input" \
                 --format pdf \
-                --output "$pdf_output"
+                --output "$pdf_output_rel"
             else
               echo "PDF config not specified, skipping PDF conversion"
             fi
