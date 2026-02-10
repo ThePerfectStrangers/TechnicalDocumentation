@@ -59,7 +59,7 @@ jobs:
               else
                 png_custom_filename=$(basename "$png")
                 png_dir_part=$(dirname "$png")
-                png_dir_abs=$(cd "$input_dir" && realpath "$png_dir_part")
+                png_dir_abs=$(cd "$input_dir" && realpath -m "$png_dir_part")
                 final_png="${png_dir_abs}/${png_custom_filename}"
               fi
               
@@ -106,7 +106,7 @@ jobs:
               else
                 pdf_custom_filename=$(basename "$pdf")
                 pdf_dir_part=$(dirname "$pdf")
-                pdf_dir_abs=$(cd "$input_dir" && realpath "$pdf_dir_part")
+                pdf_dir_abs=$(cd "$input_dir" && realpath -m "$pdf_dir_part")
                 final_pdf="${pdf_dir_abs}/${pdf_custom_filename}"
               fi
               
