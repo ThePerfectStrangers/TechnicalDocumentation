@@ -123,7 +123,7 @@ You can view the mixer configuration by using the WING EDIT software provided by
 
 ## Acoustic
 
-The band can perform in smaller venues with an acoustic set up. This setup replaces the full drum set with a smaller percussion setup, removes the need for IEMs and the IEM box, and shrinks the overall stage footprint. This configuration differs per show as it aligns more closely with the set list. For any documentation or requirements, please contact the band directly at [technical@theperfectstrangers.band](mailto:technical@theperfectstrangers.band?subject=Acoustic Set Up for The Perfect Strangers).
+The band can perform in smaller venues with an acoustic set up. This setup replaces the full drum set with a smaller percussion setup, removes the need for IEMs and the IEM box, and shrinks the overall stage footprint. This configuration differs per show as it aligns more closely with the set list. For any documentation or requirements, please contact the band directly at [technical@theperfectstrangers.band](mailto:technical@theperfectstrangers.band?subject=Acoustic%20Set%20Up%20for%20The%20Perfect%20Strangers).
 
 ### Input + Equipment
 
