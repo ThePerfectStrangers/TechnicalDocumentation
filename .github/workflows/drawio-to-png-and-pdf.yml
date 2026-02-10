@@ -143,8 +143,6 @@ jobs:
               echo "PDF config not specified, skipping PDF conversion"
             fi
 
-            tree
-
           done
 
       - name: Commit files

@@ -18,15 +18,15 @@ conversions:
       sheet: 'Channels'
       topLeftCell: 'A3'
       bottomRightCell: 'H19'
-      pdf: ./../Assets/InputList/Acoustic/
+      pdf: ./../../Assets/InputList/Acoustic/
     - input: ./InputList/FullBand/InputList.xlsx
       sheet: 'Channels'
       topLeftCell: 'A3'
       bottomRightCell: 'H43'
-      png: ./../Assets/InputList/FullBand/
-      pdf: ./../Assets/InputList/FullBand/
+      png: ./../../Assets/InputList/FullBand/
+      pdf: ./../../Assets/InputList/FullBand/
     - input: ./InputList/FullBand/SplitMap.xlsx
       sheet: 'Split Map'
       topLeftCell: 'A1'
       bottomRightCell: 'Q8'
-      pdf: ./../Assets/InputList/FullBand/
+      pdf: ./../../Assets/InputList/FullBand/
