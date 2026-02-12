@@ -1,0 +1,33 @@
+conversions:
+  drawio:
+    - input: ./MixerIEMRack/WiringDiagram.drawio
+      png: ./../Assets/MixerIEMRack/
+    - input: ./StageDiagram/FullBand/StageDiagram.drawio
+      png: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Stage Diagram.png
+      pdf: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Stage Diagram.pdf
+    - input: ./Trailer/TrailerLoadMap.drawio
+      png: ./../Assets/Trailer/The Perfect Strangers - Trailer Load Map.png
+      pdf: ./../Assets/Trailer/The Perfect Strangers - Trailer Load Map.pdf
+  excel:
+    - input: ./BandColorConvention/BandColorConvention.xlsx
+      sheet: 'Document Style'
+      topLeftCell: 'A1'
+      bottomRightCell: 'E7'
+      png: ./../Assets/BandColorConvention/BandColorConvention.png
+    - input: ./InputList/Acoustic/InputList.xlsx
+      sheet: 'Channels'
+      topLeftCell: 'A1'
+      bottomRightCell: 'H19'
+      pdf: ./../../Assets/InputList/Acoustic/The Perfect Strangers - Acoustic Input List.pdf
+    - input: ./InputList/FullBand/InputList.xlsx
+      sheet: 'Channels'
+      topLeftCell: 'A1'
+      bottomRightCell: 'I43'
+      png: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Input List.png
+      pdf: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Input List.pdf
+    - input: ./InputList/FullBand/SplitMap.xlsx
+      sheet: 'Split Map'
+      topLeftCell: 'A1'
+      bottomRightCell: 'Q8'
+      png: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Split Map.png
+      pdf: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Split Map.pdf

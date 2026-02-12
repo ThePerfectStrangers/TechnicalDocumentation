@@ -27,7 +27,7 @@ All technical documentation related to band, [The Perfect Strangers](https://The
 
 For a complete PDF that includes the Rider, Stage Diagram, and Input List, click the link below:
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Complete%20Technical%20Documentation/The%20Perfect%20Strangers%20-%20Technical%20Documentation.pdf">![Static Badge](https://img.shields.io/badge/PDF-Complete%20Technical%20Documentation-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/CompleteTechnicalDocumentation/The%20Perfect%20Strangers%20-%20Technical%20Documentation.pdf">![Static Badge](https://img.shields.io/badge/PDF-Complete%20Technical%20Documentation-EC1C24?logo=adobeacrobatreader)
 </a>
 
 # Rider
@@ -51,9 +51,9 @@ These are diagrams relating to the configuration and placement of people and/or 
 
 This is the general layout of the band. It includes the people, microphones, equipment, cable routes, where power is needed, mixing equipment, and speaker placement.
 
-![Full Band Stage Diagram](./Assets/Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.png)
+![Full Band Stage Diagram](./Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png)
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Stage%20Diagram/Full%20Band/Stage%20Diagram.drawio.pdf">![Static Badge](https://img.shields.io/badge/PDF-Stage%20Diagram-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf">![Static Badge](https://img.shields.io/badge/PDF-StageDiagram-EC1C24?logo=adobeacrobatreader)
 </a>
 
 **Note:**  In a situation where the band is not in charge of the PA, the PA speakers located Downstage Right and Downstage Left should be omitted from consideration.
@@ -73,9 +73,9 @@ This is a list of inputs needed by the band. It includes:
 
 ### Input + Equipment
 
-![Input and equipment list](./Assets/InputList/FullBand/Input%20+%20Equipment.png)
+![Input List](./Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.png)
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Setup-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Input%20List-EC1C24?logo=adobeacrobatreader)
 </a>
 
 ### Split
@@ -110,9 +110,9 @@ The snake coming from the split is banded into groups of 4 wires, ordered Green,
 
 **Note:** All outputs are set as [Input/LC (IN/LC)](https://drewbrashler.com/2017/x32-output-tap/) from the band's mixer. You can find out more details regarding the split labels on the Split Map:
 
-![Split Map](./Assets/Input%20List/Full%20Band/Split%20Map.png)
+![Split Map](./Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.png)
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Full%20Band\Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
 </a>
 
 ### Mixer Configuration
@@ -123,29 +123,21 @@ You can view the mixer configuration by using the WING EDIT software provided by
 
 ## Acoustic
 
-The band can perform in smaller venues with an acoustic set up. This setup replaces the full drum set with a smaller percussion setup, removes the need for IEMs and the IEM box, and shrinks the overall stage footprint. This configuration differs per show as it aligns more closely with the set list. For any documentation or requirements, please contact the band directly at [technical@theperfectstrangers.band](mailto:technical@theperfectstrangers.band?subject=Acoustic Set Up for The Perfect Strangers).
+The band can perform in smaller venues with an acoustic set up. This setup replaces the full drum set with a smaller percussion setup, removes the need for IEMs and the IEM box, and shrinks the overall stage footprint. This configuration differs per show as it aligns more closely with the set list. For any documentation or requirements, please contact the band directly at [technical@theperfectstrangers.band](mailto:technical@theperfectstrangers.band?subject=Acoustic%20Set%20Up%20for%20The%20Perfect%20Strangers).
 
 ### Input + Equipment
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Input%20List\Acoustic\Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Setup-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/Acoustic/The%20Perfect%20Strangers%20-%20Acoustic%20Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Input%20List-EC1C24?logo=adobeacrobatreader)
 </a>
 
 # Repository Health
 
 This is the status of the backing workflows that automate the creation of repository artifacts, such as PDFs and images. If any of these are failing, then their related artifacts may be out-of-date.
 
-[![Acoustic/Input List Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/acoustic-input-list-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/acoustic-input-list-workflow.yml)
-
-[![Band Color Convention Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/band-color-convention-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/band-color-convention-workflow.yml)
-
 [![Complete Technical Documentation PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml)
 
-[![Draw.io to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml.yml)
+[![Draw.io to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml)
 
-[![Full Band/Input List Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-input-list-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-input-list-workflow.yml)
-
-[![Full Band/Split Map Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-split-map-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-split-map-workflow.yml)
+[![Excel to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml)
 
 [![Rider Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml)
-
-[![Stage Diagram Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/stage-diagram-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/stage-diagram-workflow.yml)

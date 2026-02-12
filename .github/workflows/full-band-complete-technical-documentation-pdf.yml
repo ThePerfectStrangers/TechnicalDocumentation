@@ -2,8 +2,11 @@ name: Complete Technical Documentation PDF Workflow
 
 on:
   workflow_run:
-    workflows: [Rider Workflow, Full Band/Input List Workflow, Stage Diagram Workflow]
+    workflows: [Rider Workflow, Excel to PNG & PDF Workflow, Draw.io to PNG & PDF Workflow]
     types: [completed]
+  push:
+    paths:
+      - .github/workflows/full-band-complete-technical-documentation-pdf.yml  
 
 env:
   TITLE: The Perfect Strangers - Technical Documentation
@@ -52,8 +55,9 @@ jobs:
       - name: Commit changes to repo
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: Automatically uploaded '${{ env.OUTPUT_PATH_PDF }}'
+          commit_message: Automatically updated Complete Technical Documentation PDF
           commit_user_name: ${{ vars.COMMIT_USER_NAME }}
           commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
           commit_author: ${{ vars.COMMIT_AUTHOR }}
+          file_pattern: 'Assets/**'
           push_options: '--force'

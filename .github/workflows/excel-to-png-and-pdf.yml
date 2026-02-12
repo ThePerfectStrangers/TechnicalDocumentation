@@ -1,0 +1,169 @@
+name: Excel to PNG & PDF Workflow
+
+on:
+  push:
+    paths:
+      - '**/*.xlsx'
+      - Assets/asset-config-map.yaml
+      - .github/workflows/excel-to-png-and-pdf.yml
+      - .github/workflows/lib/export-png.py
+      - .github/workflows/lib/export-pdf.py
+  pull_request:
+    paths:
+      - '**/*.xlsx'
+      - Assets/asset-config-map.yaml
+      - .github/workflows/excel-to-png-and-pdf.yml
+      - .github/workflows/lib/export-png.py
+      - .github/workflows/lib/export-pdf.py
+
+permissions:
+  contents: write
+
+concurrency:
+  group: excel-export
+  cancel-in-progress: false
+
+jobs:
+  excel-to-png-and-pdf:
+    name: Export PNG & PDF from Excel spreadsheets
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Office
+        run: choco install office365business --params "'/productid:O365HomePremRetail /exclude:Access Groove Lync OneDrive OneNote Outlook Publisher Word Powerpoint /updates:FALSE /eula:TRUE'"
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12.3'
+
+      - name: Install Python dependencies
+        run: pip install pywin32 pillow pyyaml
+
+      - name: Process all Excel conversions from asset-config-map.yaml
+        shell: pwsh
+        run: |
+          $configPath = Join-Path $env:GITHUB_WORKSPACE "Assets\asset-config-map.yaml"
+          Write-Output "Reading config from: $configPath"
+
+          # Install powershell-yaml module for YAML parsing
+          Install-Module -Name powershell-yaml -Force -Scope CurrentUser
+          $yamlContent = Get-Content $configPath -Raw
+          $config = ConvertFrom-Yaml $yamlContent
+
+          $excelEntries = $config.conversions.excel
+          if (-not $excelEntries) {
+            Write-Output "No excel conversions found in config."
+            exit 0
+          }
+
+          foreach ($entry in $excelEntries) {
+            $inputRelative = $entry.input
+            $sheet = $entry.sheet
+            $topLeftCell = $entry.topLeftCell
+            $bottomRightCell = $entry.bottomRightCell
+            $pngOutput = $entry.png
+            $pdfOutput = $entry.pdf
+
+            Write-Output ""
+            Write-Output "============================================"
+            Write-Output "Processing: $inputRelative"
+            Write-Output "  Sheet: $sheet"
+            Write-Output "  Range: ${topLeftCell}:${bottomRightCell}"
+            Write-Output "============================================"
+
+            # Resolve absolute path of the input Excel file
+            # Paths in the config are relative to the repo root (they start with ./)
+            $inputCleaned = $inputRelative -replace '^\.\/', ''
+            $absoluteExcelPath = Join-Path $env:GITHUB_WORKSPACE $inputCleaned
+            $absoluteExcelPath = $absoluteExcelPath.Replace('/', '\')
+
+            if (-not (Test-Path $absoluteExcelPath)) {
+              Write-Output "WARNING: Input file not found: $absoluteExcelPath — skipping."
+              continue
+            }
+
+            Write-Output "  Absolute Excel Path: $absoluteExcelPath"
+
+            # --- PNG Export ---
+            if ($pngOutput -and $pngOutput -ne 'null') {
+              $inputDir = Split-Path $absoluteExcelPath -Parent
+
+              # If path ends with /, it's a directory - auto-generate filename
+              # Otherwise, the last segment is a custom output filename
+              if ($pngOutput.EndsWith('/')) {
+                $pngDirResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pngOutput.Replace('/', '\'))))
+                $inputBaseName = [System.IO.Path]::GetFileNameWithoutExtension($absoluteExcelPath)
+                $absolutePngPath = Join-Path $pngDirResolved "${inputBaseName}.png"
+              } else {
+                $pngFullResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pngOutput.Replace('/', '\'))))
+                $pngDirResolved = Split-Path $pngFullResolved -Parent
+                $absolutePngPath = $pngFullResolved
+              }
+
+              # Ensure the output directory exists
+              if (-not (Test-Path $pngDirResolved)) {
+                New-Item -ItemType Directory -Path $pngDirResolved -Force | Out-Null
+              }
+
+              Write-Output "  Exporting PNG to: $absolutePngPath"
+              python .github/workflows/lib/export-png.py "$absoluteExcelPath" "$absolutePngPath" "$sheet" "$topLeftCell" "$bottomRightCell"
+
+              if ($LASTEXITCODE -ne 0) {
+                Write-Output "  ERROR: PNG export failed for $inputRelative"
+              } else {
+                Write-Output "  PNG export succeeded."
+              }
+            } else {
+              Write-Output "  PNG output not configured — skipping PNG export."
+            }
+
+            # --- PDF Export ---
+            if ($pdfOutput -and $pdfOutput -ne 'null') {
+              $inputDir = Split-Path $absoluteExcelPath -Parent
+
+              # If path ends with /, it's a directory - auto-generate filename
+              # Otherwise, the last segment is a custom output filename
+              if ($pdfOutput.EndsWith('/')) {
+                $pdfDirResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pdfOutput.Replace('/', '\'))))
+                $inputBaseName = [System.IO.Path]::GetFileNameWithoutExtension($absoluteExcelPath)
+                $absolutePdfPath = Join-Path $pdfDirResolved "${inputBaseName}.pdf"
+              } else {
+                $pdfFullResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pdfOutput.Replace('/', '\'))))
+                $pdfDirResolved = Split-Path $pdfFullResolved -Parent
+                $absolutePdfPath = $pdfFullResolved
+              }
+
+              # Ensure the output directory exists
+              if (-not (Test-Path $pdfDirResolved)) {
+                New-Item -ItemType Directory -Path $pdfDirResolved -Force | Out-Null
+              }
+
+              Write-Output "  Exporting PDF to: $absolutePdfPath"
+              python .github/workflows/lib/export-pdf.py "$absoluteExcelPath" "$absolutePdfPath"
+
+              if ($LASTEXITCODE -ne 0) {
+                Write-Output "  ERROR: PDF export failed for $inputRelative"
+              } else {
+                Write-Output "  PDF export succeeded."
+              }
+            } else {
+              Write-Output "  PDF output not configured — skipping PDF export."
+            }
+          }
+
+          Write-Output ""
+          Write-Output "All Excel conversions processed."
+
+      - name: Commit files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Automatically converted Excel files to PNG and PDF and committed the results
+          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+          commit_author: ${{ vars.COMMIT_AUTHOR }}
+          file_pattern: 'Assets/**'
+          push_options: '--force'
