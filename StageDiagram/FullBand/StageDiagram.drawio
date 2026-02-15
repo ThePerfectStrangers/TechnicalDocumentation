@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36 Edg/144.0.0.0" version="29.3.8">
   <diagram name="Stage Diagram" id="rK8sP8XB6P-i0ZL2sLej">
-    <mxGraphModel dx="1971" dy="1077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1016" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -550,7 +550,7 @@
             <mxPoint x="412.75" y="275.44659340659354" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cOtEAzNvyZOpm-0kXXn5-8" connectable="0" parent="cOtEAzNvyZOpm-0kXXn5-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=light-dark(#ffffff, #ededed);labelBackgroundColor=none;fontSize=10;" value="Cable Path" vertex="1">
+        <mxCell id="cOtEAzNvyZOpm-0kXXn5-8" connectable="0" parent="cOtEAzNvyZOpm-0kXXn5-7" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=light-dark(#ffffff, #ededed);labelBackgroundColor=none;fontSize=10;" value="Snake Cable Path" vertex="1">
           <mxGeometry relative="1" x="-0.7869" y="-1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
@@ -594,7 +594,7 @@
             <mxPoint x="970" y="580" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cOtEAzNvyZOpm-0kXXn5-9" connectable="0" parent="cOtEAzNvyZOpm-0kXXn5-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;labelBorderColor=none;fontColor=#FFFFFF;fontSize=10;" value="Cable Path" vertex="1">
+        <mxCell id="cOtEAzNvyZOpm-0kXXn5-9" connectable="0" parent="cOtEAzNvyZOpm-0kXXn5-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;labelBorderColor=none;fontColor=#FFFFFF;fontSize=10;" value="Snake Cable Path" vertex="1">
           <mxGeometry relative="1" x="-0.6307" y="-3" as="geometry">
             <mxPoint y="-3" as="offset" />
           </mxGeometry>
@@ -611,7 +611,7 @@
             <mxPoint x="980" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cOtEAzNvyZOpm-0kXXn5-10" connectable="0" parent="cOtEAzNvyZOpm-0kXXn5-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=270;fontColor=#FFFFFF;labelBackgroundColor=none;fontSize=10;" value="Cable Path" vertex="1">
+        <mxCell id="cOtEAzNvyZOpm-0kXXn5-10" connectable="0" parent="cOtEAzNvyZOpm-0kXXn5-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=270;fontColor=#FFFFFF;labelBackgroundColor=none;fontSize=10;" value="Snake Cable Path" vertex="1">
           <mxGeometry relative="1" x="0.1467" y="-4" as="geometry">
             <mxPoint x="-5" y="-3" as="offset" />
           </mxGeometry>
