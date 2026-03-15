@@ -31,13 +31,13 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Office
         run: choco install office365business --params "'/productid:O365HomePremRetail /exclude:Access Groove Lync OneDrive OneNote Outlook Publisher Word Powerpoint /updates:FALSE /eula:TRUE'"
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12.3'
 
@@ -160,7 +160,7 @@ jobs:
           Write-Output "All Excel conversions processed."
 
       - name: Commit files
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Automatically converted Excel files to PNG and PDF and committed the results
           commit_user_name: ${{ vars.COMMIT_USER_NAME }}

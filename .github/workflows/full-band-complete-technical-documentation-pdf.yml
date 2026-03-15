@@ -28,10 +28,10 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12.3'
 
@@ -54,7 +54,7 @@ jobs:
         run: python .github/workflows/lib/combine-pdfs.py "${{ env.ABSOLUTE_OUTPUT_PATH_PDF }}" "${{ env.TITLE }}" "${{ env.AUTHOR }}" "${{ env.SUBJECT }}" "${{ env.ABSOLUTE_PATH_TO_RIDER_PDF }}" "${{ env.ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF }}" "${{ env.ABSOLUTE_PATH_TO_INPUT_LIST_PDF }}"
 
       - name: Commit changes to repo
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Automatically updated Complete Technical Documentation PDF
           commit_user_name: ${{ vars.COMMIT_USER_NAME }}

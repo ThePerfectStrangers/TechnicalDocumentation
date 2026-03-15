@@ -16,7 +16,7 @@ jobs:
       contents: write
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Convert Markdown to PDF
         uses: baileyjm02/markdown-to-pdf@v1
@@ -28,7 +28,7 @@ jobs:
           image_import: ../Assets
 
       - name: Commit changes to repo
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: Automatically uploaded '${{ vars.RIDER_PDF_PATH }}'
           commit_user_name: ${{ vars.COMMIT_USER_NAME }}
