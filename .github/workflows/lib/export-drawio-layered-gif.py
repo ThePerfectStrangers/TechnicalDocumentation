@@ -19,6 +19,7 @@ import sys
 import os
 import re
 import subprocess
+import tempfile
 import xml.etree.ElementTree as ET
 from PIL import Image
 
@@ -59,37 +60,61 @@ def parse_layers(drawio_path):
 
 
 def export_to_png(drawio_path, png_path, layer_indices):
-    """Export the drawio file to PNG with only the specified layers visible."""
-    layers_arg = ','.join(str(i) for i in layer_indices)
-    result = subprocess.run(
-        [
-            'drawio', '--export', '--no-sandbox', '--disable-gpu',
-            '--format', 'png',
-            '--layers', layers_arg,
-            '--output', png_path,
-            drawio_path,
-        ],
-        capture_output=True,
-        text=True,
-    )
-    if result.returncode != 0:
-        print(f"STDOUT: {result.stdout}")
-        print(f"STDERR: {result.stderr}")
-        result.check_returncode()
+    """Export the drawio file to PNG with only the specified layers visible.
 
-    # draw.io sometimes appends a -0 page-index suffix (e.g. Step_01-0.png)
-    if not os.path.exists(png_path):
-        base, ext = os.path.splitext(png_path)
-        page_indexed = f"{base}-0{ext}"
-        if os.path.exists(page_indexed):
-            os.rename(page_indexed, png_path)
-        else:
-            raise FileNotFoundError(
-                f"draw.io exited 0 but output file was not created.\n"
-                f"  Expected: {png_path}\n"
-                f"  STDOUT: {result.stdout}\n"
-                f"  STDERR: {result.stderr}"
-            )
+    Layer visibility is controlled by modifying the XML directly rather than
+    using the --layers CLI flag, which changed behaviour in draw.io 26.x and
+    caused the export to fail with 'input file/directory not found'.
+    """
+    # Build a modified copy of the diagram with only the target layers visible.
+    tree = ET.parse(drawio_path)
+    xml_root = tree.getroot()
+    xml_index = 0
+    for diagram in xml_root.findall('diagram'):
+        model = diagram.find('mxGraphModel')
+        if model is None:
+            continue
+        root_elem = model.find('root')
+        if root_elem is None:
+            continue
+        for cell in root_elem.findall('mxCell'):
+            if cell.get('parent') == '0' and cell.get('id') != '0':
+                cell.set('visible', '1' if xml_index in layer_indices else '0')
+                xml_index += 1
+
+    with tempfile.TemporaryDirectory() as tmp_dir:
+        tmp_input = os.path.join(tmp_dir, os.path.basename(drawio_path))
+        tree.write(tmp_input, encoding='unicode')
+
+        result = subprocess.run(
+            [
+                'drawio', '--export', '--no-sandbox', '--disable-gpu',
+                '--format', 'png',
+                '--output', png_path,
+                tmp_input,
+            ],
+            capture_output=True,
+            text=True,
+        )
+
+        if result.returncode != 0:
+            print(f"STDOUT: {result.stdout}")
+            print(f"STDERR: {result.stderr}")
+            result.check_returncode()
+
+        # draw.io sometimes appends a -0 page-index suffix (e.g. Step_01-0.png)
+        if not os.path.exists(png_path):
+            base, ext = os.path.splitext(png_path)
+            page_indexed = f"{base}-0{ext}"
+            if os.path.exists(page_indexed):
+                os.rename(page_indexed, png_path)
+            else:
+                raise FileNotFoundError(
+                    f"draw.io exited 0 but output file was not created.\n"
+                    f"  Expected: {png_path}\n"
+                    f"  STDOUT: {result.stdout}\n"
+                    f"  STDERR: {result.stderr}"
+                )
 
 
 def create_gif(png_paths, gif_path, frame_duration):
