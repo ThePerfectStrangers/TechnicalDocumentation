@@ -6,7 +6,7 @@ on:
     types: [completed]
   push:
     paths:
-      - .github/workflows/full-band-complete-technical-documentation-pdf.yml  
+      - .github/workflows/full-band-complete-technical-documentation-pdf.yml
 
 env:
   TITLE: The Perfect Strangers - Technical Documentation
@@ -35,7 +35,7 @@ jobs:
           python-version: '3.12.3'
 
       - name: Install Python dependencies
-        run: pip install pdfrw
+        run: pip install -r .github/workflows/lib/requirements.txt
 
       - name: Set Absolute Path - ${{ vars.COMPLETE_TECHNICAL_DOCUMENTATION_PDF_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.COMPLETE_TECHNICAL_DOCUMENTATION_PDF_PATH }}" -VariableName "ABSOLUTE_OUTPUT_PATH_PDF"

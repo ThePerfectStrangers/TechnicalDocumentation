@@ -141,3 +141,5 @@ This is the status of the backing workflows that automate the creation of reposi
 [![Excel to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml)
 
 [![Rider Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml)
+
+[![Draw.io Layered GIF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-layered-gif.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-layered-gif.yml)

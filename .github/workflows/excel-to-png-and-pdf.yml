@@ -41,7 +41,7 @@ jobs:
           python-version: '3.12.3'
 
       - name: Install Python dependencies
-        run: pip install pywin32 pillow pyyaml
+        run: pip install -r .github/workflows/lib/requirements.txt
 
       - name: Process all Excel conversions from asset-config-map.yaml
         shell: pwsh

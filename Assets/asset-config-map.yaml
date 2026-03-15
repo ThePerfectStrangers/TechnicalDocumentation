@@ -31,3 +31,7 @@ conversions:
       bottomRightCell: 'Q8'
       png: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Split Map.png
       pdf: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Split Map.pdf
+  drawio_layered_gif:
+    - input: ./StageDiagram/FullBand/StageDiagram.drawio
+      output_dir: ./../../Assets/StageDiagram/FullBand/OrderedAssembly/
+      frame_duration: 1000
