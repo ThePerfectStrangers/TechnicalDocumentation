@@ -64,9 +64,9 @@ def export_to_png(drawio_path, png_path, layer_indices):
     Layer visibility is controlled by modifying the XML directly rather than
     using the --layers CLI flag.
 
-    The draw.io CLI is invoked via xvfb-run (not --no-sandbox / --disable-gpu)
-    because draw.io 26.x treats unrecognised Chromium flags as the input-file
-    positional argument, which causes 'input file/directory not found'.
+    Chromium flags (--no-sandbox, --disable-gpu) are passed via the
+    ELECTRON_EXTRA_LAUNCH_ARGS env-var because draw.io 26.x's own arg parser
+    treats unrecognised CLI flags as the input-file positional argument.
     """
     # Build a modified copy of the diagram with only the target layers visible.
     tree = ET.parse(drawio_path)
@@ -92,9 +92,11 @@ def export_to_png(drawio_path, png_path, layer_indices):
     tree.write(tmp_input, encoding='unicode')
 
     try:
+        env = os.environ.copy()
+        env['ELECTRON_EXTRA_LAUNCH_ARGS'] = '--no-sandbox --disable-gpu'
+
         result = subprocess.run(
             [
-                'xvfb-run', '-a',
                 'drawio', '--export',
                 '--format', 'png',
                 '--output', png_path,
@@ -102,6 +104,7 @@ def export_to_png(drawio_path, png_path, layer_indices):
             ],
             capture_output=True,
             text=True,
+            env=env,
         )
 
         if result.returncode != 0:
