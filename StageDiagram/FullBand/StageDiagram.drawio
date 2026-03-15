@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" version="29.6.1">
   <diagram name="Stage Diagram" id="rK8sP8XB6P-i0ZL2sLej">
-    <mxGraphModel dx="1069" dy="591" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1563" dy="863" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" value="1. Background" />
@@ -8,22 +8,7 @@
           <mxGeometry height="630" width="1060" x="10.000000000000002" y="4" as="geometry" />
         </mxCell>
         <mxCell id="hYlaiTehcVsQXE26dI48-74" connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=default;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Downstage&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry x="563.996653398667" y="610.0042316197382" as="geometry" />
-        </mxCell>
-        <mxCell id="u2LiYTVrwPIllfvR_dnS-1" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
-          <mxGeometry height="128" width="128" x="215.53" y="620" as="geometry" />
-        </mxCell>
-        <mxCell id="u2LiYTVrwPIllfvR_dnS-3" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
-          <mxGeometry height="128" width="128" x="343.53000000000003" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="u2LiYTVrwPIllfvR_dnS-4" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
-          <mxGeometry height="128" width="128" x="479.27000000000004" y="620" as="geometry" />
-        </mxCell>
-        <mxCell id="u2LiYTVrwPIllfvR_dnS-5" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
-          <mxGeometry height="128" width="128" x="613.91" y="620" as="geometry" />
-        </mxCell>
-        <mxCell id="u2LiYTVrwPIllfvR_dnS-6" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
-          <mxGeometry height="128" width="128" x="600" y="930" as="geometry" />
+          <mxGeometry x="549.996653398667" y="610.0042316197382" as="geometry" />
         </mxCell>
         <mxCell id="hYlaiTehcVsQXE26dI48-36" parent="1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Power.svg;imageBorder=none;strokeWidth=2;perimeterSpacing=0;imageBackground=#000000;" value="2" vertex="1">
           <mxGeometry height="31.75" width="20.54" x="750.0000000000001" y="77.88000000000001" as="geometry" />
@@ -109,6 +94,21 @@
         </mxCell>
         <mxCell id="z7AJeT-OZztadfWj_MoV-12" parent="1" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/general/Power.svg;imageBorder=none;strokeWidth=2;perimeterSpacing=0;imageBackground=#000000;" value="3" vertex="1">
           <mxGeometry height="31.75" width="20.54" x="1045.46" y="516.1899999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="u2LiYTVrwPIllfvR_dnS-1" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
+          <mxGeometry height="128" width="128" x="232.53" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="u2LiYTVrwPIllfvR_dnS-3" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
+          <mxGeometry height="128" width="128" x="364" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="u2LiYTVrwPIllfvR_dnS-4" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
+          <mxGeometry height="128" width="128" x="495" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="u2LiYTVrwPIllfvR_dnS-5" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
+          <mxGeometry height="128" width="128" x="626" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="u2LiYTVrwPIllfvR_dnS-6" parent="1" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-people-outline-128.png;fontSize=8;" value="" vertex="1">
+          <mxGeometry height="128" width="128" x="757" y="620" as="geometry" />
         </mxCell>
         <mxCell id="9F8pUwmbT_OYvEpbTUxQ-20" parent="0" value="2. Drum Rug" />
         <mxCell id="2EZrR9Lx6Leo_fO-bju2-62" parent="9F8pUwmbT_OYvEpbTUxQ-20" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=#B20000;strokeWidth=3;fillColor=#00FF00;fontColor=#ffffff;opacity=10;" value="" vertex="1">
