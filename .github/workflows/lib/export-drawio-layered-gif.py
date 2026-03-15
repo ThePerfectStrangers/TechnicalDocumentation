@@ -98,6 +98,8 @@ def export_to_png(drawio_path, png_path, layer_indices):
         result = subprocess.run(
             [
                 'drawio', '--export',
+                '--no-sandbox',
+                '--disable-gpu',
                 '--format', 'png',
                 '--output', png_path,
                 tmp_input,
