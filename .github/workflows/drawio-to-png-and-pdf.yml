@@ -11,6 +11,7 @@ on:
       - '**/*.drawio'
       - Assets/asset-config-map.yaml
       - .github/workflows/drawio-to-png-and-pdf.yml
+  workflow_dispatch:
 
 permissions:
   contents: write

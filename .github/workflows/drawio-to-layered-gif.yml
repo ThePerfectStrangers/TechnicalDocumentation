@@ -13,6 +13,7 @@ on:
       - Assets/asset-config-map.yaml
       - .github/workflows/drawio-to-layered-gif.yml
       - .github/workflows/lib/export-drawio-layered-gif.py
+  workflow_dispatch:
 
 permissions:
   contents: write
