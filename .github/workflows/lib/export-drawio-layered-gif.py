@@ -19,7 +19,6 @@ import sys
 import os
 import re
 import subprocess
-import tempfile
 import xml.etree.ElementTree as ET
 from PIL import Image
 
@@ -63,8 +62,11 @@ def export_to_png(drawio_path, png_path, layer_indices):
     """Export the drawio file to PNG with only the specified layers visible.
 
     Layer visibility is controlled by modifying the XML directly rather than
-    using the --layers CLI flag, which changed behaviour in draw.io 26.x and
-    caused the export to fail with 'input file/directory not found'.
+    using the --layers CLI flag.
+
+    The draw.io CLI is invoked via xvfb-run (not --no-sandbox / --disable-gpu)
+    because draw.io 26.x treats unrecognised Chromium flags as the input-file
+    positional argument, which causes 'input file/directory not found'.
     """
     # Build a modified copy of the diagram with only the target layers visible.
     tree = ET.parse(drawio_path)
@@ -82,13 +84,18 @@ def export_to_png(drawio_path, png_path, layer_indices):
                 cell.set('visible', '1' if xml_index in layer_indices else '0')
                 xml_index += 1
 
-    with tempfile.TemporaryDirectory() as tmp_dir:
-        tmp_input = os.path.join(tmp_dir, os.path.basename(drawio_path))
-        tree.write(tmp_input, encoding='unicode')
+    # Write the modified diagram next to the output (same filesystem the
+    # runner can always reach) and clean up afterwards.
+    output_dir = os.path.dirname(png_path)
+    os.makedirs(output_dir, exist_ok=True)
+    tmp_input = os.path.join(output_dir, f'_tmp_{os.getpid()}.drawio')
+    tree.write(tmp_input, encoding='unicode')
 
+    try:
         result = subprocess.run(
             [
-                'drawio', '--export', '--no-sandbox', '--disable-gpu',
+                'xvfb-run', '-a',
+                'drawio', '--export',
                 '--format', 'png',
                 '--output', png_path,
                 tmp_input,
@@ -109,12 +116,17 @@ def export_to_png(drawio_path, png_path, layer_indices):
             if os.path.exists(page_indexed):
                 os.rename(page_indexed, png_path)
             else:
+                dir_contents = os.listdir(output_dir)
                 raise FileNotFoundError(
                     f"draw.io exited 0 but output file was not created.\n"
                     f"  Expected: {png_path}\n"
+                    f"  Directory contents: {dir_contents}\n"
                     f"  STDOUT: {result.stdout}\n"
                     f"  STDERR: {result.stderr}"
                 )
+    finally:
+        if os.path.exists(tmp_input):
+            os.remove(tmp_input)
 
 
 def create_gif(png_paths, gif_path, frame_duration):
