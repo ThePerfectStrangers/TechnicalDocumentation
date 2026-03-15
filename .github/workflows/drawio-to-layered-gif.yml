@@ -1,0 +1,99 @@
+name: Draw.io Layered GIF Workflow
+
+on:
+  push:
+    paths:
+      - '**/*.drawio'
+      - Assets/asset-config-map.yaml
+      - .github/workflows/drawio-to-layered-gif.yml
+      - .github/workflows/lib/export-drawio-layered-gif.py
+  pull_request:
+    paths:
+      - '**/*.drawio'
+      - Assets/asset-config-map.yaml
+      - .github/workflows/drawio-to-layered-gif.yml
+      - .github/workflows/lib/export-drawio-layered-gif.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: drawio-layered-gif
+  cancel-in-progress: false
+
+jobs:
+  drawio-layered-gif:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install drawio desktop
+        env:
+          DRAWIO_VERSION: "26.0.9"
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+          curl -sLO "https://github.com/jgraph/drawio-desktop/releases/download/v${DRAWIO_VERSION}/drawio-amd64-${DRAWIO_VERSION}.deb"
+          sudo apt-get install -y "./drawio-amd64-${DRAWIO_VERSION}.deb"
+
+      - name: Start virtual display
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r .github/workflows/lib/requirements.txt
+
+      - name: Generate layered GIFs from asset-config-map.yaml
+        run: |
+          set -e
+
+          # Install yq for YAML parsing
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+          entries=$(yq '.conversions.drawio_layered_gif // [] | length' ./Assets/asset-config-map.yaml)
+          if [ "$entries" -eq 0 ]; then
+            echo "No drawio_layered_gif entries found in config."
+            exit 0
+          fi
+
+          yq -r '.conversions.drawio_layered_gif[] | @json' ./Assets/asset-config-map.yaml | while read -r line; do
+            input=$(echo "$line" | jq -r '.input')
+            output_dir=$(echo "$line" | jq -r '.output_dir')
+            frame_duration=$(echo "$line" | jq -r '.frame_duration // 1000')
+
+            echo "============================================"
+            echo "Processing: $input"
+            echo "Output dir config: $output_dir"
+            echo "Frame duration: ${frame_duration}ms"
+            echo "============================================"
+
+            # Resolve absolute paths (output_dir is relative to the input file's directory)
+            input_abs=$(realpath "$input")
+            input_dir_abs=$(dirname "$input_abs")
+            output_dir_abs=$(cd "$input_dir_abs" && realpath -m "$output_dir")
+
+            echo "Absolute input: $input_abs"
+            echo "Absolute output dir: $output_dir_abs"
+
+            python .github/workflows/lib/export-drawio-layered-gif.py \
+              "$input_abs" "$output_dir_abs" "$frame_duration"
+          done
+
+      - name: Commit files
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Automatically generated layered assembly GIF and PNGs from Draw.io diagrams
+          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+          commit_author: ${{ vars.COMMIT_AUTHOR }}
+          file_pattern: 'Assets/**'
+          push_options: '--force'

@@ -11,6 +11,7 @@ on:
       - '**/*.drawio'
       - Assets/asset-config-map.yaml
       - .github/workflows/drawio-to-png-and-pdf.yml
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -62,17 +63,17 @@ jobs:
                 png_dir_abs=$(cd "$input_dir" && realpath -m "$png_dir_part")
                 final_png="${png_dir_abs}/${png_custom_filename}"
               fi
-              
+
               # Convert to relative path for Docker
               png_dir_rel=$(realpath --relative-to="$PWD" "$png_dir_abs")
               final_png_rel=$(realpath --relative-to="$PWD" "$final_png")
-              
+
               mkdir -p "$png_dir_abs"
               echo "Converting to PNG: $final_png_rel"
-              
+
               # Remove existing file if present to avoid conflicts
               rm -f "$final_png"
-              
+
               # Export to directory (generates default-named file)
               docker run --rm \
                 -v "$PWD:/data" \
@@ -80,7 +81,7 @@ jobs:
                 --format png \
                 --output "/data/$png_dir_rel" \
                 "/data/$input"
-              
+
               # Rename the generated file to our desired name
               # Docker creates files like "WiringDiagram-Page-1.png" or "Stage Diagram-Stage-Diagram.png"
               # We need to find these and rename to "WiringDiagram.drawio.png"
@@ -109,17 +110,17 @@ jobs:
                 pdf_dir_abs=$(cd "$input_dir" && realpath -m "$pdf_dir_part")
                 final_pdf="${pdf_dir_abs}/${pdf_custom_filename}"
               fi
-              
+
               # Convert to relative path for Docker
               pdf_dir_rel=$(realpath --relative-to="$PWD" "$pdf_dir_abs")
               final_pdf_rel=$(realpath --relative-to="$PWD" "$final_pdf")
-              
+
               mkdir -p "$pdf_dir_abs"
               echo "Converting to PDF: $final_pdf_rel"
-              
+
               # Remove existing file if present to avoid conflicts
               rm -f "$final_pdf"
-              
+
               # Export to directory (generates default-named file)
               docker run --rm \
                 -v "$PWD:/data" \
@@ -127,7 +128,7 @@ jobs:
                 --format pdf \
                 --output "/data/$pdf_dir_rel" \
                 "/data/$input"
-              
+
               # Rename the generated file to our desired name
               # Docker creates files like "TrailerLoadMap-Page-1.pdf" or "Stage Diagram-Stage-Diagram.pdf"
               # We need to find these and rename to "TrailerLoadMap.drawio.pdf"
