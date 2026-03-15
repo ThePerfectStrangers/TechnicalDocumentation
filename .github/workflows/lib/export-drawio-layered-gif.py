@@ -77,6 +77,20 @@ def export_to_png(drawio_path, png_path, layer_indices):
         print(f"STDERR: {result.stderr}")
         result.check_returncode()
 
+    # draw.io sometimes appends a -0 page-index suffix (e.g. Step_01-0.png)
+    if not os.path.exists(png_path):
+        base, ext = os.path.splitext(png_path)
+        page_indexed = f"{base}-0{ext}"
+        if os.path.exists(page_indexed):
+            os.rename(page_indexed, png_path)
+        else:
+            raise FileNotFoundError(
+                f"draw.io exited 0 but output file was not created.\n"
+                f"  Expected: {png_path}\n"
+                f"  STDOUT: {result.stdout}\n"
+                f"  STDERR: {result.stderr}"
+            )
+
 
 def create_gif(png_paths, gif_path, frame_duration):
     """Combine a sequence of PNGs into an animated GIF."""
@@ -146,7 +160,7 @@ def main():
 
     for step in range(1, len(layers) + 1):
         visible_indices = [layers[j][0] for j in range(step)]
-        step_label = f"Step {str(step).zfill(pad)}"
+        step_label = f"Step_{str(step).zfill(pad)}"
         png_path = os.path.join(output_dir, f"{step_label}.png")
 
         print(f"\nExporting {step_label} (layers: {visible_indices})...")
