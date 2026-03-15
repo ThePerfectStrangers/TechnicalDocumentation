@@ -13,9 +13,9 @@ on:
       - '**/*.xlsx'
       - Assets/asset-config-map.yaml
       - .github/workflows/excel-to-png-and-pdf.yml
-  workflow_dispatch:
       - .github/workflows/lib/export-png.py
       - .github/workflows/lib/export-pdf.py
+  workflow_dispatch:
 
 permissions:
   contents: write
