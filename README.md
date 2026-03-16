@@ -1,3 +1,5 @@
+<img src="./Assets/Logo/Logo-16-9-W-B.png" width="50%" text-align="center">
+
 <!-- title: The Perfect Strangers - Technical Documentation -->
 # Technical Documentation <!-- omit from toc -->
 
