@@ -190,14 +190,29 @@ def main():
         print("No layers found. Exiting.")
         sys.exit(0)
 
+    # Resolve gif path early so cleanup can cover it even when it lives
+    # outside output_dir.
+    if gif_output_path:
+        gif_path = gif_output_path
+        os.makedirs(os.path.dirname(gif_path), exist_ok=True)
+    else:
+        gif_name = os.path.splitext(os.path.basename(drawio_path))[0] + ".gif"
+        gif_path = os.path.join(output_dir, gif_name)
+
     # Prepare output directory
     os.makedirs(output_dir, exist_ok=True)
 
-    # Clean previous generated files
+    # Clean previous generated files so stale files from a layer-count
+    # reduction (or name change) never linger.
     for f in os.listdir(output_dir):
         full_path = os.path.join(output_dir, f)
         if os.path.isfile(full_path) and (f.endswith('.png') or f.endswith('.gif')):
             os.remove(full_path)
+
+    # If the GIF lives outside output_dir, remove it separately.
+    if os.path.abspath(os.path.dirname(gif_path)) != os.path.abspath(output_dir):
+        if os.path.exists(gif_path):
+            os.remove(gif_path)
 
     # Export cumulative layer PNGs
     pad = len(str(len(layers)))
@@ -214,12 +229,6 @@ def main():
         print(f"  Saved: {png_path}")
 
     # Create animated GIF
-    if gif_output_path:
-        gif_path = gif_output_path
-        os.makedirs(os.path.dirname(gif_path), exist_ok=True)
-    else:
-        gif_name = os.path.splitext(os.path.basename(drawio_path))[0] + ".gif"
-        gif_path = os.path.join(output_dir, gif_name)
     print(f"\nCreating animated GIF: {gif_path}")
     create_gif(png_paths, gif_path, frame_duration)
 
