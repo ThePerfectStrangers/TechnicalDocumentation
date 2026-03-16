@@ -34,6 +34,7 @@ conversions:
   drawio_layered_gif:
     - input: ./StageDiagram/FullBand/StageDiagram.drawio
       output_dir: ./../../Assets/StageDiagram/FullBand/StageAssembly/
+      gif: ./../../Assets/StageDiagram/FullBand/StageAssembly/StageAssembly.gif
       frame_duration: 3000
   markdown_pdf:
     - input: ./Rider/Rider.md

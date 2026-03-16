@@ -7,12 +7,14 @@ Layers are discovered from the XML and sorted naturally by name.
 Each step shows all layers up to and including the current one.
 
 Usage:
-    python export-drawio-layered-gif.py <drawio_path> <output_dir> [frame_duration_ms]
+    python export-drawio-layered-gif.py <drawio_path> <output_dir> [frame_duration_ms] [gif_output_path]
 
 Arguments:
     drawio_path       - Absolute path to the .drawio file
-    output_dir        - Absolute path to the output directory
+    output_dir        - Absolute path to the output directory for step PNGs
     frame_duration_ms - Milliseconds per frame in the GIF (default: 1000)
+    gif_output_path   - Absolute path for the output GIF file, including filename
+                        (default: <output_dir>/<drawio_basename>.gif)
 """
 
 import sys
@@ -170,10 +172,13 @@ def main():
     drawio_path = sys.argv[1]
     output_dir = sys.argv[2]
     frame_duration = int(sys.argv[3]) if len(sys.argv) > 3 else 1000
+    gif_output_path = sys.argv[4] if len(sys.argv) > 4 else None
 
     print(f"Draw.io file: {drawio_path}")
     print(f"Output directory: {output_dir}")
     print(f"Frame duration: {frame_duration}ms")
+    if gif_output_path:
+        print(f"GIF output path: {gif_output_path}")
 
     # Discover and sort layers
     layers = parse_layers(drawio_path)
@@ -209,8 +214,12 @@ def main():
         print(f"  Saved: {png_path}")
 
     # Create animated GIF
-    gif_name = os.path.splitext(os.path.basename(drawio_path))[0] + ".gif"
-    gif_path = os.path.join(output_dir, gif_name)
+    if gif_output_path:
+        gif_path = gif_output_path
+        os.makedirs(os.path.dirname(gif_path), exist_ok=True)
+    else:
+        gif_name = os.path.splitext(os.path.basename(drawio_path))[0] + ".gif"
+        gif_path = os.path.join(output_dir, gif_name)
     print(f"\nCreating animated GIF: {gif_path}")
     create_gif(png_paths, gif_path, frame_duration)
 
