@@ -19,7 +19,7 @@ The stage setup is completed in 11 sequential steps, building from the foundatio
 
 <div class="no-pdf">
 
-![Stage Assembly Guide](../../../Assets/StageDiagram/FullBand/StageAssembly/StageAssemblyGuide.gif)
+![Stage Assembly Guide](../../../Assets/StageDiagram/FullBand/StageAssembly/StageAssembly.gif)
 
 </div>
 ---
