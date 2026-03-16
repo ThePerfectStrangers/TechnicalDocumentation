@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Converts a Markdown file to PDF using md2pdf (Chromium-based rendering).
+Converts a Markdown file to PDF using markdown + weasyprint.
 
 This handles embedded HTML (tables, images, etc.) that commonly appears
 in Markdown files, producing a faithful PDF representation.
@@ -15,7 +15,8 @@ Arguments:
 
 import sys
 import os
-from md2pdf.core import md2pdf
+import markdown
+from weasyprint import HTML
 
 
 def main():
@@ -37,16 +38,26 @@ def main():
     with open(input_path, 'r', encoding='utf-8') as f:
         md_content = f.read()
 
-    # Use the input file's directory as the base path for resolving relative
-    # image references (e.g. ../Assets/Logo/Logo.png)
-    base_dir = os.path.dirname(input_path)
-
-    md2pdf(
-        output_path,
-        md_content=md_content,
-        md_file_path=input_path,
-        base_url=base_dir,
+    # Convert markdown to HTML, enabling useful extensions
+    html_body = markdown.markdown(
+        md_content,
+        extensions=['tables', 'fenced_code', 'toc'],
     )
+
+    # Wrap in a minimal HTML document
+    html_doc = f"""<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<body>
+{html_body}
+</body>
+</html>"""
+
+    # Use the input file's directory as the base URL so relative image
+    # paths (e.g. ../Assets/Logo/Logo.png) resolve correctly
+    base_url = os.path.dirname(input_path)
+
+    HTML(string=html_doc, base_url=base_url).write_pdf(output_path)
 
     if os.path.exists(output_path):
         print(f"Successfully generated: {output_path}")
