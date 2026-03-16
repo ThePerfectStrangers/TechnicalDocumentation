@@ -4,14 +4,14 @@ on:
   push:
     paths:
       - 'Rider/Rider.md'
-      - 'StageDiagram/FullBand/OrderedAssembly/README.md'
+      - 'StageDiagram/FullBand/StageAssembly/README.md'
       - Assets/asset-config-map.yaml
       - .github/workflows/markdown-to-pdf.yml
       - .github/workflows/lib/export-markdown-pdf.py
   pull_request:
     paths:
       - 'Rider/Rider.md'
-      - 'StageDiagram/FullBand/OrderedAssembly/README.md'
+      - 'StageDiagram/FullBand/StageAssembly/README.md'
       - Assets/asset-config-map.yaml
       - .github/workflows/markdown-to-pdf.yml
       - .github/workflows/lib/export-markdown-pdf.py

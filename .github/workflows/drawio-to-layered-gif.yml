@@ -55,7 +55,7 @@ jobs:
 
       - name: Clean up existing generated files
         run: |
-          rm -f Assets/StageDiagram/FullBand/OrderedAssembly/Step_*.png
+          rm -f Assets/StageDiagram/FullBand/StageAssembly/Step_*.png
 
       - name: Generate layered GIFs from asset-config-map.yaml
         run: |
