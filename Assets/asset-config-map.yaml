@@ -35,3 +35,8 @@ conversions:
     - input: ./StageDiagram/FullBand/StageDiagram.drawio
       output_dir: ./../../Assets/StageDiagram/FullBand/OrderedAssembly/
       frame_duration: 3000
+  markdown_pdf:
+    - input: ./Rider/Rider.md
+      output: ./Rider.pdf
+    - input: ./StageDiagram/FullBand/OrderedAssembly/README.md
+      output: ./../../../Assets/StageDiagram/FullBand/OrderedAssembly/OrderedAssemblyGuide.pdf
