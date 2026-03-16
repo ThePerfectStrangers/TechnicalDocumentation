@@ -21,7 +21,7 @@ The stage setup is completed in 11 sequential steps, building from the foundatio
 
 ## Step 1: Boundaries & Orientation
 
-![Step 1: Boundaries & Orientation](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_01.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_01.png" width="75%">
 
 Establish the stage boundaries and orientation. Mark the downstage edge and identify stage left/right positions. This provides the reference frame for all subsequent positioning.
 
@@ -29,7 +29,7 @@ Establish the stage boundaries and orientation. Mark the downstage edge and iden
 
 ## Step 2: Drum Rug
 
-![Step 2: Drum Rug](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_02.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_02.png" width="75%">
 
 Place the drum rug first as it anchors the entire setup. Position it according to stage markings to ensure proper alignment of the drum kit and surrounding equipment.
 
@@ -37,7 +37,7 @@ Place the drum rug first as it anchors the entire setup. Position it according t
 
 ## Step 3: Other Rugs
 
-![Step 3: Other Rugs](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_03.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_03.png" width="75%">
 
 Position additional rugs for other performers. These define the playing areas and help with cable management throughout the set.
 
@@ -45,7 +45,7 @@ Position additional rugs for other performers. These define the playing areas an
 
 ## Step 4: Speakers
 
-![Step 4: Speakers](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_04.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_04.png" width="75%">
 
 Place amplifiers and subwoofers. Position speakers before running cables to ensure optimal sound coverage and to avoid repositioning after cables are laid.
 
@@ -53,7 +53,7 @@ Place amplifiers and subwoofers. Position speakers before running cables to ensu
 
 ## Step 5: IEM Box + Amps
 
-![Step 5: IEM Box + Amps](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_05.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_05.png" width="75%">
 
 Set up the in-ear monitor (IEM) distribution system and guitar/bass amplifiers. This central hub should be positioned for easy access during soundcheck and performance.
 
@@ -61,7 +61,7 @@ Set up the in-ear monitor (IEM) distribution system and guitar/bass amplifiers. 
 
 ## Step 6: Drums
 
-![Step 6: Drums](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_06.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_06.png" width="75%">
 
 Assemble and position the drum kit on the drum rug. Complete the full kit setup including hardware, cymbals, and drums before moving to other stages.
 
@@ -69,7 +69,7 @@ Assemble and position the drum kit on the drum rug. Complete the full kit setup 
 
 ## Step 7: Mic Stands
 
-![Step 7: Mic Stands](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_07.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_07.png" width="75%">
 
 Position all microphone stands according to the stage plot. Set approximate heights and angles to expedite soundcheck.
 
@@ -77,7 +77,7 @@ Position all microphone stands according to the stage plot. Set approximate heig
 
 ## Step 8: Keyboards + Pedals + DIs
 
-![Step 8: Keyboards + Pedals](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_08.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_08.png" width="75%">
 
 Set up keyboard stands, place keyboards, and position associated pedals and DI boxes. Arrange pedals within comfortable reach of the keyboard player.
 
@@ -85,7 +85,7 @@ Set up keyboard stands, place keyboards, and position associated pedals and DI b
 
 ## Step 9: Cable Ramps
 
-![Step 9: Cable Ramps](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_09.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_09.png" width="75%">
 
 Install cable ramps at crossing points to protect cables and prevent tripping hazards. Place ramps before running final instrument cables.
 
@@ -93,7 +93,7 @@ Install cable ramps at crossing points to protect cables and prevent tripping ha
 
 ## Step 10: Snakes 
 
-![Step 10: Cables](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_10.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_10.png" width="75%">
 
 Run stage snakes from the mixing position to the stage. Route cables along designated paths, keeping them clear of performer positions where possible. Run all remaining cables including instrument cables, power cables, and monitor sends. Secure cables with appropriate strain relief and routing to minimize stage clutter.
 
@@ -101,7 +101,7 @@ Run stage snakes from the mixing position to the stage. Route cables along desig
 
 ## Step 11: Guitars
 
-![Step 11: Guitars](../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_11.png)
+<img src="../../../Assets/StageDiagram/FullBand/OrderedAssembly/Step_11.png" width="75%">
 
 Place guitar stands and position guitars in their designated locations. This is the final step as guitars are often the last items set up before soundcheck begins.
 
