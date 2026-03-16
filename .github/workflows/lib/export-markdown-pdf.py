@@ -47,7 +47,22 @@ def main():
     # Wrap in a minimal HTML document
     html_doc = f"""<!DOCTYPE html>
 <html>
-<head><meta charset="utf-8"></head>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @page {{
+      margin: 2cm;
+    }}
+    body {{
+      font-family: sans-serif;
+    }}
+    img {{
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }}
+  </style>
+</head>
 <body>
 {html_body}
 </body>
