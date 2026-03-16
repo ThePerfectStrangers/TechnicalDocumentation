@@ -4,7 +4,7 @@ This document outlines the recommended load-in sequence for The Perfect Stranger
 
 You can download the entire Stage Load-In Order guide here:
 
-<a id="raw-url" href="https://raw.githubusercontent.com/Assets/StageDiagram/FullBand/OrderedAssembly/OrderedAssemblyGuide.pdf">![Static Badge](https://img.shields.io/badge/PDF-Ordered_Assembly_Guide-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/OrderedAssembly/OrderedAssemblyGuide.pdf">![Static Badge](https://img.shields.io/badge/PDF-Ordered_Assembly_Guide-EC1C24?logo=adobeacrobatreader)
 </a>
 
 ## Overview
