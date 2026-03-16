@@ -1,4 +1,6 @@
-<img src="./Assets/Logo/Logo-16-9-W-B.png" width="50%" text-align="center">
+<p align="center">
+  <img src="./Assets/Logo/Logo-16-9-W-B.png" width="50%" text-align="center">
+</p>
 
 <!-- title: The Perfect Strangers - Technical Documentation -->
 # Technical Documentation <!-- omit from toc -->

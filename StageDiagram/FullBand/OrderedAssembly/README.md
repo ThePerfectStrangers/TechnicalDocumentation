@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../../../Assets/Logo/Logo-16-9-W-B.png" width="50%" text-align="center">
+</p>
+
 # Stage Load-In Order
 
 This document outlines the recommended load-in sequence for The Perfect Strangers full band setup. Following this order ensures efficient setup and minimizes the need to move equipment once placed.
