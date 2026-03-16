@@ -53,6 +53,10 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r .github/workflows/lib/requirements.txt
 
+      - name: Clean up existing generated files
+        run: |
+          rm -f Assets/StageDiagram/FullBand/OrderedAssembly/Step_*.png
+
       - name: Generate layered GIFs from asset-config-map.yaml
         run: |
           set -e
