@@ -61,6 +61,9 @@ def main():
       height: auto;
       display: block;
     }}
+    .no-pdf {{
+      display: none;
+    }}
   </style>
 </head>
 <body>

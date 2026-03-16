@@ -6,17 +6,22 @@
 
 This document outlines the recommended load-in sequence for The Perfect Strangers full band setup. Following this order ensures efficient setup and minimizes the need to move equipment once placed.
 
+<div class="no-pdf">
 You can download the entire Stage Load-In Order guide here:
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/OrderedAssembly/OrderedAssemblyGuide.pdf">![Static Badge](https://img.shields.io/badge/PDF-Ordered_Assembly_Guide-EC1C24?logo=adobeacrobatreader)
 </a>
+</div>
 
 ## Overview
 
 The stage setup is completed in 11 sequential steps, building from the foundation (background and rugs) to the final placement of instruments. Each step represents a layer in the stage diagram and corresponds to a specific phase of the load-in process.
 
+<div class="no-pdf">
+
 ![Ordered Stage Assembly](../../../Assets/StageDiagram/FullBand/OrderedAssembly/StageDiagram.gif)
 
+</div>
 ---
 
 ## Step 1: Boundaries & Orientation
