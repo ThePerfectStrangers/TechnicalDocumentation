@@ -5,7 +5,7 @@ on:
       - main
     paths:
       - 'Rider/Rider.md'
-      - '.github/workflows/rider-workflow.yml'
+      - '.github/workflows/markdown-to-pdf.yml'
   workflow_dispatch:
 
 jobs:
