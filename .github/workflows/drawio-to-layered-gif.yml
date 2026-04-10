@@ -71,14 +71,16 @@ jobs:
             input=$(echo "$line" | jq -r '.input')
             output_dir=$(echo "$line" | jq -r '.output_dir')
             frame_duration=$(echo "$line" | jq -r '.frame_duration // 1000')
+            gif=$(echo "$line" | jq -r '.gif // ""')
 
             echo "============================================"
             echo "Processing: $input"
             echo "Output dir config: $output_dir"
             echo "Frame duration: ${frame_duration}ms"
+            [ -n "$gif" ] && echo "GIF output config: $gif"
             echo "============================================"
 
-            # Resolve absolute paths (output_dir is relative to the input file's directory)
+            # Resolve absolute paths (output_dir and gif are relative to the input file's directory)
             input_abs=$(realpath "$input")
             input_dir_abs=$(dirname "$input_abs")
             output_dir_abs=$(cd "$input_dir_abs" && realpath -m "$output_dir")
@@ -86,8 +88,15 @@ jobs:
             echo "Absolute input: $input_abs"
             echo "Absolute output dir: $output_dir_abs"
 
+            python_args=("$input_abs" "$output_dir_abs" "$frame_duration")
+            if [ -n "$gif" ]; then
+              gif_abs=$(cd "$input_dir_abs" && realpath -m "$gif")
+              echo "Absolute GIF output: $gif_abs"
+              python_args+=("$gif_abs")
+            fi
+
             python .github/workflows/lib/export-drawio-layered-gif.py \
-              "$input_abs" "$output_dir_abs" "$frame_duration"
+              "${python_args[@]}"
           done
 
       - name: Commit files

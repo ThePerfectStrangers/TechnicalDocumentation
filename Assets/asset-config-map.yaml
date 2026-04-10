@@ -33,5 +33,11 @@ conversions:
       pdf: ./../../Assets/InputList/FullBand/The Perfect Strangers - Full Band Split Map.pdf
   drawio_layered_gif:
     - input: ./StageDiagram/FullBand/StageDiagram.drawio
-      output_dir: ./../../Assets/StageDiagram/FullBand/OrderedAssembly/
+      output_dir: ./../../Assets/StageDiagram/FullBand/StageAssembly/
+      gif: ./../../Assets/StageDiagram/FullBand/StageAssembly/StageAssembly.gif
       frame_duration: 3000
+  markdown_pdf:
+    - input: ./Rider/Rider.md
+      output: ./Rider.pdf
+    - input: ./StageDiagram/FullBand/StageAssembly/README.md
+      output: ./../../../Assets/StageDiagram/FullBand/StageAssembly/StageAssemblyGuide.pdf

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./Assets/Logo/Logo-16-9-W-B.png" width="50%" text-align="center">
+</p>
+
 <!-- title: The Perfect Strangers - Technical Documentation -->
 # Technical Documentation <!-- omit from toc -->
 
@@ -53,11 +57,12 @@ This is the general layout of the band. It includes the people, microphones, equ
 
 ![Full Band Stage Diagram](./Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png)
 
-<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf">![Static Badge](https://img.shields.io/badge/PDF-StageDiagram-EC1C24?logo=adobeacrobatreader)
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf">![Static Badge](https://img.shields.io/badge/PDF-Stage_Diagram-EC1C24?logo=adobeacrobatreader)
 </a>
 
 **Note:**  In a situation where the band is not in charge of the PA, the PA speakers located Downstage Right and Downstage Left should be omitted from consideration.
 
+[Click here](StageDiagram/FullBand/StageAssembly/README.md) to access the step-by-step stage assembly guide.
 
 # Input List
 
@@ -140,6 +145,6 @@ This is the status of the backing workflows that automate the creation of reposi
 
 [![Excel to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml)
 
-[![Rider Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/rider-workflow.yml)
+[![Markdown To PDF](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/markdown-to-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/markdown-to-pdf.yml)
 
 [![Draw.io Layered GIF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-layered-gif.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-layered-gif.yml)
