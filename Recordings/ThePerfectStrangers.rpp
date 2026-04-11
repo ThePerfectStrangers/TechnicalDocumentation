@@ -1,4 +1,4 @@
-<REAPER_PROJECT 0.1 "7.61/win64" 1773598464 0
+<REAPER_PROJECT 0.1 "7.68/win64" 1775944851 0
   AUTHOR "Chad Birch"
   <NOTES 0 2
   >
@@ -18,9 +18,9 @@
   TIMEMODE 1 5 -1 30 0 0 -1 0
   VIDEO_CONFIG 0 0 256
   PANMODE 3
-  CURSOR 0
-  ZOOM 2.01311346374652 0 0
-  VZOOMEX 2.75 1
+  CURSOR 9072
+  ZOOM 2.01311346374651 18011 0
+  VZOOMEX 3 0
   USE_REC_CFG 0
   RECMODE 1
   SMPTESYNC 0 30 100 40 1000 300 0 0 1 0 0
@@ -36,7 +36,7 @@
   RENDER_PATTERN "$year.$month.$day\$regionnumber - $region"
   RENDER_FMT 0 2 44100
   RENDER_1X 0
-  RENDER_RANGE 3 32 430 18 1000
+  RENDER_RANGE 7 32 430 18 1000
   RENDER_RESAMPLE 3 0 1
   RENDER_ADDTOPROJ 0
   RENDER_STEMS 0
@@ -67,8 +67,8 @@
   GLOBAL_AUTO -1
   TEMPO 120 4 4 0
   PLAYRATE 1 0 0.25 4
-  SELECTION 12596 12916
-  SELECTION2 12596 12916
+  SELECTION 10892 11656
+  SELECTION2 10892 11656
   MASTERAUTOMODE 0
   MASTERTRACKHEIGHT 0 0
   MASTERPEAKCOL 16576
@@ -134,6 +134,35 @@
     PT 2035581.048333334700 120.0000000000 1 262148 0 5 0 "" 0 169 0 ABBB
     PT 2035911.048333334700 120.0000000000 1
   >
+  RULERHEIGHT 86 86
+  RULERLANE 1 4 "" 0 -1
+  RULERLANE 2 8 "" 0 -1
+  MARKER 1 2100 "Who's Crying Now" 1 0 1 R {1D63FB9F-B8ED-40B0-BE63-5E8100656845} 0 1
+  MARKER 1 2352 "" 1
+  MARKER 2 3744 "Hotel California" 1 0 1 R {2AD659E2-69BE-41BD-B747-7E75A7DB6E89} 0 1
+  MARKER 2 4172 "" 1
+  MARKER 3 4292 "Hotel California" 1 0 1 R {9B03E240-6174-4BE7-B4CE-BBE46263CA6A} 0 1
+  MARKER 3 4736 "" 1
+  MARKER 4 5088 Heartbreaker 1 0 1 R {DA2A1A76-B2D1-48EF-8265-BEB22B2D0ACD} 0 1
+  MARKER 4 5320 "" 1
+  MARKER 5 5488 Heartbreaker 1 0 1 R {0C52B558-E6A3-4D45-B0B1-1240D7F2EFA4} 0 1
+  MARKER 5 5724 "" 1
+  MARKER 6 6172 "Brass in Pocket" 1 0 1 R {7EA88824-D5F5-46A4-B4A2-3BE84D03CE59} 0 1
+  MARKER 6 6372 "" 1
+  MARKER 7 6448 "Brass in Pocket" 1 0 1 R {0256065E-1486-4C90-A0AA-9A276105424A} 0 1
+  MARKER 7 6648 "" 1
+  MARKER 8 6776 "I'm the Only One" 1 0 1 R {A8050BC7-33B6-4404-BD93-BA3E925B9A96} 0 1
+  MARKER 8 7096 "" 1
+  MARKER 9 7256 "Me & Bobby McGee" 1 0 1 R {375E3FD4-0713-47D8-BD1A-53AE48CC26F4} 0 1
+  MARKER 9 7536 "" 1
+  MARKER 10 8204 "Going Down" 1 0 1 R {893E42E8-9B89-4525-8A32-C6F74969BF3E} 0 1
+  MARKER 10 8452 "" 1
+  MARKER 11 9072 "Going Down" 9 0 1 R {3E62C7B6-A8B8-43EF-B4C8-4036B54EF2AC} 0 1
+  MARKER 11 9364 "" 9
+  MARKER 12 10008 "Who's Crying Now" 1 0 1 R {D0F56A6E-A10C-4847-839E-7F7A6E58D8B0} 0 1
+  MARKER 12 10296 "" 1
+  MARKER 13 10892 "High Flyin' Dakylan" 1 0 1 R {25377000-E284-45ED-A9C9-9A052353804F} 0 1
+  MARKER 13 11656 "" 1
   <PROJBAY
   >
   <TRACK {3C538B4B-27C0-4D48-86A1-0E9382259824}
@@ -208,7 +237,7 @@
     BUSCOMP 0 0 0 0 0
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
     LANEREC -1 -1 -1 0
-    SEL 1
+    SEL 0
     REC 1 0 1 0 0 0 0 0
     VU 2
     TRACKHEIGHT 0 0 0 0 0 0 0
@@ -246,6 +275,52 @@
       FXID {0E278C29-6778-4F38-8C37-020B086EB8A7}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0186666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {A3902F61-90F4-4DA4-834F-70741D58B1E1}
+      IID 216
+      NAME "02-Chad - Vox-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {89137F96-67C2-4A10-A0AB-ABB21AE3760B}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\02-Chad - Vox-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0186666666668
+      SNAPOFFS 0
+      LENGTH 4697.8773333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F482CCD9-541F-43C2-B72B-A5E2DA15B402}
+      IID 217
+      NAME "02-Chad - Vox-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {81327096-533C-46BC-955A-CC3477B12F5A}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\02-Chad - Vox-260411_1550.wav"
+      >
+    >
   >
   <TRACK {A02E37E0-E92E-4C7B-87DA-0F9101CFA9E1}
     NAME "Billy - Vox"
@@ -278,6 +353,52 @@
       LASTSEL 0
       DOCKED 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0186666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C78A7F76-E160-4323-8E0B-6192FE78C9F0}
+      IID 218
+      NAME "03-Billy - Vox-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {31415CD7-F73B-4032-B22A-AEA9351609C7}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\03-Billy - Vox-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0186666666668
+      SNAPOFFS 0
+      LENGTH 4697.8773333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7E463CBE-1DBD-4481-810E-250A22F25B30}
+      IID 219
+      NAME "03-Billy - Vox-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {83F69564-35E3-40F0-B7B7-C0A1DCF42D59}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\03-Billy - Vox-260411_1550.wav"
+      >
+    >
   >
   <TRACK {D866E515-656E-43DE-BBB8-4BA6E1E51A9F}
     NAME "Mike - Vox"
@@ -285,7 +406,7 @@
     BEAT -1
     AUTOMODE 0
     PANLAWFLAGS 3
-    VOLPAN 1 0 -1 -1 1
+    VOLPAN 0.5942751695773 0 -1 -1 1
     MUTESOLO 0 0 0
     IPHASE 0
     PLAYOFFS 0 1
@@ -307,6 +428,52 @@
     MAINSEND 1 0
     HWOUT 1046 0 1 0 0 0 0 -1:U -1
     HWOUT 0 0 1 0 0 0 0 -1:U -1
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0186666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {EBC4D84E-6E2A-45F8-B312-27A23FB5629F}
+      IID 220
+      NAME "04-Mike - Vox-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {BEFBE126-B8D3-4878-91D4-F15C89CB0606}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\04-Mike - Vox-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0186666666668
+      SNAPOFFS 0
+      LENGTH 4697.8773333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CB8B13B8-BBAA-416E-BD08-30AC5325CAC6}
+      IID 221
+      NAME "04-Mike - Vox-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {17BC59E8-83C0-49AD-8806-1561F3CBB4A1}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\04-Mike - Vox-260411_1550.wav"
+      >
+    >
   >
   <TRACK {B258A26E-93B1-4AB2-8C9C-51FFFA8026E8}
     NAME "Jessica - Vox"
@@ -362,6 +529,52 @@
       FXID {CCE675E8-E6E8-4CFC-A3C7-2A2BEC9DEC71}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0186666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {EE51BF60-A117-451E-94D3-9239E6C25187}
+      IID 222
+      NAME "05-Jessica - Vox-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CE8C4DA8-FCFA-4172-A8CD-6272F00E877A}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\05-Jessica - Vox-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0186666666668
+      SNAPOFFS 0
+      LENGTH 4697.8773333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8892A05C-63DA-4A5C-BC86-717424B8025B}
+      IID 223
+      NAME "05-Jessica - Vox-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {EAFD3D4F-E754-4819-ACC8-B84B4535A50C}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\05-Jessica - Vox-260411_1550.wav"
+      >
+    >
   >
   <TRACK {9854E06B-64D3-41AF-B9F1-85E6453269AE}
     NAME "Paul - Vox"
@@ -404,6 +617,52 @@
       FLOATPOS 1360 99 525 414
       FXID {3B588A56-CE6F-4CAE-868A-EF85762DBD2D}
       WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0293333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4CA17FBE-698C-4C04-B7CB-1E8E3610DE84}
+      IID 224
+      NAME "06-Paul - Vox-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C035E65B-FAD8-4D97-95C8-67509423D47D}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\06-Paul - Vox-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0293333333329
+      SNAPOFFS 0
+      LENGTH 4697.8666666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B3AB32C3-6A3B-4339-A3DD-B0F83DB283EA}
+      IID 225
+      NAME "06-Paul - Vox-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DDAC3DED-2F5E-4167-ADF0-24506579522E}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\06-Paul - Vox-260411_1550.wav"
+      >
     >
   >
   <TRACK {1BA09E98-4183-4930-9964-B5EB9807172B}
@@ -448,6 +707,52 @@
       FXID {21C8C8E3-45EF-40B1-9789-C33005FDE59E}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0293333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C0649ED6-1F56-469B-A00A-6D700CB704F2}
+      IID 226
+      NAME "07-Kenzi - Vox-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F958A5F3-BAA2-4ED7-B9EC-97CD072CA1EE}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\07-Kenzi - Vox-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0293333333329
+      SNAPOFFS 0
+      LENGTH 4697.8666666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7DA6B966-D203-4781-AF6A-E602542A9086}
+      IID 227
+      NAME "07-Kenzi - Vox-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A28777A4-6B17-4B1D-A42B-E6843DD2A815}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\07-Kenzi - Vox-260411_1550.wav"
+      >
+    >
   >
   <TRACK {79E8FAFE-E23E-4DE7-B6C6-C94B137D0775}
     NAME "Guest - Vox"
@@ -477,6 +782,52 @@
     MAINSEND 1 0
     HWOUT 1055 0 1 0 0 0 0 -1:U -1
     HWOUT 0 0 1 0 0 0 0 -1:U -1
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0293333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D58FF572-C000-49C3-B598-385557AEBF0C}
+      IID 228
+      NAME "08-Guest - Vox-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {7E610B35-942A-4AF2-AD72-7546E45B4CD6}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\08-Guest - Vox-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0293333333329
+      SNAPOFFS 0
+      LENGTH 4697.8666666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DB2F23BC-3987-4DAB-9122-51E802C92592}
+      IID 229
+      NAME "08-Guest - Vox-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CDF7C0D3-524E-4BD6-9BC7-A7FBC54C9637}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\08-Guest - Vox-260411_1550.wav"
+      >
+    >
   >
   <TRACK {5BA726A7-1645-45E0-A18E-39AB6F27FA39}
     NAME Instruments
@@ -492,7 +843,7 @@
     SHOWINMIX 1 0.6667 0.5 1 0.5 0 0 0 0
     FIXEDLANES 9 0 0 0 0
     LANEREC -1 -1 -1 0
-    SEL 0
+    SEL 1
     REC 1 -1 1 0 0 0 0 0
     VU 2
     SPACER 1
@@ -553,6 +904,52 @@
       FXID {C87DBB62-9C5A-4AF4-A98A-4E8071AFCBA1}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0293333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C755671D-C026-4314-BE7C-10E64B50D3EB}
+      IID 230
+      NAME "10-Billy - Bass-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {393A601F-A7AE-4FAA-9407-77631B5A52E3}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\10-Billy - Bass-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0293333333329
+      SNAPOFFS 0
+      LENGTH 4697.8666666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1564B0F2-9B83-4477-85F5-39E03A34CCFD}
+      IID 231
+      NAME "10-Billy - Bass-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {10C68004-0D28-4B60-9D1B-01405560F514}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\10-Billy - Bass-260411_1550.wav"
+      >
+    >
   >
   <TRACK {83228557-D499-4B02-811D-6E714F8A7428}
     NAME "Paul - Vox"
@@ -600,6 +997,52 @@
       FXID {97F93C9B-E7EC-4769-8334-5A6677936CE6}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0293333333329
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CE2B3EED-F4DD-4CA2-84CF-1B840817A36D}
+      IID 232
+      NAME "11-Paul - Vox-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {39B556B9-757F-4A45-B9E0-808ABC6A4B12}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\11-Paul - Vox-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0293333333329
+      SNAPOFFS 0
+      LENGTH 4697.8666666666668
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E78B9130-D49B-4BFA-8138-5D01B2FDF7B4}
+      IID 233
+      NAME "11-Paul - Vox-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {40F6783E-8F38-48C0-BBC0-696DE51A7DD1}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\11-Paul - Vox-260411_1550.wav"
+      >
+    >
   >
   <TRACK {93DC14B5-83E0-4944-9AAF-8DEF370AA3AD}
     NAME "Paul - Fender"
@@ -645,6 +1088,52 @@
       FLOATPOS 1944 52 525 414
       FXID {D8B5BF4B-E6BB-4C0A-AFE9-904BFE325060}
       WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.04
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B5DC2D82-20DA-4321-BC2E-526E21137810}
+      IID 234
+      NAME "12-Paul - Fender-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {94D03118-7499-4002-A86D-ED9E7E6F4F18}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\12-Paul - Fender-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.04
+      SNAPOFFS 0
+      LENGTH 4697.856
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {47B1D465-9B39-4009-A77C-188BA6D917E3}
+      IID 235
+      NAME "12-Paul - Fender-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {4BB6DBCD-B63A-4708-8478-1937CFA28B5F}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\12-Paul - Fender-260411_1550.wav"
+      >
     >
   >
   <TRACK {FD75BA66-04DD-4195-B7A2-1F304FB5B7CE}
@@ -693,6 +1182,52 @@
       FXID {6C2366E1-233D-4822-8FF9-3FF0D7330A4D}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.04
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CB4D5634-7A4D-4C0B-844E-F91EF1364E0A}
+      IID 236
+      NAME "13-Paul - Acoustic-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1084B504-4D36-4CD4-AD55-5150326C1642}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\13-Paul - Acoustic-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.04
+      SNAPOFFS 0
+      LENGTH 4697.856
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {CCABAFF7-AFA9-4CF4-BAF9-1BFA7DF88D37}
+      IID 237
+      NAME "13-Paul - Acoustic-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {50FBC85B-1F4D-46AD-82BA-A26B08CC01E4}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\13-Paul - Acoustic-260411_1550.wav"
+      >
+    >
   >
   <TRACK {70A1448E-33BE-4325-A988-3128A2D15E80}
     NAME "Mike - Amp 1"
@@ -740,6 +1275,52 @@
       FXID {9D754C80-BF8E-4BC4-9CB5-04E4F880455E}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.04
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {699B3420-5F38-4080-9136-47B612F7E2C1}
+      IID 238
+      NAME "14-Mike - Amp 1-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F4A86DBF-1A92-4365-8725-502A94FD1065}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\14-Mike - Amp 1-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.04
+      SNAPOFFS 0
+      LENGTH 4697.856
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3FC39B3F-73DA-4132-A325-7BD41068D617}
+      IID 239
+      NAME "14-Mike - Amp 1-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {1DF95F5E-F859-40BC-B17D-C9463A717935}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\14-Mike - Amp 1-260411_1550.wav"
+      >
+    >
   >
   <TRACK {43DEF89C-6DAD-4A18-ACD9-5F81559DBA53}
     NAME "Mike - Amp 2"
@@ -785,6 +1366,52 @@
       FLOATPOS 0 0 0 0
       FXID {9FE614B0-31AB-4D19-BBBD-F9D36A650087}
       WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.04
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B336307A-64C5-49BA-95D5-F040B275C939}
+      IID 240
+      NAME "15-Mike - Amp 2-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F4F9AB8B-C1C8-4DF6-A8A5-C88247B5370E}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\15-Mike - Amp 2-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.04
+      SNAPOFFS 0
+      LENGTH 4697.856
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {1D79488D-3E27-48D6-9300-067230D1B3B7}
+      IID 241
+      NAME "15-Mike - Amp 2-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5BCEA9FD-3C5F-4604-B3E3-186F993EBC41}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\15-Mike - Amp 2-260411_1550.wav"
+      >
     >
   >
   <TRACK {CB136864-2001-4099-8D6E-0B8EED6BC582}
@@ -832,6 +1459,52 @@
       FXID {827D7573-B03B-4E32-9CBA-650B28AA41AD}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.050666666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {7B8AB832-D4F2-4BC4-87EC-6B07199AEF51}
+      IID 242
+      NAME "16-Mike - Acoustic-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F2D86191-B754-4BE7-BF79-3AA15370BD52}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\16-Mike - Acoustic-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.050666666667
+      SNAPOFFS 0
+      LENGTH 4697.8453333333337
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {716273F1-7C42-4592-9F10-B1D585908FBE}
+      IID 243
+      NAME "16-Mike - Acoustic-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6DDF87AB-9738-4D2E-B989-5E26D78E0484}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\16-Mike - Acoustic-260411_1550.wav"
+      >
+    >
   >
   <TRACK {7BA3A5EC-B22B-4D5E-B326-0E283187A4E8}
     NAME Piano
@@ -876,6 +1549,52 @@
       FXID {BF509C61-A53A-474F-B959-62E3446CAAF8}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.050666666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {EEA347C1-5A4C-45A6-970D-4EB8177825EA}
+      IID 244
+      NAME 17-Piano-260411_1346.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {78F23DEB-9AEC-4DFD-9536-31429CA57A45}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\17-Piano-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.050666666667
+      SNAPOFFS 0
+      LENGTH 4697.8453333333337
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {910EDC05-8DB9-451D-BA7E-5EAD044D4CA0}
+      IID 245
+      NAME 17-Piano-260411_1550.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5D302B8E-1290-4945-853D-ACFFD7DC4D3D}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\17-Piano-260411_1550.wav"
+      >
+    >
   >
   <TRACK {C35B0E90-3117-458D-AD35-BED830FDC347}
     NAME Keyboard
@@ -919,6 +1638,52 @@
       FXID {472BBFC3-B68C-4EF0-8CF5-1384125D57F0}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.050666666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {2EDB073B-31DA-4DFF-A78B-E35571790CE2}
+      IID 246
+      NAME 18-Keyboard-260411_1346.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {871F9349-0B14-4627-8375-FECB4B3FCEC0}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\18-Keyboard-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.050666666667
+      SNAPOFFS 0
+      LENGTH 4697.8453333333337
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8F1B51EB-47D5-4E5C-BEB9-58CD35FF658F}
+      IID 247
+      NAME 18-Keyboard-260411_1550.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A4E7B9A2-AE01-4F15-A702-558E813BA904}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\18-Keyboard-260411_1550.wav"
+      >
+    >
   >
   <TRACK {96C7FF97-7B61-49C1-BBEA-7719F95A2679}
     NAME "Kenzi - Acoustic"
@@ -950,6 +1715,52 @@
       SHOW 0
       LASTSEL 0
       DOCKED 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.050666666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {8742D2B3-E32E-4533-A813-DDEFC4659B6B}
+      IID 248
+      NAME "19-Kenzi - Acoustic-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DDB605F6-79BB-4FF1-9532-D38492F06AD9}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\19-Kenzi - Acoustic-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.050666666667
+      SNAPOFFS 0
+      LENGTH 4697.8453333333337
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {697114B1-5B32-4C6B-BBD1-4F926975466A}
+      IID 249
+      NAME "19-Kenzi - Acoustic-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {237AF003-5B2E-4D8A-AFA8-8B39CC9345E9}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\19-Kenzi - Acoustic-260411_1550.wav"
+      >
     >
   >
   <TRACK {0E8C296B-F3D3-41D5-B03D-642436AAB1B9}
@@ -1040,6 +1851,52 @@
       FXID {A15B4BE1-32BD-420A-8454-6846D55F5AD9}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.050666666667
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {6D42284B-1D95-4CF0-99A8-6DDDC6342348}
+      IID 250
+      NAME 21-Kick-260411_1346.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {DB06188E-98D3-4B4C-A69C-AD241BFD77F8}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\21-Kick-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.050666666667
+      SNAPOFFS 0
+      LENGTH 4697.8453333333337
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4286F300-701C-4C91-B543-C4BB92F0289D}
+      IID 251
+      NAME 21-Kick-260411_1550.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F5E1DBDA-48A3-4B71-B44B-1C9D21B84C8E}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\21-Kick-260411_1550.wav"
+      >
+    >
   >
   <TRACK {5DD1B73C-0AD0-4BD7-BF05-FE42CD6B5EC4}
     NAME Snare
@@ -1085,6 +1942,52 @@
       FLOATPOS 1944 52 525 414
       FXID {35D228ED-B08A-4B3A-9129-219ADDCF5421}
       WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0613333333331
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4F985195-1652-4EC4-AE2D-F35F7DD1A6DC}
+      IID 252
+      NAME 22-Snare-260411_1346.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {A190E2ED-94CE-445B-978B-6A7214F9E927}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\22-Snare-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0613333333331
+      SNAPOFFS 0
+      LENGTH 4697.8346666666666
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {449F8A26-23FE-4E94-B3BE-644875558DC3}
+      IID 253
+      NAME 22-Snare-260411_1550.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {98129A37-2E13-4B63-AF25-ED973E7D701E}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\22-Snare-260411_1550.wav"
+      >
     >
   >
   <TRACK {AF562FDA-CAF9-4312-AD07-D727C09860AA}
@@ -1132,6 +2035,52 @@
       FXID {8A3DF851-C15A-4504-A66F-51D00F683A69}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0613333333331
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {22577BA7-193E-451D-A2D6-DDB6AE21063C}
+      IID 254
+      NAME 23-Hi-Hat-260411_1346.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {8919150D-A1E2-48B9-8571-2A70A31E2695}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\23-Hi-Hat-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0613333333331
+      SNAPOFFS 0
+      LENGTH 4697.8346666666666
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {372AA4EA-B98C-47A1-AD7A-80724590080E}
+      IID 255
+      NAME 23-Hi-Hat-260411_1550.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {10E156D4-8959-4CB8-837D-18D3661F55CF}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\23-Hi-Hat-260411_1550.wav"
+      >
+    >
   >
   <TRACK {A18F6E0E-2D55-4715-94A1-1D6EF1E8DD11}
     NAME "Tom 1"
@@ -1177,6 +2126,52 @@
       FLOATPOS 1944 52 525 414
       FXID {C5CCED6F-19CA-4E70-890C-E8962825BBF2}
       WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0613333333331
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {28A91C55-00E7-4989-98BA-E9BB2F5BA87F}
+      IID 256
+      NAME "24-Tom 1-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3FB8FC60-EA57-4893-9410-85F176024824}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\24-Tom 1-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0613333333331
+      SNAPOFFS 0
+      LENGTH 4697.8346666666666
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5232A893-317E-4AE6-AC40-1341CBCBF3E1}
+      IID 257
+      NAME "24-Tom 1-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {15E12509-BBF1-4DF7-94F9-2E8942C9E50B}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\24-Tom 1-260411_1550.wav"
+      >
     >
   >
   <TRACK {0A498D99-D9FD-464A-8CDE-2A97A433E595}
@@ -1224,6 +2219,52 @@
       FXID {2A0868A6-A980-495F-B3B3-5834F74EAA46}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0613333333331
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {13E20FED-8E5B-45D0-9FD3-681615039FFA}
+      IID 258
+      NAME "25-Tom 2-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F03BD204-223F-4E6F-9DA3-15286B50CF87}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\25-Tom 2-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0613333333331
+      SNAPOFFS 0
+      LENGTH 4697.8346666666666
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DAA24FD9-B98B-4D00-9E5F-276BAFC3289D}
+      IID 259
+      NAME "25-Tom 2-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {515C3667-D5BA-4BF4-A8D5-4CE3E23F8A93}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\25-Tom 2-260411_1550.wav"
+      >
+    >
   >
   <TRACK {A7577919-8318-4A54-8E0B-A32E356927F1}
     NAME "Tom 3"
@@ -1269,6 +2310,52 @@
       FLOATPOS 1944 52 525 414
       FXID {B84E8850-5599-4A67-9F5F-862A53834E4E}
       WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.072
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {511BE8BF-EEA5-4F8E-951F-D67855C32699}
+      IID 260
+      NAME "26-Tom 3-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F0F84C2A-DE82-4433-9088-91CDF55EA410}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\26-Tom 3-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.072
+      SNAPOFFS 0
+      LENGTH 4697.824
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {E2388E0C-F431-4E23-943D-03E0FA7C6A41}
+      IID 261
+      NAME "26-Tom 3-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {627CC89E-F43C-4112-8FBB-E9AC5844D272}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\26-Tom 3-260411_1550.wav"
+      >
     >
   >
   <TRACK {87069307-1D1A-4517-99DB-D0FFF93476BD}
@@ -1325,6 +2412,52 @@
       FXID {CB4F1B9F-1B6D-42C6-BD06-749C533E3A11}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.072
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {5C409261-0FB8-491E-A1EC-9AB9A1E0D4FB}
+      IID 262
+      NAME "27-Tom 4-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {CD1022A8-A612-44BC-A4C8-BF49BD1FDEE0}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\27-Tom 4-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.072
+      SNAPOFFS 0
+      LENGTH 4697.824
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DD003D06-25CF-47BD-BD8C-EDEA5F049203}
+      IID 263
+      NAME "27-Tom 4-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {9A0522A0-7B3A-476D-AA5A-A83ECA5FC67E}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\27-Tom 4-260411_1550.wav"
+      >
+    >
   >
   <TRACK {501EF613-7E4A-43A7-BAA7-F9F78FB71877}
     NAME "Overhead Ride"
@@ -1371,6 +2504,52 @@
       FXID {1E83272E-B3F3-4C9C-966C-332F35F00D08}
       WAK 0 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.072
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {C83AC0E5-9DCE-4B0E-AB13-54094F8D2487}
+      IID 264
+      NAME "28-Overhead Ride-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {263BD302-D142-4AAB-A762-4251119DCF18}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\28-Overhead Ride-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.072
+      SNAPOFFS 0
+      LENGTH 4697.824
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {ECD8D279-27C5-4CEC-8B5C-B967F84836DF}
+      IID 265
+      NAME "28-Overhead Ride-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {D910DB83-EC34-46F7-B4C1-81B3F5B0C570}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\28-Overhead Ride-260411_1550.wav"
+      >
+    >
   >
   <TRACK {D7FA31CE-8263-4B15-B3EF-9CF2CA9D3427}
     NAME "Overhead Hi-Hat"
@@ -1416,6 +2595,52 @@
       FLOATPOS 1944 52 525 414
       FXID {80DCA239-5717-4136-B9C7-487248A051D9}
       WAK 0 0
+    >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.072
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {35A72F65-7984-42B0-A901-30358F0F98B4}
+      IID 266
+      NAME "29-Overhead Hi-Hat-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F99FD363-AF48-4C5A-9AA7-8CD0C41E5B05}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\29-Overhead Hi-Hat-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.072
+      SNAPOFFS 0
+      LENGTH 4697.824
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {37120B9A-C7E7-4802-9F7A-8B39B45466CE}
+      IID 267
+      NAME "29-Overhead Hi-Hat-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {6F55AFD7-E188-42BA-A4AE-03C0521A3113}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\29-Overhead Hi-Hat-260411_1550.wav"
+      >
     >
   >
   <TRACK {02B7D6B7-8B79-438F-97ED-B377159D95D0}
@@ -1483,6 +2708,98 @@
       LASTSEL 0
       DOCKED 0
     >
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 3728.3893333333335
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D5BADE19-A8DA-4130-A5A9-7CE801EE4194}
+      IID 268
+      NAME "31-Bluetooth Music-260411_1346.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {F1C8CBAF-C032-4100-ACD6-12DEF3465CAF}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\31-Bluetooth Music-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 3728.3893333333335
+      SNAPOFFS 0
+      LENGTH 3728.6933333333332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {4FEEFC09-8D76-4100-A8E1-0E133D15DDEA}
+      IID 269
+      NAME "31-Bluetooth Music-260411_1448.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E34ADDF9-5A89-4F73-B15C-4AF4F1CFA11B}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\31-Bluetooth Music-260411_1448.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0826666666662
+      SNAPOFFS 0
+      LENGTH 3728.7253333333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D5789E45-79A1-4EC1-BAAF-74BE2A8A9E19}
+      IID 270
+      NAME "31-Bluetooth Music-260411_1550.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {56D37311-1ECD-4BFF-907F-970EA26A9F34}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\31-Bluetooth Music-260411_1550.wav"
+      >
+    >
+    <ITEM
+      POSITION 11185.808000000001
+      SNAPOFFS 0
+      LENGTH 969.088
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {F1FE7263-7353-4099-A8AC-3A8DCECDB29C}
+      IID 271
+      NAME "31-Bluetooth Music-260411_1652.wav"
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {AE1C4572-26D7-4BB5-8188-6E21655F6571}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\31-Bluetooth Music-260411_1652.wav"
+      >
+    >
   >
   <TRACK {03CDD0AF-D5D3-4EA9-9857-028CE915B462}
     NAME Crowd
@@ -1511,6 +2828,98 @@
     MIDIOUT -1
     MAINSEND 1 0
     HWOUT 0 0 1 0 0 0 0 -1:U -1
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 3728.3893333333335
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {BE4FE8D4-083B-4626-8224-A7F8AB5BC573}
+      IID 272
+      NAME 32-Crowd-260411_1346.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {E4C99883-8342-470D-98B3-6CCFD6E868CF}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\32-Crowd-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 3728.3893333333335
+      SNAPOFFS 0
+      LENGTH 3728.6933333333332
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {3C4720D2-31E8-44FD-AA36-92989B9C3A2C}
+      IID 273
+      NAME 32-Crowd-260411_1448.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {5355C0D7-9FB1-49C4-A8AE-5185BE745E22}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\32-Crowd-260411_1448.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0826666666662
+      SNAPOFFS 0
+      LENGTH 3728.7253333333333
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {10EC7703-5823-48F6-99BD-CC06560EADBC}
+      IID 274
+      NAME 32-Crowd-260411_1550.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {3291864B-C6D9-4073-BFDF-C42991B0E7A4}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\32-Crowd-260411_1550.wav"
+      >
+    >
+    <ITEM
+      POSITION 11185.808000000001
+      SNAPOFFS 0
+      LENGTH 969.088
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {DBE1D402-B23C-491C-BB03-C8D7E77C2235}
+      IID 275
+      NAME 32-Crowd-260411_1652.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {2EDDFD74-413A-49EB-88EC-41E2AE6D77B7}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\32-Crowd-260411_1652.wav"
+      >
+    >
   >
   <TRACK {A9DD1B6C-8CDD-41C7-A839-E9E696FD26DC}
     NAME Talkback
@@ -1542,6 +2951,52 @@
     HWOUT 32 0 1 0 0 0 0 -1:U -1
     HWOUT 33 0 1 0 0 0 0 -1:U -1
     HWOUT 0 0 1 0 0 0 0 -1:U -1
+    <ITEM
+      POSITION 0
+      SNAPOFFS 0
+      LENGTH 7457.0826666666662
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0.01 0 1 0 0 0
+      FADEOUT 1 0 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {B9DC025E-F303-4E7F-80A0-156CED0455CE}
+      IID 276
+      NAME 33-Talkback-260411_1346.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {652A1021-FCF9-4411-8392-BA8068AD151E}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\33-Talkback-260411_1346.wav"
+      >
+    >
+    <ITEM
+      POSITION 7457.0826666666662
+      SNAPOFFS 0
+      LENGTH 4697.8133333333335
+      LOOP 1
+      ALLTAKES 0
+      FADEIN 1 0 0 1 0 0 0
+      FADEOUT 1 0.01 0 1 0 0 0
+      MUTE 0 0
+      SEL 0
+      IGUID {D7187DA7-D867-4D1F-BC9F-77CBA435C1EE}
+      IID 277
+      NAME 33-Talkback-260411_1550.wav
+      VOLPAN 1 0 1 -1
+      SOFFS 0
+      PLAYRATE 1 1 0 -1 0 0.0025
+      CHANMODE 0
+      GUID {C4CC825A-F60F-43A5-8C40-0322E50ECAFD}
+      RECPASS 6
+      <SOURCE WAVE
+        FILE "F:\OneDrive\Bands\The Perfect Strangers\Recordings\Working Session\Tracks\33-Talkback-260411_1550.wav"
+      >
+    >
   >
   <EXTENSIONS
     <SWSAUTOCOLOR
