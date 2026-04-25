@@ -72,7 +72,7 @@ This is a list of inputs needed by the band. It includes:
   * If 48V Phantom Power is required
   * Other notes related to the input channel
 
-48V phantom power and gain control are managed on stage by the band's IEM mixing rig. All channels are targetd for a gain of -18.5. A split is used to send a line-level signal to FOH. More information can be found below regarding the split.
+48V phantom power and gain control are managed on stage by the band's IEM mixing rig. All channels are targeted for a gain of -18.5. A split is used to send a line-level signal to FOH. More information can be found below regarding the split.
 
 ## Full Band
 

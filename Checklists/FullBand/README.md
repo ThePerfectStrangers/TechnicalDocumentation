@@ -17,7 +17,7 @@
 - [ ] Percussion Equipment Box
   - [ ] Red Shaker
   - [ ] Blue Shaker
-  - [ ] Yelllow Shaker
+  - [ ] Yellow Shaker
   - [ ] Guiro
   - [ ] Cowbell
   - [ ] Drum Stick
