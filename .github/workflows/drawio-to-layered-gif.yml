@@ -19,7 +19,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: drawio-layered-gif
+  group: repo-commit
   cancel-in-progress: false
 
 jobs:

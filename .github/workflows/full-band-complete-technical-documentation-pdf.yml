@@ -19,6 +19,10 @@ env:
   ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF: '' # These will get set in a later step
   ABSOLUTE_PATH_TO_INPUT_LIST_PDF: '' # These will get set in a later step
 
+concurrency:
+  group: repo-commit
+  cancel-in-progress: false
+
 jobs:
   on-success:
     name: Merge PDFs

@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: drawio-export
+  group: repo-commit
   cancel-in-progress: false
 
 jobs:

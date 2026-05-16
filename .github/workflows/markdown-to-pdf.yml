@@ -21,7 +21,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: markdown-to-pdf
+  group: repo-commit
   cancel-in-progress: false
 
 jobs:
