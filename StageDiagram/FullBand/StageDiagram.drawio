@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" version="29.6.1">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0">
   <diagram name="Stage Diagram" id="rK8sP8XB6P-i0ZL2sLej">
-    <mxGraphModel dx="2020" dy="1114" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1825" dy="1020" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" value="1. Background" />
@@ -45,12 +45,12 @@
         </mxCell>
         <object label="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;&amp;nbsp;%date{yyyy-mm-dd}%&lt;/b&gt;&lt;/span&gt;" placeholders="1" id="gMmdd4p3Cz0ONS5ggtzc-1">
           <mxCell connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=none;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry x="1030.996653398667" y="831.0042316197382" as="geometry" />
+            <mxGeometry x="1009.9966533986669" y="831.0042316197382" as="geometry" />
           </mxCell>
         </object>
         <object label="&lt;span style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Date Updated:&lt;/b&gt;&lt;/span&gt;" placeholders="1" id="gMmdd4p3Cz0ONS5ggtzc-2">
           <mxCell connectable="0" parent="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBorderColor=none;labelBackgroundColor=none;" vertex="1">
-            <mxGeometry x="877.6466533986669" y="831.0042316197382" as="geometry" />
+            <mxGeometry x="865.6466533986669" y="831.0042316197382" as="geometry" />
           </mxCell>
         </object>
         <mxCell id="9wGHMmDusLpBEDEfmosd-2" connectable="0" parent="1" style="group" value="" vertex="1">
