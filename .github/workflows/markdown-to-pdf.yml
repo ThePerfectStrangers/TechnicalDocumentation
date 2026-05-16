@@ -74,8 +74,12 @@ jobs:
               "$input_abs" "$output_abs"
           done
 
-      - name: Rebase on latest remote changes before committing
-        run: git pull --rebase --autostash origin ${{ github.ref_name }}
+      - name: Sync with latest remote changes before committing
+        run: |
+          git fetch origin
+          git stash
+          git reset --hard origin/${{ github.ref_name }}
+          git stash pop
 
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v7
@@ -85,3 +89,5 @@ jobs:
           commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
           commit_author: ${{ vars.COMMIT_AUTHOR }}
           file_pattern: '**/*.pdf'
+          skip_fetch: true
+          skip_checkout: true
