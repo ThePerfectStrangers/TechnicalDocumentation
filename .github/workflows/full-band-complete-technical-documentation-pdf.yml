@@ -20,8 +20,8 @@ env:
   ABSOLUTE_PATH_TO_INPUT_LIST_PDF: '' # These will get set in a later step
 
 concurrency:
-  group: repo-commit
-  cancel-in-progress: false
+  group: complete-technical-documentation
+  cancel-in-progress: true
 
 jobs:
   on-success:
