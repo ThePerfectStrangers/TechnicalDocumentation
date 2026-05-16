@@ -19,7 +19,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: repo-commit
+  group: drawio-layered-gif
   cancel-in-progress: false
 
 jobs:
@@ -99,6 +99,11 @@ jobs:
               "${python_args[@]}"
           done
 
+      - name: Rebase on latest remote changes before committing
+        run: |
+          git fetch origin
+          git rebase origin/${{ github.ref_name }}
+
       - name: Commit files
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
@@ -107,4 +112,3 @@ jobs:
           commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
           commit_author: ${{ vars.COMMIT_AUTHOR }}
           file_pattern: 'Assets/**'
-          push_options: '--force'
