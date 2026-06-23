@@ -279,8 +279,8 @@
             "mute": false,
             "pol": false,
             "col": 5,
-            "name": "Hi-Hat",
-            "icon": 205,
+            "name": "Aux",
+            "icon": 213,
             "tags": "",
             "rmt": "OFF",
             "rcvc": false
@@ -2817,8 +2817,8 @@
             "mute": false,
             "pol": false,
             "col": 5,
-            "name": "Hi-Hat",
-            "icon": 205,
+            "name": "Aux",
+            "icon": 213,
             "tags": ""
           },
           "6": {
@@ -8193,7 +8193,7 @@
             "dlyon": false
           },
           "conn": {
-            "grp": "LCL",
+            "grp": "USB",
             "in": 5,
             "altgrp": "USB",
             "altin": 5
