@@ -45,7 +45,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
-      - uses: dorny/paths-filter@v3
+      - uses: dorny/paths-filter@v4
         id: filter
         with:
           filters: |
@@ -202,7 +202,7 @@ jobs:
 
       - name: Upload Excel exports as artifact
         if: steps.collect.outputs.has_files == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: exports-excel
           path: ${{ runner.temp }}/exports/
@@ -295,7 +295,7 @@ jobs:
 
       - name: Upload Draw.io exports as artifact
         if: steps.collect.outputs.has_files == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: exports-drawio
           path: ${{ runner.temp }}/exports/
@@ -394,7 +394,7 @@ jobs:
 
       - name: Upload GIF exports as artifact
         if: steps.collect.outputs.has_files == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: exports-drawio-gif
           path: ${{ runner.temp }}/exports/
@@ -466,7 +466,7 @@ jobs:
 
       - name: Upload Markdown exports as artifact
         if: steps.collect.outputs.has_files == 'true'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: exports-markdown
           path: ${{ runner.temp }}/exports/
@@ -496,7 +496,7 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Download all conversion artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           pattern: exports-*
           path: ${{ github.workspace }}
