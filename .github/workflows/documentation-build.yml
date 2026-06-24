@@ -1,0 +1,535 @@
+name: Documentation Build
+
+on:
+  push:
+    paths:
+      - '**/*.xlsx'
+      - '**/*.drawio'
+      - 'Rider/Rider.md'
+      - 'StageDiagram/FullBand/StageAssembly/README.md'
+      - 'Assets/asset-config-map.yaml'
+      - '.github/workflows/documentation-build.yml'
+      - '.github/workflows/lib/**'
+  pull_request:
+    paths:
+      - '**/*.xlsx'
+      - '**/*.drawio'
+      - 'Rider/Rider.md'
+      - 'StageDiagram/FullBand/StageAssembly/README.md'
+      - 'Assets/asset-config-map.yaml'
+      - '.github/workflows/documentation-build.yml'
+      - '.github/workflows/lib/**'
+  workflow_dispatch:
+
+concurrency:
+  group: documentation-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Determine which source categories changed so downstream jobs can skip.
+  # On workflow_dispatch there are no changed files; each downstream job
+  # handles that with an explicit  || github.event_name == 'workflow_dispatch'
+  # guard.
+  # ─────────────────────────────────────────────────────────────────────────
+  check-changes:
+    name: Detect Changed Files
+    runs-on: ubuntu-latest
+    outputs:
+      excel:      ${{ steps.filter.outputs.excel }}
+      drawio:     ${{ steps.filter.outputs.drawio }}
+      drawio-gif: ${{ steps.filter.outputs.drawio-gif }}
+      markdown:   ${{ steps.filter.outputs.markdown }}
+      workflow:   ${{ steps.filter.outputs.workflow }}
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            excel:
+              - '**/*.xlsx'
+              - 'Assets/asset-config-map.yaml'
+              - '.github/workflows/lib/export-png.py'
+              - '.github/workflows/lib/export-pdf.py'
+            drawio:
+              - '**/*.drawio'
+              - 'Assets/asset-config-map.yaml'
+            drawio-gif:
+              - '**/*.drawio'
+              - 'Assets/asset-config-map.yaml'
+              - '.github/workflows/lib/export-drawio-layered-gif.py'
+            markdown:
+              - 'Rider/Rider.md'
+              - 'StageDiagram/FullBand/StageAssembly/README.md'
+              - 'Assets/asset-config-map.yaml'
+              - '.github/workflows/lib/export-markdown-pdf.py'
+            workflow:
+              - '.github/workflows/documentation-build.yml'
+              - '.github/workflows/lib/**'
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Excel → PNG & PDF   (requires Windows + Microsoft Office)
+  # ─────────────────────────────────────────────────────────────────────────
+  excel-export:
+    name: Excel to PNG & PDF
+    needs: check-changes
+    if: needs.check-changes.outputs.excel == 'true' || needs.check-changes.outputs.workflow == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install Office
+        run: choco install office365business --params "'/productid:O365HomePremRetail /exclude:Access Groove Lync OneDrive OneNote Outlook Publisher Word Powerpoint /updates:FALSE /eula:TRUE'"
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12.3'
+
+      - name: Install Python dependencies
+        run: pip install -r .github/workflows/lib/requirements.txt
+
+      - name: Process all Excel conversions from asset-config-map.yaml
+        shell: pwsh
+        run: |
+          $configPath = Join-Path $env:GITHUB_WORKSPACE "Assets\asset-config-map.yaml"
+          Write-Output "Reading config from: $configPath"
+
+          Install-Module -Name powershell-yaml -Force -Scope CurrentUser
+          $yamlContent = Get-Content $configPath -Raw
+          $config = ConvertFrom-Yaml $yamlContent
+
+          $excelEntries = $config.conversions.excel
+          if (-not $excelEntries) {
+            Write-Output "No excel conversions found in config."
+            exit 0
+          }
+
+          foreach ($entry in $excelEntries) {
+            $inputRelative   = $entry.input
+            $sheet           = $entry.sheet
+            $topLeftCell     = $entry.topLeftCell
+            $bottomRightCell = $entry.bottomRightCell
+            $pngOutput       = $entry.png
+            $pdfOutput       = $entry.pdf
+
+            Write-Output ""
+            Write-Output "============================================"
+            Write-Output "Processing: $inputRelative"
+            Write-Output "  Sheet: $sheet"
+            Write-Output "  Range: ${topLeftCell}:${bottomRightCell}"
+            Write-Output "============================================"
+
+            $inputCleaned      = $inputRelative -replace '^\.\/', ''
+            $absoluteExcelPath = (Join-Path $env:GITHUB_WORKSPACE $inputCleaned).Replace('/', '\')
+
+            if (-not (Test-Path $absoluteExcelPath)) {
+              Write-Output "WARNING: Input file not found: $absoluteExcelPath — skipping."
+              continue
+            }
+
+            Write-Output "  Absolute Excel Path: $absoluteExcelPath"
+
+            # PNG Export
+            if ($pngOutput -and $pngOutput -ne 'null') {
+              $inputDir = Split-Path $absoluteExcelPath -Parent
+              if ($pngOutput.EndsWith('/')) {
+                $pngDirResolved  = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pngOutput.Replace('/', '\'))))
+                $absolutePngPath = Join-Path $pngDirResolved "$([System.IO.Path]::GetFileNameWithoutExtension($absoluteExcelPath)).png"
+              } else {
+                $pngFullResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pngOutput.Replace('/', '\'))))
+                $pngDirResolved  = Split-Path $pngFullResolved -Parent
+                $absolutePngPath = $pngFullResolved
+              }
+              if (-not (Test-Path $pngDirResolved)) { New-Item -ItemType Directory -Path $pngDirResolved -Force | Out-Null }
+              Write-Output "  Exporting PNG to: $absolutePngPath"
+              python .github/workflows/lib/export-png.py "$absoluteExcelPath" "$absolutePngPath" "$sheet" "$topLeftCell" "$bottomRightCell"
+              if ($LASTEXITCODE -ne 0) { Write-Output "  ERROR: PNG export failed." } else { Write-Output "  PNG export succeeded." }
+            } else {
+              Write-Output "  PNG output not configured — skipping."
+            }
+
+            # PDF Export
+            if ($pdfOutput -and $pdfOutput -ne 'null') {
+              $inputDir = Split-Path $absoluteExcelPath -Parent
+              if ($pdfOutput.EndsWith('/')) {
+                $pdfDirResolved  = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pdfOutput.Replace('/', '\'))))
+                $absolutePdfPath = Join-Path $pdfDirResolved "$([System.IO.Path]::GetFileNameWithoutExtension($absoluteExcelPath)).pdf"
+              } else {
+                $pdfFullResolved = [System.IO.Path]::GetFullPath((Join-Path $inputDir ($pdfOutput.Replace('/', '\'))))
+                $pdfDirResolved  = Split-Path $pdfFullResolved -Parent
+                $absolutePdfPath = $pdfFullResolved
+              }
+              if (-not (Test-Path $pdfDirResolved)) { New-Item -ItemType Directory -Path $pdfDirResolved -Force | Out-Null }
+              Write-Output "  Exporting PDF to: $absolutePdfPath"
+              python .github/workflows/lib/export-pdf.py "$absoluteExcelPath" "$absolutePdfPath"
+              if ($LASTEXITCODE -ne 0) { Write-Output "  ERROR: PDF export failed." } else { Write-Output "  PDF export succeeded." }
+            } else {
+              Write-Output "  PDF output not configured — skipping."
+            }
+          }
+
+          Write-Output ""
+          Write-Output "All Excel conversions processed."
+
+      - name: Stage and collect generated files
+        id: collect
+        shell: pwsh
+        run: |
+          git add -A
+          $changed = git diff --cached --name-only
+          if (-not $changed) {
+            Write-Output "No changed files detected — skipping artifact upload."
+            "has_files=false" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+            exit 0
+          }
+          $exportDir = Join-Path $env:RUNNER_TEMP "exports"
+          New-Item -ItemType Directory -Path $exportDir -Force | Out-Null
+          foreach ($file in $changed) {
+            $fileWin  = $file.Replace('/', '\')
+            $destPath = Join-Path $exportDir $fileWin
+            $destDir  = Split-Path $destPath -Parent
+            if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Path $destDir -Force | Out-Null }
+            if (Test-Path $fileWin) { Copy-Item $fileWin $destPath -Force }
+          }
+          "has_files=true" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          Write-Output "Files staged for artifact upload:"
+          Get-ChildItem $exportDir -Recurse -File | Select-Object -ExpandProperty FullName
+
+      - name: Upload Excel exports as artifact
+        if: steps.collect.outputs.has_files == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: exports-excel
+          path: ${{ runner.temp }}/exports/
+          if-no-files-found: ignore
+          retention-days: 1
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Draw.io → PNG & PDF   (Docker / rlespinasse/drawio-export)
+  # ─────────────────────────────────────────────────────────────────────────
+  drawio-export:
+    name: Draw.io to PNG & PDF
+    needs: check-changes
+    if: needs.check-changes.outputs.drawio == 'true' || needs.check-changes.outputs.workflow == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Convert Draw.io files to PNG & PDF
+        run: |
+          set -e
+
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+          yq -r '.conversions.drawio[] | @json' ./Assets/asset-config-map.yaml | while read -r line; do
+            input=$(echo "$line" | jq -r '.input')
+            png=$(echo "$line"   | jq -r '.png // "null"')
+            pdf=$(echo "$line"   | jq -r '.pdf // "null"')
+
+            echo "Processing: $input"
+            input_basename=$(basename "$input")
+            input_dir=$(dirname "$input")
+            input_name_without_ext="${input_basename%.drawio}"
+
+            # PNG
+            if [ "$png" != "null" ] && [ -n "$png" ]; then
+              if [[ "$png" == */ ]]; then
+                png_dir_abs=$(cd "$input_dir" && realpath "$png")
+                final_png="${png_dir_abs}/${input_basename}.png"
+              else
+                png_dir_abs=$(cd "$input_dir" && realpath -m "$(dirname "$png")")
+                final_png="${png_dir_abs}/$(basename "$png")"
+              fi
+              png_dir_rel=$(realpath --relative-to="$PWD" "$png_dir_abs")
+              mkdir -p "$png_dir_abs"
+              rm -f "$final_png"
+              docker run --rm -v "$PWD:/data" rlespinasse/drawio-export \
+                --format png --output "/data/$png_dir_rel" "/data/$input"
+              generated=$(find "$png_dir_abs" -maxdepth 1 -type f -name "${input_name_without_ext}-*.png" | head -n 1)
+              [ -n "$generated" ] && mv "$generated" "$final_png" && echo "  PNG → $(realpath --relative-to="$PWD" "$final_png")"
+            fi
+
+            # PDF
+            if [ "$pdf" != "null" ] && [ -n "$pdf" ]; then
+              if [[ "$pdf" == */ ]]; then
+                pdf_dir_abs=$(cd "$input_dir" && realpath "$pdf")
+                final_pdf="${pdf_dir_abs}/${input_basename}.pdf"
+              else
+                pdf_dir_abs=$(cd "$input_dir" && realpath -m "$(dirname "$pdf")")
+                final_pdf="${pdf_dir_abs}/$(basename "$pdf")"
+              fi
+              pdf_dir_rel=$(realpath --relative-to="$PWD" "$pdf_dir_abs")
+              mkdir -p "$pdf_dir_abs"
+              rm -f "$final_pdf"
+              docker run --rm -v "$PWD:/data" rlespinasse/drawio-export \
+                --format pdf --output "/data/$pdf_dir_rel" "/data/$input"
+              generated=$(find "$pdf_dir_abs" -maxdepth 1 -type f -name "${input_name_without_ext}-*.pdf" | head -n 1)
+              [ -n "$generated" ] && mv "$generated" "$final_pdf" && echo "  PDF → $(realpath --relative-to="$PWD" "$final_pdf")"
+            fi
+          done
+
+      - name: Stage and collect generated files
+        id: collect
+        run: |
+          git add -A
+          changed=$(git diff --cached --name-only)
+          if [ -z "$changed" ]; then
+            echo "No changed files detected — skipping artifact upload."
+            echo "has_files=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          export_dir="$RUNNER_TEMP/exports"
+          mkdir -p "$export_dir"
+          while IFS= read -r file; do
+            dest="$export_dir/$file"
+            mkdir -p "$(dirname "$dest")"
+            cp "$file" "$dest"
+          done <<< "$changed"
+          echo "has_files=true" >> $GITHUB_OUTPUT
+
+      - name: Upload Draw.io exports as artifact
+        if: steps.collect.outputs.has_files == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: exports-drawio
+          path: ${{ runner.temp }}/exports/
+          if-no-files-found: ignore
+          retention-days: 1
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Draw.io → Layered GIF   (drawio-desktop + xvfb + Python)
+  # ─────────────────────────────────────────────────────────────────────────
+  drawio-gif:
+    name: Draw.io to Layered GIF
+    needs: check-changes
+    if: needs.check-changes.outputs.drawio-gif == 'true' || needs.check-changes.outputs.workflow == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Install drawio desktop
+        env:
+          DRAWIO_VERSION: "26.0.9"
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+          curl -sLO "https://github.com/jgraph/drawio-desktop/releases/download/v${DRAWIO_VERSION}/drawio-amd64-${DRAWIO_VERSION}.deb"
+          sudo apt-get install -y "./drawio-amd64-${DRAWIO_VERSION}.deb"
+          sudo chown root:root /opt/drawio/chrome-sandbox
+          sudo chmod 4755 /opt/drawio/chrome-sandbox
+
+      - name: Start virtual display
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r .github/workflows/lib/requirements.txt
+
+      - name: Generate layered GIFs from asset-config-map.yaml
+        run: |
+          set -e
+
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+          entries=$(yq '.conversions.drawio_layered_gif // [] | length' ./Assets/asset-config-map.yaml)
+          if [ "$entries" -eq 0 ]; then
+            echo "No drawio_layered_gif entries found in config."
+            exit 0
+          fi
+
+          yq -r '.conversions.drawio_layered_gif[] | @json' ./Assets/asset-config-map.yaml | while read -r line; do
+            input=$(echo "$line"          | jq -r '.input')
+            output_dir=$(echo "$line"     | jq -r '.output_dir')
+            frame_duration=$(echo "$line" | jq -r '.frame_duration // 1000')
+            gif=$(echo "$line"            | jq -r '.gif // ""')
+
+            echo "============================================"
+            echo "Processing: $input"
+            echo "============================================"
+
+            input_abs=$(realpath "$input")
+            input_dir_abs=$(dirname "$input_abs")
+            output_dir_abs=$(cd "$input_dir_abs" && realpath -m "$output_dir")
+
+            python_args=("$input_abs" "$output_dir_abs" "$frame_duration")
+            if [ -n "$gif" ]; then
+              gif_abs=$(cd "$input_dir_abs" && realpath -m "$gif")
+              python_args+=("$gif_abs")
+            fi
+
+            python .github/workflows/lib/export-drawio-layered-gif.py "${python_args[@]}"
+          done
+
+      - name: Stage and collect generated files
+        id: collect
+        run: |
+          git add -A
+          changed=$(git diff --cached --name-only)
+          if [ -z "$changed" ]; then
+            echo "No changed files detected — skipping artifact upload."
+            echo "has_files=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          export_dir="$RUNNER_TEMP/exports"
+          mkdir -p "$export_dir"
+          while IFS= read -r file; do
+            dest="$export_dir/$file"
+            mkdir -p "$(dirname "$dest")"
+            cp "$file" "$dest"
+          done <<< "$changed"
+          echo "has_files=true" >> $GITHUB_OUTPUT
+
+      - name: Upload GIF exports as artifact
+        if: steps.collect.outputs.has_files == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: exports-drawio-gif
+          path: ${{ runner.temp }}/exports/
+          if-no-files-found: ignore
+          retention-days: 1
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Markdown → PDF   (Rider + Stage Assembly instructions)
+  # ─────────────────────────────────────────────────────────────────────────
+  markdown-export:
+    name: Markdown to PDF
+    needs: check-changes
+    if: needs.check-changes.outputs.markdown == 'true' || needs.check-changes.outputs.workflow == 'true' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r .github/workflows/lib/requirements.txt
+
+      - name: Generate PDFs from Markdown via asset-config-map.yaml
+        run: |
+          set -e
+
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+          entries=$(yq '.conversions.markdown_pdf // [] | length' ./Assets/asset-config-map.yaml)
+          if [ "$entries" -eq 0 ]; then
+            echo "No markdown_pdf entries found in config."
+            exit 0
+          fi
+
+          yq -r '.conversions.markdown_pdf[] | @json' ./Assets/asset-config-map.yaml | while read -r line; do
+            input=$(echo "$line"  | jq -r '.input')
+            output=$(echo "$line" | jq -r '.output')
+            echo "============================================"
+            echo "Processing: $input"
+            echo "Output: $output"
+            echo "============================================"
+            input_abs=$(realpath "$input")
+            output_abs=$(cd "$(dirname "$input_abs")" && realpath -m "$output")
+            python .github/workflows/lib/export-markdown-pdf.py "$input_abs" "$output_abs"
+          done
+
+      - name: Stage and collect generated files
+        id: collect
+        run: |
+          git add -A
+          changed=$(git diff --cached --name-only)
+          if [ -z "$changed" ]; then
+            echo "No changed files detected — skipping artifact upload."
+            echo "has_files=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          export_dir="$RUNNER_TEMP/exports"
+          mkdir -p "$export_dir"
+          while IFS= read -r file; do
+            dest="$export_dir/$file"
+            mkdir -p "$(dirname "$dest")"
+            cp "$file" "$dest"
+          done <<< "$changed"
+          echo "has_files=true" >> $GITHUB_OUTPUT
+
+      - name: Upload Markdown exports as artifact
+        if: steps.collect.outputs.has_files == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: exports-markdown
+          path: ${{ runner.temp }}/exports/
+          if-no-files-found: ignore
+          retention-days: 1
+
+  # ─────────────────────────────────────────────────────────────────────────
+  # Merge all generated PDFs → Complete Technical Documentation PDF,
+  # then commit every generated asset in a single commit.
+  #
+  # Runs after all conversion jobs regardless of which were skipped.
+  # Skipped when all conversion jobs were skipped, or any job failed.
+  # ─────────────────────────────────────────────────────────────────────────
+  merge-and-commit:
+    name: Merge PDFs & Commit
+    needs: [check-changes, excel-export, drawio-export, drawio-gif, markdown-export]
+    if: always() && !cancelled() && needs.excel-export.result != 'failure' && needs.drawio-export.result != 'failure' && needs.drawio-gif.result != 'failure' && needs.markdown-export.result != 'failure' && (needs.excel-export.result == 'success' || needs.drawio-export.result == 'success' || needs.drawio-gif.result == 'success' || needs.markdown-export.result == 'success')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      TITLE: The Perfect Strangers - Technical Documentation
+      AUTHOR: Chad Birch (chad@theperfectstrangers.band)
+      SUBJECT: Rider, Input Lists, and Stage Diagram for The Perfect Strangers
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Download all conversion artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: exports-*
+          path: ${{ github.workspace }}
+          merge-multiple: true
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install Python dependencies
+        run: pip install -r .github/workflows/lib/requirements.txt
+
+      - name: Set Absolute Path - ${{ vars.COMPLETE_TECHNICAL_DOCUMENTATION_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.COMPLETE_TECHNICAL_DOCUMENTATION_PDF_PATH }}" -VariableName "ABSOLUTE_OUTPUT_PATH_PDF"
+
+      - name: Set Absolute Path - ${{ vars.RIDER_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.RIDER_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_RIDER_PDF"
+
+      - name: Set Absolute Path - ${{ vars.STAGE_DIAGRAM_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.STAGE_DIAGRAM_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF"
+
+      - name: Set Absolute Path - ${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}
+        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
+
+      - name: Merge PDFs into Complete Technical Documentation
+        run: python .github/workflows/lib/combine-pdfs.py "${{ env.ABSOLUTE_OUTPUT_PATH_PDF }}" "${{ env.TITLE }}" "${{ env.AUTHOR }}" "${{ env.SUBJECT }}" "${{ env.ABSOLUTE_PATH_TO_RIDER_PDF }}" "${{ env.ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF }}" "${{ env.ABSOLUTE_PATH_TO_INPUT_LIST_PDF }}"
+
+      - name: Commit all generated documentation assets
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: Automatically updated documentation assets
+          commit_user_name: ${{ vars.COMMIT_USER_NAME }}
+          commit_user_email: ${{ vars.COMMIT_USER_EMAIL }}
+          commit_author: ${{ vars.COMMIT_AUTHOR }}
+          file_pattern: 'Assets/**'
