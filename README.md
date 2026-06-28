@@ -55,6 +55,8 @@ These are diagrams relating to the configuration and placement of people and/or 
 
 This is the general layout of the band. It includes the people, microphones, equipment, cable routes, where power is needed, mixing equipment, and speaker placement.
 
+**Note:** The band's `IEM Box` and `Bass` player may be swapped if the stage access poses problems in the default configuration.
+
 ![Full Band Stage Diagram](./Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png)
 
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf">![Static Badge](https://img.shields.io/badge/PDF-Stage_Diagram-EC1C24?logo=adobeacrobatreader)
