@@ -27,6 +27,7 @@ These are the requirements each venue that hosts the band must provide.
 - [Equipment](#equipment)
   - [Stage area](#stage-area)
   - [Electrical](#electrical)
+  - [Lighting](#lighting)
 - [Parking](#parking)
   - [Band Member Vehicles](#band-member-vehicles)
   - [Equipment Trailer](#equipment-trailer)
@@ -67,11 +68,15 @@ The band will provide power conditioners and surge protectors for their equipmen
       * One new Upstage Left.
     * These are always required.
 
+### Lighting
+
+The band requires sufficient lighting for safe setup and teardown of equipment. Providing this lighting is the responsibility of the venue or promoter.
+
 ## Parking
 
 ### Band Member Vehicles
 
-The band may need as many as 3 parking spots for members and one extended space for the equipment truck and trailer, totaling 4 spaces.
+The band may need as many as 6 parking spots for members and one extended space for the equipment truck and trailer, totaling 7 spaces. The equipment trailer must have reasonable proximity to the performing area and be able to accommodate the use of hand carts for transporting gear. If parking is limited at your venue, please contact the band ahead of time to get the exact number of parking spaces required for your show.
 
 ### Equipment Trailer
 
