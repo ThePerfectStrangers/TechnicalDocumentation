@@ -74,7 +74,7 @@ This is a list of inputs needed by the band. It includes:
   * If 48V Phantom Power is required
   * Other notes related to the input channel
 
-48V phantom power and gain control are managed on stage by the band's IEM mixing rig. All channels are targeted for a gain of -18.5. A split is used to send a line-level signal to FOH. More information can be found below regarding the split.
+More information regarding splitting the signal to front-of-house (FOH) can be found in the [Split section](#split).
 
 ## Full Band
 
@@ -89,11 +89,12 @@ This is a list of inputs needed by the band. It includes:
 
 #### Modes
 
-The band requires a 24-channel split. The band can provide 15 feet of labeled split tails (XLR) from the band's IEM box if needed.
+The band requires a 24-channel split. The band can provide 10 feet of labeled split tails (XLR) from the band's IEM box if needed.
 
 When splitting is required, we can support two modes:
-1. (Preferred) We run all mics into our IEM box and send a split to the front-of-house (FOH). We will control all gain (staged to -18.5). This is preferred because it reduces the amount of time each band member must spend recalibrating their mix.
-2. All mics run to FOH and FOH sends us a split to our IEM box. This method requires the venue/sound company to provide the split.
+1. (Preferred) The band uses their own microphones, running them into their IEM Mixer. Then a split signal is sent to the front-of-house (FOH). The band will manage all phantom power to mics and control all gain (staged to `-18.5`). The band then manages their own IEM mixes, leaving the FOH engineer to only manage the FOH mix. This is preferred because it reduces the amount of time each band member must spend recalibrating their mix.
+
+2. (Festival) All microphones and cabling are provided by a live sound team, who manage both FOH sound and individual mixing for each band member. The band would bring their own earbuds to connect to IEM body packs provided by the sound team. Alternatively, the band may provide IEM transmitters and body packs if needed, but they will need to be routed from the monitor mixing board on-stage.
 
 #### Splitter Assignments
 
@@ -102,20 +103,20 @@ All ports are XLR male.
 ##### Order & Ports
 
 The splitter ports are ordered as follows:
-1. **Drums**: 1-9
-2. **Vocals**: 10-16
-  * Vocals 6 & 7 may not be required for every show as they are for guest vocalists.
-3. **Piano/Keyboards**: 17-18
-4. **Guitars**: 19-22
-  * (E): Electric
-  * (A): Acoustic
-5. **Bass**: 23
+1. **Drums**: 1-10
+2. **Bass**: 13
+3. **Piano/Keyboards**: 15-16
+4. **Guitars**: 17-22
+    * (E): Electric
+    * (A): Acoustic
+6. **Vocals**: 25-30
+    * `Vocals 6` may not be required for every show as it is for guest vocalists.
 
 ##### Snake Tails
 
-The snake coming from the split is banded into groups of 4 wires, ordered Green, Blue, Yellow, and Red. Each bundle is represented by a unique color. These colors can be found in the numbering section of the Split Map.
+A 10 ft. snake cable may be utilized from the IEM Mixer to handle connections at a distance. There are four 8-channel snake cables that are color sequenced by banding on the cable: Green, Blue, Red, and Yellow. The `Split Map` is broken down into four groups containing eight channels across three distinct rows. The top row if the group specifies the banded cable to use. The second row identifies the color sequence for the non-labeled connecting end of the snake cable which should be color-matched to the numbered port assignment. Finally, the third row specifies the generic input description by location, matching the performer using the [Document Style](#document-style) outlined at the beginning. Meaning you find the cable banded in green, the plug each non-labeled end to the port corresponding to the color of the cable, then the labled end can connect to the patch routed to the front-of-house (FOH) engineer.
 
-**Note:** All outputs are set as [Input/LC (IN/LC)](https://drewbrashler.com/2017/x32-output-tap/) from the band's mixer. You can find out more details regarding the split labels on the Split Map:
+**Note:** All outputs are set as [Line-Level](https://drewbrashler.com/2026/behringer-wing-stageconnect-guide/) from the band's mixer. You can find out more details regarding the split labels on the Split Map:
 
 ![Split Map](./Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.png)
 
@@ -124,7 +125,7 @@ The snake coming from the split is banded into groups of 4 wires, ordered Green,
 
 ### Mixer Configuration
 
-The band uses a Behringer WING RACK mixer for mixing all IEMs and front-of-house when necessary. If you will be working with the band and using their mixer, you can download the latest configuration from the [Mixer folder](Mixer).
+The band uses a Behringer WING RACK mixer for mixing all IEMs and front-of-house when necessary. If you will be working with the band to manage live sound at an event using their equipment, you can download the latest configuration from the [Mixer folder](Mixer).
 
 You can view the mixer configuration by using the WING EDIT software provided by Behringer. You can [download it from their website](https://www.behringer.com/wing/wing-rack#documentations).
 
