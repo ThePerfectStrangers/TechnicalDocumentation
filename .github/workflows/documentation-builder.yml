@@ -8,7 +8,7 @@ on:
       - 'Rider/Rider.md'
       - 'StageDiagram/FullBand/StageAssembly/README.md'
       - 'Assets/asset-config-map.yaml'
-      - '.github/workflows/documentation-build.yml'
+      - '.github/workflows/documentation-builder.yml'
       - '.github/workflows/lib/**'
   pull_request:
     paths:
@@ -17,12 +17,12 @@ on:
       - 'Rider/Rider.md'
       - 'StageDiagram/FullBand/StageAssembly/README.md'
       - 'Assets/asset-config-map.yaml'
-      - '.github/workflows/documentation-build.yml'
+      - '.github/workflows/documentation-builder.yml'
       - '.github/workflows/lib/**'
   workflow_dispatch:
 
 concurrency:
-  group: documentation-build-${{ github.ref }}
+  group: documentation-builder-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -67,7 +67,7 @@ jobs:
               - 'Assets/asset-config-map.yaml'
               - '.github/workflows/lib/export-markdown-pdf.py'
             workflow:
-              - '.github/workflows/documentation-build.yml'
+              - '.github/workflows/documentation-builder.yml'
               - '.github/workflows/lib/**'
 
   # ─────────────────────────────────────────────────────────────────────────

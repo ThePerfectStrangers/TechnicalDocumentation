@@ -142,12 +142,4 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 
 This is the status of the backing workflows that automate the creation of repository artifacts, such as PDFs and images. If any of these are failing, then their related artifacts may be out-of-date.
 
-[![Complete Technical Documentation PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/full-band-complete-technical-documentation-pdf.yml)
-
-[![Draw.io to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-png-and-pdf.yml)
-
-[![Excel to PNG & PDF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/excel-to-png-and-pdf.yml)
-
-[![Markdown To PDF](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/markdown-to-pdf.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/markdown-to-pdf.yml)
-
-[![Draw.io Layered GIF Workflow](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-layered-gif.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/drawio-to-layered-gif.yml)
+[![Documentation Build](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/documentation-builder.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/documentation-builder.yml)
