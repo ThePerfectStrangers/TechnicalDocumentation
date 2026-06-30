@@ -142,4 +142,4 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 
 This is the status of the backing workflows that automate the creation of repository artifacts, such as PDFs and images. If any of these are failing, then their related artifacts may be out-of-date.
 
-[![Documentation Build](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/documentation-builder.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/documentation-builder.yml)
+[![Documentation Builder](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/documentation-builder.yml/badge.svg)](https://github.com/ThePerfectStrangers/TechnicalDocumentation/actions/workflows/documentation-builder.yml)
