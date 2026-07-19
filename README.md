@@ -14,6 +14,7 @@ All technical documentation related to band, [The Perfect Strangers](https://The
 - [Document Style](#document-style)
 - [Stage Diagram](#stage-diagram)
   - [Full Band](#full-band)
+  - [Drums](#drums)
 - [Input List](#input-list)
   - [Full Band](#full-band-1)
     - [Input + Equipment](#input--equipment)
@@ -65,6 +66,10 @@ This is the general layout of the band. It includes the people, microphones, equ
 **Note:**  In a situation where the band is not in charge of the PA, the PA speakers located Downstage Right and Downstage Left should be omitted from consideration.
 
 [Click here](StageDiagram/FullBand/StageAssembly/README.md) to access the step-by-step stage assembly guide.
+
+## Drums
+
+For a detailed view of the drums, including microphones, tunings, and more, check out [Chad's Drum Repository](https://github.com/chadbirch/Drums).
 
 # Input List
 
