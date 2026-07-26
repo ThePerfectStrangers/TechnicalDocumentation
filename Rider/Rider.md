@@ -14,7 +14,7 @@
   </tr>
 </table>
 
-Rider Updated: 2024.09.29
+Rider Updated: {{LAST_UPDATED_DATE}}
 
 <!-- title: The Perfect Strangers - Rider -->
 # Rider 

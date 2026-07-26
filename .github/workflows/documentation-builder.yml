@@ -433,6 +433,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -464,7 +466,22 @@ jobs:
             echo "============================================"
             input_abs=$(realpath "$input")
             output_abs=$(cd "$(dirname "$input_abs")" && realpath -m "$output")
-            python .github/workflows/lib/export-markdown-pdf.py "$input_abs" "$output_abs"
+
+            # Generic {{LAST_UPDATED_DATE}} substitution: works for any markdown
+            # file, using that specific file's own last git commit date. Files
+            # without the placeholder are unaffected.
+            last_updated=$(git log -1 --format='%ad' --date=format:'%Y.%m.%d' -- "$input")
+            if [ -z "$last_updated" ]; then
+              echo "  WARNING: No git history found for $input — using today's date."
+              last_updated=$(date '+%Y.%m.%d')
+            fi
+            echo "  Last updated (per git history): $last_updated"
+
+            render_input="$(dirname "$input_abs")/.render-$(basename "$input_abs")"
+            sed "s/{{LAST_UPDATED_DATE}}/$last_updated/g" "$input_abs" > "$render_input"
+
+            python .github/workflows/lib/export-markdown-pdf.py "$render_input" "$output_abs"
+            rm -f "$render_input"
           done
 
       - name: Stage and collect generated files
