@@ -44,6 +44,6 @@ conversions:
       frame_duration: 3000
   markdown_pdf:
     - input: ./Rider/Rider.md
-      output: ./../Rider.pdf
+      output: ./../Assets/Rider/Rider.pdf
     - input: ./StageDiagram/FullBand/StageAssembly/README.md
       output: ./../../../Assets/StageDiagram/FullBand/StageAssembly/StageAssemblyGuide.pdf
