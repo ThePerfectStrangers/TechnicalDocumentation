@@ -17,21 +17,30 @@
 Rider Updated: 2024.09.29
 
 <!-- title: The Perfect Strangers - Rider -->
-# Rider <!-- omit from toc -->
+# Rider 
 
 These are the requirements each venue that hosts the band must provide.
 
-- [Personnel](#personnel)
-  - [Entourage](#entourage)
-  - [Personnel for collecting entry fee](#personnel-for-collecting-entry-fee)
-- [Equipment](#equipment)
-  - [Stage area](#stage-area)
-  - [Electrical](#electrical)
-  - [Lighting](#lighting)
-- [Parking](#parking)
-  - [Band Member Vehicles](#band-member-vehicles)
-  - [Equipment Trailer](#equipment-trailer)
-- [Refusal to Perform](#refusal-to-perform)
+- [Rider](#rider)
+  - [Contact Info](#contact-info)
+  - [Personnel](#personnel)
+    - [Entourage](#entourage)
+    - [Personnel for collecting entry fee](#personnel-for-collecting-entry-fee)
+  - [Equipment](#equipment)
+    - [Stage area](#stage-area)
+    - [Electrical](#electrical)
+    - [Lighting](#lighting)
+    - [Wi-Fi](#wi-fi)
+  - [Parking](#parking)
+    - [Band Member Vehicles](#band-member-vehicles)
+    - [Equipment Trailer](#equipment-trailer)
+  - [Refusal to Perform](#refusal-to-perform)
+- [Stage Diagram](#stage-diagram)
+- [Input List](#input-list)
+
+## Contact Info
+
+You can reach out to the band by emailing [booking@theperfectstrangers.band](mailto:booking@theperfectstrangers.band). If you would like to speak with a member regarding a specific question, please provide your name and number so one of us can get back to you.
 
 ## Personnel
 
@@ -72,6 +81,10 @@ The band will provide power conditioners and surge protectors for their equipmen
 
 The band requires sufficient lighting for safe setup and teardown of equipment. Providing this lighting is the responsibility of the venue or promoter.
 
+### Wi-Fi
+
+If the venue has wi-fi that connects to the internet, the band should be provided with the connection info so they can connect their equipment to the wifi. This should be provided at no cost to the band. The band should be notified no later than 48 hours prior to the performance if the venue does not have wi-fi that connects to the internet.
+
 ## Parking
 
 ### Band Member Vehicles
@@ -94,3 +107,11 @@ The band reserves the right to refuse to perform for any reason regarding band m
   * etc.
 
 We hope never to refuse to perform, but the safety of our band members is our number one priority, followed by the safety of our equipment.
+
+# Stage Diagram
+
+![Full Band Stage Diagram](../Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png)
+
+# Input List
+
+![Input List](../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.png)
