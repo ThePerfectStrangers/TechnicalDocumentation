@@ -541,6 +541,24 @@ jobs:
       - name: Set Absolute Path - ${{ vars.STAGE_DIAGRAM_PDF_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.STAGE_DIAGRAM_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF"
 
+      - name: Resolve Stage Diagram PDF path fallback
+        shell: pwsh
+        run: |
+          if (Test-Path "${{ env.ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF }}") {
+            Write-Host "Using Stage Diagram PDF path from STAGE_DIAGRAM_PDF_PATH."
+            exit 0
+          }
+
+          $stageDiagramDir = Split-Path "${{ env.ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF }}" -Parent
+          $fallback = Get-ChildItem -Path $stageDiagramDir -Filter '*Stage Diagram*.pdf' -File | Sort-Object Name | Select-Object -First 1
+
+          if (-not $fallback) {
+            throw "No Stage Diagram PDF found in '$stageDiagramDir'. Checked configured path '${{ env.ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF }}'."
+          }
+
+          Add-Content -Path $env:GITHUB_ENV -Value "ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF=$($fallback.FullName)"
+          Write-Host "Configured Stage Diagram PDF missing; using fallback: $($fallback.FullName)"
+
       - name: Set Absolute Path - ${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
 
