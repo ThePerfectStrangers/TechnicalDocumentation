@@ -1,10 +1,16 @@
 conversions:
   drawio:
+    # `layers` is optional: a comma-separated list of 0-based layer indices
+    # (in diagram XML order) to export, e.g. "0,1,3". If omitted, all layers
+    # are exported.
     - input: ./MixerIEMRack/WiringDiagram.drawio
       png: ./../Assets/MixerIEMRack/
     - input: ./StageDiagram/FullBand/StageDiagram.drawio
+      png: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Complete Stage Diagram.png
+      pdf: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Complete Stage Diagram.pdf
+    - input: ./StageDiagram/FullBand/StageDiagram.drawio
       png: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Stage Diagram.png
-      pdf: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Stage Diagram.pdf
+      layers: 0,1,2,4,5,6,7,10
     - input: ./Trailer/TrailerLoadMap.drawio
       png: ./../Assets/Trailer/The Perfect Strangers - Trailer Load Map.png
       pdf: ./../Assets/Trailer/The Perfect Strangers - Trailer Load Map.pdf

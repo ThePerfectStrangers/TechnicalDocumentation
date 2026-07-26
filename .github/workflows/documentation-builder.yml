@@ -57,6 +57,7 @@ jobs:
             drawio:
               - '**/*.drawio'
               - 'Assets/asset-config-map.yaml'
+              - '.github/workflows/lib/export-drawio.py'
             drawio-gif:
               - '**/*.drawio'
               - 'Assets/asset-config-map.yaml'
@@ -210,7 +211,8 @@ jobs:
           retention-days: 1
 
   # ─────────────────────────────────────────────────────────────────────────
-  # Draw.io → PNG & PDF   (Docker / rlespinasse/drawio-export)
+  # Draw.io → PNG & PDF   (drawio-desktop + xvfb + Python, with optional
+  # per-diagram layer filtering via the `layers` field)
   # ─────────────────────────────────────────────────────────────────────────
   drawio-export:
     name: Draw.io to PNG & PDF
@@ -219,6 +221,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
+
+      - name: Install drawio desktop
+        env:
+          DRAWIO_VERSION: "27.0.9"
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+          curl -sLO "https://github.com/jgraph/drawio-desktop/releases/download/v${DRAWIO_VERSION}/drawio-amd64-${DRAWIO_VERSION}.deb"
+          sudo apt-get install -y "./drawio-amd64-${DRAWIO_VERSION}.deb"
+          sudo chown root:root /opt/drawio/chrome-sandbox
+          sudo chmod 4755 /opt/drawio/chrome-sandbox
+
+      - name: Start virtual display
+        run: |
+          Xvfb :99 -screen 0 1920x1080x24 &
+          echo "DISPLAY=:99" >> $GITHUB_ENV
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
 
       - name: Convert Draw.io files to PNG & PDF
         run: |
@@ -231,11 +254,16 @@ jobs:
             input=$(echo "$line" | jq -r '.input')
             png=$(echo "$line"   | jq -r '.png // "null"')
             pdf=$(echo "$line"   | jq -r '.pdf // "null"')
+            layers=$(echo "$line" | jq -r '.layers // ""')
 
             echo "Processing: $input"
+            input_abs=$(realpath "$input")
             input_basename=$(basename "$input")
             input_dir=$(dirname "$input")
-            input_name_without_ext="${input_basename%.drawio}"
+
+            if [ -n "$layers" ]; then
+              echo "  Layers: $layers"
+            fi
 
             # PNG
             if [ "$png" != "null" ] && [ -n "$png" ]; then
@@ -246,13 +274,10 @@ jobs:
                 png_dir_abs=$(cd "$input_dir" && realpath -m "$(dirname "$png")")
                 final_png="${png_dir_abs}/$(basename "$png")"
               fi
-              png_dir_rel=$(realpath --relative-to="$PWD" "$png_dir_abs")
               mkdir -p "$png_dir_abs"
               rm -f "$final_png"
-              docker run --rm -v "$PWD:/data" rlespinasse/drawio-export \
-                --format png --output "/data/$png_dir_rel" "/data/$input"
-              generated=$(find "$png_dir_abs" -maxdepth 1 -type f -name "${input_name_without_ext}-*.png" | head -n 1)
-              [ -n "$generated" ] && mv "$generated" "$final_png" && echo "  PNG → $(realpath --relative-to="$PWD" "$final_png")"
+              python .github/workflows/lib/export-drawio.py "$input_abs" "$final_png" png "$layers"
+              echo "  PNG → $(realpath --relative-to="$PWD" "$final_png")"
             fi
 
             # PDF
@@ -264,13 +289,10 @@ jobs:
                 pdf_dir_abs=$(cd "$input_dir" && realpath -m "$(dirname "$pdf")")
                 final_pdf="${pdf_dir_abs}/$(basename "$pdf")"
               fi
-              pdf_dir_rel=$(realpath --relative-to="$PWD" "$pdf_dir_abs")
               mkdir -p "$pdf_dir_abs"
               rm -f "$final_pdf"
-              docker run --rm -v "$PWD:/data" rlespinasse/drawio-export \
-                --format pdf --output "/data/$pdf_dir_rel" "/data/$input"
-              generated=$(find "$pdf_dir_abs" -maxdepth 1 -type f -name "${input_name_without_ext}-*.pdf" | head -n 1)
-              [ -n "$generated" ] && mv "$generated" "$final_pdf" && echo "  PDF → $(realpath --relative-to="$PWD" "$final_pdf")"
+              python .github/workflows/lib/export-drawio.py "$input_abs" "$final_pdf" pdf "$layers"
+              echo "  PDF → $(realpath --relative-to="$PWD" "$final_pdf")"
             fi
           done
 
