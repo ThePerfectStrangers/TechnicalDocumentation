@@ -7,7 +7,6 @@ conversions:
       png: ./../Assets/MixerIEMRack/
     - input: ./StageDiagram/FullBand/StageDiagram.drawio
       png: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Complete Stage Diagram.png
-      pdf: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Complete Stage Diagram.pdf
     - input: ./StageDiagram/FullBand/StageDiagram.drawio
       png: ./../../Assets/StageDiagram/FullBand/The Perfect Strangers - Stage Diagram.png
       layers: 0,1,2,4,5,6,7,10
@@ -43,7 +42,5 @@ conversions:
       gif: ./../../Assets/StageDiagram/FullBand/StageAssembly/StageAssembly.gif
       frame_duration: 3000
   markdown_pdf:
-    - input: ./Rider/Rider.md
-      output: ./../Assets/Rider/Rider.pdf
     - input: ./StageDiagram/FullBand/StageAssembly/README.md
       output: ./../../../Assets/StageDiagram/FullBand/StageAssembly/StageAssemblyGuide.pdf

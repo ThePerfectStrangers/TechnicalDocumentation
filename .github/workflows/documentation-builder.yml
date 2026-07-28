@@ -554,10 +554,7 @@ jobs:
 
       - name: Set Absolute Path - ${{ vars.RIDER_PDF_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.RIDER_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_RIDER_PDF"
-
-      - name: Set Absolute Path - ${{ vars.STAGE_DIAGRAM_PDF_PATH }}
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.STAGE_DIAGRAM_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF"
-
+      
       - name: Set Absolute Path - ${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
 

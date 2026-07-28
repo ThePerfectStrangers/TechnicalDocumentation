@@ -24,8 +24,12 @@ These are the requirements each venue that hosts the band must provide.
 - [Rider](#rider)
   - [Contact Info](#contact-info)
   - [Personnel](#personnel)
+    - [Band Members](#band-members)
     - [Entourage](#entourage)
-    - [Personnel for collecting entry fee](#personnel-for-collecting-entry-fee)
+    - [Support Staff](#support-staff)
+      - [Sound and lighting engineers](#sound-and-lighting-engineers)
+      - [Equipment roadies](#equipment-roadies)
+      - [Door/gate operators](#doorgate-operators)
   - [Equipment](#equipment)
     - [Stage area](#stage-area)
     - [Electrical](#electrical)
@@ -34,9 +38,21 @@ These are the requirements each venue that hosts the band must provide.
   - [Parking](#parking)
     - [Band Member Vehicles](#band-member-vehicles)
     - [Equipment Trailer](#equipment-trailer)
-  - [Refusal to Perform](#refusal-to-perform)
+  - [Cancellation Policy](#cancellation-policy)
 - [Stage Diagram](#stage-diagram)
+  - [Full Band](#full-band)
+  - [Drums](#drums)
 - [Input List](#input-list)
+  - [Full Band](#full-band-1)
+    - [Input + Equipment](#input--equipment)
+    - [Split](#split)
+      - [Modes](#modes)
+      - [Splitter Assignments](#splitter-assignments)
+        - [Order \& Ports](#order--ports)
+        - [Snake Tails](#snake-tails)
+    - [Mixer Configuration](#mixer-configuration)
+  - [Acoustic](#acoustic)
+    - [Input + Equipment](#input--equipment-1)
 
 ## Contact Info
 
@@ -44,11 +60,29 @@ You can reach out to the band by emailing [booking@theperfectstrangers.band](mai
 
 ## Personnel
 
+### Band Members
+
+The documents and graphics in this repository use the following color convention for the band members:
+
+<img src="./../Assets/BandColorConvention/BandColorConvention.png" width=75%>
+
 ### Entourage
 
 Each band member may have an additional person in their entourage (typically a significant other). In addition, the band may also employ up to 2 sound engineers/stagehands. These people should be allowed the same access as the band members and be exempt from being charged any admission or access fee to a venue.
 
-### Personnel for collecting entry fee
+### Support Staff
+
+The band may employ support staff at a venue to help in the setup or operation of the light show. The staff includes, but it not limited to:
+
+#### Sound and lighting engineers
+
+Help setup the sound and lights before the performance and/or operate the equipment for the band during the performance.
+
+#### Equipment roadies
+
+Help load, setup, teardown, and pack equipment.
+
+#### Door/gate operators
 
 If an entry fee/cover charge is required, where the band gets 100% of the cover, the band will provide someone to take up the money. If the cover charge is being split with the venue, then the venue must also provide someone to observe the handling of the money. This helps to ensure everyone is satisfied that the money was handled properly at the end of the night. If the venue fails to provide someone, then they forfeit their rights to dispute anything regarding the handling of entry fee money.
 
@@ -97,21 +131,112 @@ For a full band setup, the band uses a covered trailer to transport equipment. T
 
 The trailer will need to have access close to the area designated for the band to load/unload equipment. This may require the use of parking cones to reserve the space until the band arrives. Please notify the band beforehand if any procedures need to be followed before the band's arrival.
 
-## Refusal to Perform
+## Cancellation Policy
 
-The band reserves the right to refuse to perform for any reason regarding band member or equipment safety. Such reasons are, but not limited to:
-  * Unstable or unsafe building or performance area
+The band reserves the right to cancel the performance for any reason regarding band member or equipment safety. Such reasons are, but not limited to:
+  * Sickness of members  * Unstable or unsafe building or performance area
   * Volatile or threatening crowd
   * Excessive moisture in the air
   * Threat of severe rain or lightning
   * etc.
 
-We hope never to refuse to perform, but the safety of our band members is our number one priority, followed by the safety of our equipment.
+We hope never cancel a performance, but the safety of our band members is our number one priority, followed by the safety of our equipment.
 
 # Stage Diagram
 
-![Full Band Stage Diagram](../Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png)
+These are diagrams relating to the configuration and placement of people and/or equipment on stage.
+
+## Full Band
+
+This is the general layout of the band. It includes the people, microphones, equipment, cable routes, where power is needed, mixing equipment, and speaker placement.
+
+**Note:** The band's `IEM Box` and `Bass` player may be mirrored if the stage access poses problems in the default configuration.
+
+![Full Band Stage Diagram](./../Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png)
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf">![Static Badge](https://img.shields.io/badge/PDF-Stage_Diagram-EC1C24?logo=adobeacrobatreader)
+</a>
+
+**Note:**  In a situation where the band is not in charge of the PA, the PA speakers located Downstage Right and Downstage Left should be omitted from consideration.
+
+[Click here](../StageDiagram/FullBand/StageAssembly/README.md) to access the step-by-step stage assembly guide.
+
+## Drums
+
+For a detailed view of the drums, including microphones, tunings, and more, check out [Chad's Drum Repository](https://github.com/chadbirch/Drums).
+
 
 # Input List
 
-![Input List](../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.png)
+This is a list of inputs needed by the band. It includes:
+  * The input description
+  * Type of equipment (such as microphone)
+  * If 48V Phantom Power is required
+  * Other notes related to the input channel
+
+More information regarding splitting the signal to front-of-house (FOH) can be found in the [Split section](#split).
+
+## Full Band
+
+### Input + Equipment
+
+![Input List](./../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.png)
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Input%20List-EC1C24?logo=adobeacrobatreader)
+</a>
+
+### Split
+
+#### Modes
+
+The band requires 32-channels of split capacity.
+
+When splitting is required, we can support two modes:
+1. (Preferred) The band uses their own microphones, running them into their IEM Mixer. Then a split signal is sent to the front-of-house (FOH). The band will manage all phantom power to mics and control all gain (staged to `-18.5`). The band then manages their own IEM mixes, leaving the FOH engineer to only manage the FOH mix. This is preferred because it reduces the amount of time each band member must spend recalibrating their mix. The band can split the signal from their IEM Mixer box the following ways:
+  
+   1.  **AES50 via Ethercon**: A single Ethercon cable is sent from the **AES50 C** port of the band's Behringer WING Rack inside the IEM Mixer Box to the FOH mixing console. This allows the console to receive the audio signal, clock sync, and channel labels. 
+   2.  **XLR from two Midas DN4816-O Interfaces**: XLR cables are patched between the band's IEM Mixer Box and the FOH mixing console.
+
+2. (Festival) All microphones and cabling are provided by a live sound team, who manage both FOH sound and individual mixing for each band member. The band would bring their own earbuds to connect to IEM body packs provided by the sound team. Alternatively, the band may provide IEM transmitters and body packs if needed, but they will need to be routed from the monitor mixing board on-stage.
+
+#### Splitter Assignments
+
+All ports are XLR male.
+
+##### Order & Ports
+
+The splitter ports are ordered as follows:
+1. **Drums**: 1-10
+2. **Bass**: 13
+3. **Piano/Keyboards**: 15-16
+4. **Guitars**: 17-22
+    * (E): Electric
+    * (A): Acoustic
+6. **Vocals**: 25-30
+    * `Vocals 6` may not be required for every show as it is for guest vocalists.
+
+##### Snake Tails
+
+A 10 ft. snake cable may be utilized from the IEM Mixer to handle connections at a distance. There are four 8-channel snake cables that are color sequenced by banding on the cable: Green, Blue, Red, and Yellow. The `Split Map` is broken down into four groups containing eight channels across three distinct rows. The top row if the group specifies the banded cable to use. The second row identifies the color sequence for the non-labeled connecting end of the snake cable which should be color-matched to the numbered port assignment. Finally, the third row specifies the generic input description by location, matching the performer using the [Document Style](#document-style) outlined at the beginning. Meaning you find the cable banded in green, the plug each non-labeled end to the port corresponding to the color of the cable, then the labled end can connect to the patch routed to the front-of-house (FOH) engineer.
+
+**Note:** All outputs are set as [Line-Level](https://drewbrashler.com/2026/behringer-wing-stageconnect-guide/) from the band's mixer. You can find out more details regarding the split labels on the Split Map:
+
+![Split Map](./../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.png)
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
+</a>
+
+### Mixer Configuration
+
+The band uses a Behringer WING RACK mixer for mixing all IEMs and front-of-house when necessary. If you will be working with the band to manage live sound at an event using their equipment, you can download the latest configuration from the [Mixer folder](Mixer).
+
+You can view the mixer configuration by using the WING EDIT software provided by Behringer. You can [download it from their website](https://www.behringer.com/wing/wing-rack#documentations).
+
+## Acoustic
+
+The band can perform in smaller venues with an acoustic set up. This setup replaces the full drum set with a smaller percussion setup, removes the need for IEMs and the IEM box, and shrinks the overall stage footprint. This configuration differs per show as it aligns more closely with the set list. For any documentation or requirements, please contact the band directly at [technical@theperfectstrangers.band](mailto:technical@theperfectstrangers.band?subject=Acoustic%20Set%20Up%20for%20The%20Perfect%20Strangers).
+
+### Input + Equipment
+
+<a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/Acoustic/The%20Perfect%20Strangers%20-%20Acoustic%20Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Input%20List-EC1C24?logo=adobeacrobatreader)
+</a>
