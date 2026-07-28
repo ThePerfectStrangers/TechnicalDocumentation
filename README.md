@@ -23,7 +23,7 @@ The band uses a rider to ensure the safety of the the public, band members, and 
 * Input List
 * Cancellation Policy
 
-[![Download PDF](https://img.shields.io/badge/Rider-Download%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Rider/Rider.pdf)
+[![Download PDF](https://img.shields.io/badge/Rider-Download%20PDF-EC1C24?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/Rider/Rider.pdf)
 
 # Stage Assembly
 
