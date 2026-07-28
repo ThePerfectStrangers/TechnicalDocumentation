@@ -554,12 +554,18 @@ jobs:
 
       - name: Set Absolute Path - ${{ vars.RIDER_PDF_PATH }}
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.RIDER_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_RIDER_PDF"
-      
-      - name: Set Absolute Path - ${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}
-        run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
-
+            
       - name: Merge PDFs into Complete Technical Documentation
         run: python .github/workflows/lib/combine-pdfs.py "${{ env.ABSOLUTE_OUTPUT_PATH_PDF }}" "${{ env.TITLE }}" "${{ env.AUTHOR }}" "${{ env.SUBJECT }}" "${{ env.ABSOLUTE_PATH_TO_RIDER_PDF }}"
+
+      # git-auto-commit-action never pulls before pushing, so if another commit
+      # landed on main while this job was generating assets, its push fails
+      # with a non-fast-forward error. Rebase onto the latest main first,
+      # auto-stashing our not-yet-committed generated files around the rebase.
+      - name: Sync with latest main before committing
+        run: |
+          git fetch origin main
+          git rebase --autostash origin/main
 
       - name: Commit all generated documentation assets
         uses: stefanzweifel/git-auto-commit-action@v7
