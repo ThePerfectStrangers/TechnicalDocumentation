@@ -520,7 +520,7 @@ jobs:
   # Skipped when all conversion jobs were skipped, or any job failed.
   # ─────────────────────────────────────────────────────────────────────────
   merge-and-commit:
-    name: Merge PDFs & Commit
+    name: Merge & Commit
     needs: [check-changes, excel-export, drawio-export, drawio-gif, markdown-export]
     if: always() && !cancelled() && needs.excel-export.result != 'failure' && needs.drawio-export.result != 'failure' && needs.drawio-gif.result != 'failure' && needs.markdown-export.result != 'failure' && (needs.excel-export.result == 'success' || needs.drawio-export.result == 'success' || needs.drawio-gif.result == 'success' || needs.markdown-export.result == 'success')
     runs-on: ubuntu-latest
