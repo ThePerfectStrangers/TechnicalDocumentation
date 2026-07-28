@@ -11,6 +11,7 @@ All technical documentation related to band, [The Perfect Strangers](https://The
 
 - [Rider](#rider)
 - [Stage Assembly](#stage-assembly)
+- [Trailer Loading](#trailer-loading)
 - [Repository Health](#repository-health)
 
 # Rider
@@ -27,6 +28,10 @@ The band uses a rider to ensure the safety of the the public, band members, and 
 # Stage Assembly
 
 A step-by-step guide on [how the band assembles the stage](./StageDiagram/FullBand/StageAssembly/README.md).
+
+# Trailer Loading
+
+A diagram that shows the [general location of all band equipment in the trailer.](./Trailer/README.md).
 
 # Repository Health
 
