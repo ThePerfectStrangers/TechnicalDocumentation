@@ -559,7 +559,7 @@ jobs:
         run: pwsh .github/workflows/lib/Set-Absolute-Path-Variable.ps1 -BasePath "${{ github.workspace }}" -RelativePath "${{ vars.FULL_BAND_INPUT_LIST_PDF_PATH }}" -VariableName "ABSOLUTE_PATH_TO_INPUT_LIST_PDF"
 
       - name: Merge PDFs into Complete Technical Documentation
-        run: python .github/workflows/lib/combine-pdfs.py "${{ env.ABSOLUTE_OUTPUT_PATH_PDF }}" "${{ env.TITLE }}" "${{ env.AUTHOR }}" "${{ env.SUBJECT }}" "${{ env.ABSOLUTE_PATH_TO_RIDER_PDF }}" "${{ env.ABSOLUTE_PATH_TO_STAGE_DIAGRAM_PDF }}" "${{ env.ABSOLUTE_PATH_TO_INPUT_LIST_PDF }}"
+        run: python .github/workflows/lib/combine-pdfs.py "${{ env.ABSOLUTE_OUTPUT_PATH_PDF }}" "${{ env.TITLE }}" "${{ env.AUTHOR }}" "${{ env.SUBJECT }}" "${{ env.ABSOLUTE_PATH_TO_RIDER_PDF }}"
 
       - name: Commit all generated documentation assets
         uses: stefanzweifel/git-auto-commit-action@v7
