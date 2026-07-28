@@ -44,3 +44,5 @@ conversions:
   markdown_pdf:
     - input: ./StageDiagram/FullBand/StageAssembly/README.md
       output: ./../../../Assets/StageDiagram/FullBand/StageAssembly/StageAssemblyGuide.pdf
+    - input: ./Rider/Rider.md
+      output: ./../Assets/Rider/Rider.pdf
