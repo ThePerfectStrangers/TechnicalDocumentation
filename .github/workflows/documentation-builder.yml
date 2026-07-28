@@ -37,17 +37,21 @@ jobs:
     name: Detect Changed Files
     runs-on: ubuntu-latest
     outputs:
-      excel:      ${{ steps.filter.outputs.excel }}
-      drawio:     ${{ steps.filter.outputs.drawio }}
-      drawio-gif: ${{ steps.filter.outputs.drawio-gif }}
-      markdown:   ${{ steps.filter.outputs.markdown }}
-      workflow:   ${{ steps.filter.outputs.workflow }}
+      excel:         ${{ steps.filter.outputs.excel }}
+      excel_files:   ${{ steps.filter.outputs.excel_files }}
+      drawio:        ${{ steps.filter.outputs.drawio }}
+      drawio_files:  ${{ steps.filter.outputs.drawio_files }}
+      drawio-gif:    ${{ steps.filter.outputs.drawio-gif }}
+      markdown:      ${{ steps.filter.outputs.markdown }}
+      markdown_files: ${{ steps.filter.outputs.markdown_files }}
+      workflow:      ${{ steps.filter.outputs.workflow }}
     steps:
       - uses: actions/checkout@v6
 
       - uses: dorny/paths-filter@v4
         id: filter
         with:
+          list-files: json
           filters: |
             excel:
               - '**/*.xlsx'
@@ -72,11 +76,82 @@ jobs:
               - '.github/workflows/lib/**'
 
   # ─────────────────────────────────────────────────────────────────────────
+  # Guard against a changed source file (xlsx/drawio/md) having no matching
+  # entry in Assets/asset-config-map.yaml — that would make a downstream
+  # export job "succeed" while silently never regenerating the asset.
+  # ─────────────────────────────────────────────────────────────────────────
+  validate-asset-config:
+    name: Validate Asset Config Coverage
+    needs: check-changes
+    if: needs.check-changes.outputs.excel == 'true' || needs.check-changes.outputs.drawio == 'true' || needs.check-changes.outputs.markdown == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Ensure changed source files are registered in asset-config-map.yaml
+        env:
+          EXCEL_FILES_JSON: ${{ needs.check-changes.outputs.excel_files }}
+          DRAWIO_FILES_JSON: ${{ needs.check-changes.outputs.drawio_files }}
+          MARKDOWN_FILES_JSON: ${{ needs.check-changes.outputs.markdown_files }}
+        run: |
+          set -e
+
+          sudo wget -qO /usr/local/bin/yq https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64
+          sudo chmod +x /usr/local/bin/yq
+
+          missing=0
+
+          check_category () {
+            local label="$1"
+            local json_files="$2"
+            local yq_query="$3"
+            local ext="$4"
+
+            mapfile -t all_files < <(echo "$json_files" | jq -r '.[]? // empty')
+            files=()
+            for f in "${all_files[@]}"; do
+              if [[ "$f" == *"$ext" ]]; then
+                files+=("$f")
+              fi
+            done
+            if [ "${#files[@]}" -eq 0 ]; then
+              return
+            fi
+
+            mapfile -t configured < <(yq -r "$yq_query" ./Assets/asset-config-map.yaml | sed 's#^\./##')
+
+            for f in "${files[@]}"; do
+              found=0
+              for c in "${configured[@]}"; do
+                if [ "$c" == "$f" ]; then
+                  found=1
+                  break
+                fi
+              done
+              if [ "$found" -eq 0 ]; then
+                echo "::error file=Assets/asset-config-map.yaml::$label source '$f' changed but has no matching entry in Assets/asset-config-map.yaml — its generated output would silently go stale."
+                missing=1
+              fi
+            done
+          }
+
+          check_category "Excel"    "$EXCEL_FILES_JSON"    '.conversions.excel[].input' '.xlsx'
+          check_category "Draw.io"  "$DRAWIO_FILES_JSON"   '(.conversions.drawio[]?.input, .conversions.drawio_layered_gif[]?.input)' '.drawio'
+          check_category "Markdown" "$MARKDOWN_FILES_JSON" '.conversions.markdown_pdf[].input' '.md'
+
+          if [ "$missing" -eq 1 ]; then
+            echo ""
+            echo "Add the missing entry/entries to Assets/asset-config-map.yaml so the corresponding PDF/PNG output is regenerated."
+            exit 1
+          fi
+          echo "All changed source files are registered in Assets/asset-config-map.yaml."
+
+  # ─────────────────────────────────────────────────────────────────────────
   # Excel → PNG & PDF   (requires Windows + Microsoft Office)
   # ─────────────────────────────────────────────────────────────────────────
   excel-export:
     name: Excel to PNG & PDF
-    needs: check-changes
+    needs: [check-changes, validate-asset-config]
     if: needs.check-changes.outputs.excel == 'true' || needs.check-changes.outputs.workflow == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: windows-latest
     steps:
@@ -216,7 +291,7 @@ jobs:
   # ─────────────────────────────────────────────────────────────────────────
   drawio-export:
     name: Draw.io to PNG & PDF
-    needs: check-changes
+    needs: [check-changes, validate-asset-config]
     if: needs.check-changes.outputs.drawio == 'true' || needs.check-changes.outputs.workflow == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
@@ -329,7 +404,7 @@ jobs:
   # ─────────────────────────────────────────────────────────────────────────
   drawio-gif:
     name: Draw.io to Layered GIF
-    needs: check-changes
+    needs: [check-changes, validate-asset-config]
     if: needs.check-changes.outputs.drawio-gif == 'true' || needs.check-changes.outputs.workflow == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
@@ -428,7 +503,7 @@ jobs:
   # ─────────────────────────────────────────────────────────────────────────
   markdown-export:
     name: Markdown to PDF
-    needs: [check-changes, excel-export, drawio-export, drawio-gif]
+    needs: [check-changes, validate-asset-config, excel-export, drawio-export, drawio-gif]
     if: needs.check-changes.outputs.markdown == 'true' || needs.check-changes.outputs.workflow == 'true' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
