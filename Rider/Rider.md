@@ -17,9 +17,11 @@
 Rider Updated: {{LAST_UPDATED_DATE}}
 
 <!-- title: The Perfect Strangers - Rider -->
-# Rider 
+# Rider
 
 These are the requirements each venue that hosts the band must provide.
+
+<div class="no-pdf">
 
 - [Rider](#rider)
   - [Contact Info](#contact-info)
@@ -53,6 +55,8 @@ These are the requirements each venue that hosts the band must provide.
     - [Mixer Configuration](#mixer-configuration)
   - [Acoustic](#acoustic)
     - [Input + Equipment](#input--equipment-1)
+
+</div>
 
 ## Contact Info
 
@@ -154,8 +158,12 @@ This is the general layout of the band. It includes the people, microphones, equ
 
 ![Full Band Stage Diagram](./../Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.png)
 
+<div class="no-pdf">
+
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/StageDiagram/FullBand/The%20Perfect%20Strangers%20-%20Stage%20Diagram.pdf">![Static Badge](https://img.shields.io/badge/PDF-Stage_Diagram-EC1C24?logo=adobeacrobatreader)
 </a>
+
+</div>
 
 **Note:**  In a situation where the band is not in charge of the PA, the PA speakers located Downstage Right and Downstage Left should be omitted from consideration.
 
@@ -182,8 +190,12 @@ More information regarding splitting the signal to front-of-house (FOH) can be f
 
 ![Input List](./../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.png)
 
+<div class="no-pdf">
+
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Full%20Band%20Input%20List-EC1C24?logo=adobeacrobatreader)
 </a>
+
+</div>
 
 ### Split
 
@@ -193,8 +205,8 @@ The band requires 32-channels of split capacity.
 
 When splitting is required, we can support two modes:
 1. (Preferred) The band uses their own microphones, running them into their IEM Mixer. Then a split signal is sent to the front-of-house (FOH). The band will manage all phantom power to mics and control all gain (staged to `-18.5`). The band then manages their own IEM mixes, leaving the FOH engineer to only manage the FOH mix. This is preferred because it reduces the amount of time each band member must spend recalibrating their mix. The band can split the signal from their IEM Mixer box the following ways:
-  
-   1.  **AES50 via Ethercon**: A single Ethercon cable is sent from the **AES50 C** port of the band's Behringer WING Rack inside the IEM Mixer Box to the FOH mixing console. This allows the console to receive the audio signal, clock sync, and channel labels. 
+
+   1.  **AES50 via Ethercon**: A single Ethercon cable is sent from the **AES50 C** port of the band's Behringer WING Rack inside the IEM Mixer Box to the FOH mixing console. This allows the console to receive the audio signal, clock sync, and channel labels.
    2.  **XLR from two Midas DN4816-O Interfaces**: XLR cables are patched between the band's IEM Mixer Box and the FOH mixing console.
 
 2. (Festival) All microphones and cabling are provided by a live sound team, who manage both FOH sound and individual mixing for each band member. The band would bring their own earbuds to connect to IEM body packs provided by the sound team. Alternatively, the band may provide IEM transmitters and body packs if needed, but they will need to be routed from the monitor mixing board on-stage.
@@ -223,8 +235,12 @@ A 10 ft. snake cable may be utilized from the IEM Mixer to handle connections at
 
 ![Split Map](./../Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.png)
 
+<div class="no-pdf">
+
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/FullBand/The%20Perfect%20Strangers%20-%20Full%20Band%20Split%20Map.pdf">![Static Badge](https://img.shields.io/badge/PDF-Split%20Map-EC1C24?logo=adobeacrobatreader)
 </a>
+
+</div>
 
 ### Mixer Configuration
 
@@ -238,5 +254,9 @@ The band can perform in smaller venues with an acoustic set up. This setup repla
 
 ### Input + Equipment
 
+<div class="no-pdf">
+
 <a id="raw-url" href="https://raw.githubusercontent.com/ThePerfectStrangers/TechnicalDocumentation/main/Assets/InputList/Acoustic/The%20Perfect%20Strangers%20-%20Acoustic%20Input%20List.pdf">![Static Badge](https://img.shields.io/badge/PDF-Acoustic%20Input%20List-EC1C24?logo=adobeacrobatreader)
 </a>
+
+</div>
