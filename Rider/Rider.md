@@ -167,7 +167,11 @@ This is the general layout of the band. It includes the people, microphones, equ
 
 **Note:**  In a situation where the band is not in charge of the PA, the PA speakers located Downstage Right and Downstage Left should be omitted from consideration.
 
+<div class="no-pdf">
+  
 [Click here](../StageDiagram/FullBand/StageAssembly/README.md) to access the step-by-step stage assembly guide.
+
+</div>
 
 ## Drums
 
