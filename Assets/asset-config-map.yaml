@@ -13,6 +13,8 @@ conversions:
     - input: ./Trailer/TrailerLoadMap.drawio
       png: ./../Assets/Trailer/The Perfect Strangers - Trailer Load Map.png
       pdf: ./../Assets/Trailer/The Perfect Strangers - Trailer Load Map.pdf
+    - input: ./BandColorConvention/BandInfoAndPosition.drawio
+      png: ./../Assets/BandColorConvention/BandInfoAndPosition.png
   excel:
     - input: ./BandColorConvention/BandColorConvention.xlsx
       sheet: 'Document Style'
