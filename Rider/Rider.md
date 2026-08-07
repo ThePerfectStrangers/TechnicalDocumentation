@@ -27,6 +27,8 @@ These are the requirements each venue that hosts the band must provide.
   - [Contact Info](#contact-info)
   - [Personnel](#personnel)
     - [Band Members](#band-members)
+      - [Input List/Split Map Convention](#input-listsplit-map-convention)
+      - [Stage Diagram Convention](#stage-diagram-convention)
     - [Entourage](#entourage)
     - [Support Staff](#support-staff)
       - [Sound and lighting engineers](#sound-and-lighting-engineers)
@@ -68,7 +70,12 @@ You can reach out to the band by emailing [booking@theperfectstrangers.band](mai
 
 The documents and graphics in this repository use the following color convention for the band members:
 
+#### Input List/Split Map Convention
 <img src="./../Assets/BandColorConvention/BandColorConvention.png" width=75%>
+
+#### Stage Diagram Convention
+
+<img src="./../Assets/BandColorConvention/BandInfoAndPosition.png" width=75%>
 
 ### Entourage
 
