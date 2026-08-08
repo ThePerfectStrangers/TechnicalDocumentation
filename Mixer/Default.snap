@@ -216,7 +216,7 @@
       }
     },
     "io": {
-      "altsw": true,
+      "altsw": false,
       "autoaltovr": true,
       "in": {
         "LCL": {
@@ -623,7 +623,7 @@
           },
           "2": {
             "mode": "M",
-            "g": 15,
+            "g": 0,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -649,7 +649,7 @@
           },
           "4": {
             "mode": "M",
-            "g": 35,
+            "g": 30,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -701,7 +701,7 @@
           },
           "8": {
             "mode": "M",
-            "g": 32.5,
+            "g": 30,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -714,7 +714,7 @@
           },
           "9": {
             "mode": "M",
-            "g": 40,
+            "g": 22.5,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -753,7 +753,7 @@
           },
           "12": {
             "mode": "M",
-            "g": 40,
+            "g": 27.5,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -5936,19 +5936,19 @@
           },
           "14": {
             "grp": "A",
-            "in": 11
+            "in": 5
           },
           "15": {
             "grp": "A",
-            "in": 5
+            "in": 6
           },
           "16": {
             "grp": "A",
-            "in": 6
+            "in": 7
           },
           "17": {
             "grp": "A",
-            "in": 7
+            "in": 15
           },
           "18": {
             "grp": "A",
@@ -6756,7 +6756,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -6909,7 +6909,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 1.600000381,
+            "lvl": -0.799999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -7113,7 +7113,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": -9,
@@ -7470,7 +7470,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -7631,7 +7631,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -29.5,
+            "lvl": -12.20000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -7827,7 +7827,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -7988,7 +7988,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -29.5,
+            "lvl": -13.40000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -8184,7 +8184,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -8541,7 +8541,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -8898,7 +8898,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -9091,7 +9091,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -53.40000153,
+            "lvl": -50.70000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9255,7 +9255,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -9448,7 +9448,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -55.29999924,
+            "lvl": -40.79999924,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9612,7 +9612,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -9805,7 +9805,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -33.40000153,
+            "lvl": -29.89999962,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9969,7 +9969,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -10162,7 +10162,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -59.79999924,
+            "lvl": -57.09999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -10326,7 +10326,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": true,
             "trim": 0,
             "bal": 0,
@@ -10487,7 +10487,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -144,
+            "lvl": -82.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -10683,7 +10683,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -11040,7 +11040,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -11397,7 +11397,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -11550,7 +11550,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 0.299999237,
+            "lvl": -2.100000381,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11582,7 +11582,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -144,
+            "lvl": -28.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11754,7 +11754,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 9,
@@ -11907,7 +11907,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 10,
+            "lvl": 0.700000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11931,7 +11931,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -5.799999237,
+            "lvl": -14,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11939,15 +11939,15 @@
           },
           "5": {
             "on": true,
-            "lvl": -18.39999962,
+            "lvl": -19.60000038,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
-            "pan": 100
+            "pan": 0
           },
           "6": {
             "on": true,
-            "lvl": -15.29999924,
+            "lvl": -6.299999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12111,7 +12111,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -12468,7 +12468,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -12615,7 +12615,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 4.799999237,
+            "lvl": 3.299999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12631,7 +12631,7 @@
           },
           "3": {
             "on": true,
-            "lvl": 6.599998474,
+            "lvl": 4.099998474,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12639,7 +12639,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -3.999998093,
+            "lvl": -4.299999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12647,7 +12647,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -15.09999847,
+            "lvl": -16.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12819,7 +12819,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -12988,7 +12988,7 @@
           },
           "3": {
             "on": true,
-            "lvl": -11.5,
+            "lvl": -6,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12996,7 +12996,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -3.199998856,
+            "lvl": -1.600000381,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13004,7 +13004,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -14.79999924,
+            "lvl": -17.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13012,7 +13012,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -0.399999619,
+            "lvl": -1.099998474,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13176,7 +13176,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": -9,
@@ -13337,7 +13337,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -4.700000763,
+            "lvl": -4.79999733,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13353,7 +13353,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -1.600000381,
+            "lvl": -0.399999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13361,15 +13361,15 @@
           },
           "5": {
             "on": true,
-            "lvl": -27.10000038,
+            "lvl": -22.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
-            "pan": -100
+            "pan": -2
           },
           "6": {
             "on": true,
-            "lvl": -9.399997711,
+            "lvl": -7.799999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13533,7 +13533,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": -9,
@@ -13686,7 +13686,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 7.5,
+            "lvl": 5.099998474,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13722,11 +13722,11 @@
             "pon": false,
             "mode": "PRE",
             "plink": 0,
-            "pan": -100
+            "pan": -3
           },
           "6": {
             "on": true,
-            "lvl": -7.29999733,
+            "lvl": -8,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13890,7 +13890,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": -9,
@@ -14079,11 +14079,11 @@
             "pon": false,
             "mode": "PRE",
             "plink": 0,
-            "pan": -100
+            "pan": 0
           },
           "6": {
             "on": true,
-            "lvl": -13.40000153,
+            "lvl": -11.09999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14247,7 +14247,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -14440,7 +14440,7 @@
           },
           "6": {
             "on": false,
-            "lvl": -79.09999847,
+            "lvl": -73.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14604,7 +14604,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -14781,7 +14781,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -8,
+            "lvl": -4.399997711,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14789,7 +14789,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -22.60000038,
+            "lvl": -18.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14797,7 +14797,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -4.79999733,
+            "lvl": 1.800001144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14961,7 +14961,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 9,
@@ -15114,7 +15114,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 1.200000763,
+            "lvl": -4.299999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15122,7 +15122,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -7.200000763,
+            "lvl": 0.700000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15138,7 +15138,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -15.20000076,
+            "lvl": -9.200000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15146,15 +15146,15 @@
           },
           "5": {
             "on": true,
-            "lvl": -28.89999771,
+            "lvl": -16.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
-            "pan": 100
+            "pan": 0
           },
           "6": {
             "on": true,
-            "lvl": 1.5,
+            "lvl": 10,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15318,7 +15318,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 9,
@@ -15479,7 +15479,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -8,
+            "lvl": -8.299999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15507,11 +15507,11 @@
             "pon": false,
             "mode": "PRE",
             "plink": 0,
-            "pan": 100
+            "pan": 0
           },
           "6": {
             "on": true,
-            "lvl": 1.5,
+            "lvl": 1.700000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15675,7 +15675,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 9,
@@ -15864,7 +15864,7 @@
             "pon": false,
             "mode": "PRE",
             "plink": 0,
-            "pan": 100
+            "pan": 0
           },
           "6": {
             "on": true,
@@ -16032,7 +16032,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -16185,7 +16185,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 6.299999237,
+            "lvl": 4.200000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16201,7 +16201,7 @@
           },
           "3": {
             "on": true,
-            "lvl": -7.200000763,
+            "lvl": 0.100000381,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16209,7 +16209,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -4.200000763,
+            "lvl": 2.400001526,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16217,7 +16217,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -9.200000763,
+            "lvl": -5.399999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16225,7 +16225,7 @@
           },
           "6": {
             "on": true,
-            "lvl": 4.799999237,
+            "lvl": 2.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16389,7 +16389,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": -9,
@@ -16542,7 +16542,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": -0.599998474,
+            "lvl": -3,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16574,7 +16574,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -18.5,
+            "lvl": -22.10000038,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16746,7 +16746,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 9,
@@ -16939,7 +16939,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -22.5,
+            "lvl": -13,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17103,7 +17103,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -17256,7 +17256,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": -10.40000153,
+            "lvl": 1.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17280,7 +17280,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -3.700000763,
+            "lvl": -6,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17460,7 +17460,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -17817,7 +17817,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -18174,7 +18174,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -18531,7 +18531,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -18724,7 +18724,7 @@
           },
           "6": {
             "on": false,
-            "lvl": -144,
+            "lvl": -87.30000305,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -18888,7 +18888,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -19245,7 +19245,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -19602,7 +19602,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -19959,7 +19959,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -20316,7 +20316,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -20509,7 +20509,7 @@
           },
           "6": {
             "on": false,
-            "lvl": 0,
+            "lvl": 0.899999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -20673,7 +20673,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -21032,7 +21032,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -21329,7 +21329,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -21626,7 +21626,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -21923,7 +21923,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -22220,7 +22220,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -22517,7 +22517,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -22814,7 +22814,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -23111,7 +23111,7 @@
         "in": {
           "set": {
             "srcauto": true,
-            "altsrc": true,
+            "altsrc": false,
             "inv": false,
             "trim": 0,
             "bal": 0,
@@ -23420,7 +23420,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -14.59999847,
+        "fdr": -20,
         "pan": 0,
         "wid": 100,
         "mon": "A",
@@ -26619,7 +26619,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -25.89999962,
+            "lvl": -20.39999962,
             "pre": false
           },
           "7": {
@@ -26856,7 +26856,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -26.60000038,
+            "lvl": -19.79999733,
             "pre": false
           },
           "7": {
@@ -27349,7 +27349,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -20.5,
+        "fdr": -21.09999847,
         "pan": 0,
         "wid": 100,
         "mon": "A",
