@@ -215,7 +215,7 @@ More information regarding splitting the signal to front-of-house (FOH) can be f
 The band requires 32-channels of split capacity.
 
 When splitting is required, we can support two modes:
-1. (Preferred) The band uses their own microphones, running them into their IEM Mixer. Then a split signal is sent to the front-of-house (FOH). The band will manage all phantom power to mics and control all gain (staged to `-18.5`). The band then manages their own IEM mixes, leaving the FOH engineer to only manage the FOH mix. This is preferred because it reduces the amount of time each band member must spend recalibrating their mix. The band can split the signal from their IEM Mixer box the following ways:
+1. (Preferred) The band uses their own microphones, running them into their IEM Mixer. Then a split signal is sent to the front-of-house (FOH). The band will manage all phantom power to mics and control all gain (staged to `-18.5 dbFS`). The band then manages their own IEM mixes, leaving the FOH engineer to only manage the FOH mix. This is preferred because it reduces the amount of time each band member must spend recalibrating their mix. The band can split the signal from their IEM Mixer box the following ways:
 
    1.  **AES50 via Ethercon**: A single Ethercon cable is sent from the **AES50 C** port of the band's Behringer WING Rack inside the IEM Mixer Box to the FOH mixing console. This allows the console to receive the audio signal, clock sync, and channel labels.
    2.  **XLR from two Midas DN4816-O Interfaces**: XLR cables are patched between the band's IEM Mixer Box and the FOH mixing console.
