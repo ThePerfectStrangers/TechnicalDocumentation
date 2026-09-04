@@ -1,7 +1,7 @@
 {
   "type": "snapshot.11",
   "creator": "WING Edit",
-  "creator_vers": "3.3.2",
+  "creator_vers": "3.3.3",
   "creator_model": "wing",
   "creator_name": "Mastermind",
   "ae_data": {
@@ -623,7 +623,7 @@
           },
           "2": {
             "mode": "M",
-            "g": 34,
+            "g": 35,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -649,7 +649,7 @@
           },
           "4": {
             "mode": "M",
-            "g": 29,
+            "g": 30,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -667,7 +667,7 @@
             "mute": false,
             "pol": false,
             "col": 3,
-            "name": "Paul Amp1",
+            "name": "Paul AmpSL",
             "icon": 300,
             "tags": "",
             "rmt": "OFF",
@@ -680,7 +680,7 @@
             "mute": false,
             "pol": false,
             "col": 3,
-            "name": "Paul Amp2",
+            "name": "Paul AmpSR",
             "icon": 300,
             "tags": "",
             "rmt": "OFF",
@@ -714,12 +714,12 @@
           },
           "9": {
             "mode": "M",
-            "g": 28.5,
+            "g": 27.5,
             "vph": false,
             "mute": false,
             "pol": false,
             "col": 15,
-            "name": "Mike Amp1",
+            "name": "Mike AmpSL",
             "icon": 300,
             "tags": "",
             "rmt": "OFF",
@@ -732,7 +732,7 @@
             "mute": false,
             "pol": false,
             "col": 15,
-            "name": "Mike Amp2",
+            "name": "Mike AmpSR",
             "icon": 300,
             "tags": "",
             "rmt": "OFF",
@@ -805,13 +805,13 @@
           },
           "16": {
             "mode": "M",
-            "g": 32.5,
+            "g": 27.5,
             "vph": false,
             "mute": false,
             "pol": false,
-            "col": 11,
-            "name": "Guest Vocals",
-            "icon": 113,
+            "col": 9,
+            "name": "Kenzi Amp",
+            "icon": 300,
             "tags": "",
             "rmt": "OFF",
             "rcvc": false
@@ -822,9 +822,9 @@
             "vph": false,
             "mute": false,
             "pol": false,
-            "col": 1,
-            "name": "",
-            "icon": 0,
+            "col": 11,
+            "name": "Guest Vocals",
+            "icon": 113,
             "tags": "",
             "rmt": "OFF",
             "rcvc": false
@@ -2488,291 +2488,419 @@
         "SC": {
           "1": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "2": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "3": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "4": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "5": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "6": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "7": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "8": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "9": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "10": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "11": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "12": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "13": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "14": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "15": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "16": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "17": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "18": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "19": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "20": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "21": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "22": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "23": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "24": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "25": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "26": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "27": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "28": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "29": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "30": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "31": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           },
           "32": {
             "mode": "M",
+            "g": 0,
+            "vph": false,
             "mute": false,
             "pol": false,
             "col": 1,
             "name": "",
             "icon": 0,
-            "tags": ""
+            "tags": "",
+            "rmt": "OFF",
+            "rcvc": false
           }
         },
         "USB": {
@@ -3050,9 +3178,9 @@
             "mode": "M",
             "mute": false,
             "pol": false,
-            "col": 1,
-            "name": "",
-            "icon": 0,
+            "col": 9,
+            "name": "Kenzi Amp",
+            "icon": 300,
             "tags": ""
           },
           "32": {
@@ -5936,59 +6064,59 @@
           },
           "14": {
             "grp": "A",
-            "in": 5
+            "in": 11
           },
           "15": {
             "grp": "A",
-            "in": 6
+            "in": 5
           },
           "16": {
             "grp": "A",
-            "in": 7
+            "in": 6
           },
           "17": {
             "grp": "A",
-            "in": 15
+            "in": 7
           },
           "18": {
             "grp": "A",
-            "in": 13
+            "in": 15
           },
           "19": {
             "grp": "A",
-            "in": 14
+            "in": 16
           },
           "20": {
             "grp": "A",
-            "in": 8
+            "in": 13
           },
           "21": {
             "grp": "A",
-            "in": 3
+            "in": 14
           },
           "22": {
-            "grp": "A",
-            "in": 4
-          },
-          "23": {
-            "grp": "A",
-            "in": 12
-          },
-          "24": {
             "grp": "LCL",
             "in": 1
           },
+          "23": {
+            "grp": "A",
+            "in": 8
+          },
+          "24": {
+            "grp": "A",
+            "in": 3
+          },
           "25": {
             "grp": "A",
-            "in": 16
+            "in": 4
           },
           "26": {
-            "grp": "OFF",
-            "in": 1
+            "grp": "A",
+            "in": 12
           },
           "27": {
-            "grp": "OFF",
-            "in": 1
+            "grp": "A",
+            "in": 17
           },
           "28": {
             "grp": "OFF",
@@ -10162,7 +10290,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -56.19058609,
+            "lvl": -56.20000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11786,7 +11914,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -13.32355881,
+        "fdr": -13.29999924,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -11885,12 +12013,12 @@
         "main": {
           "1": {
             "on": true,
-            "lvl": -0.635385513,
+            "lvl": -0.599998474,
             "pre": false
           },
           "2": {
             "on": true,
-            "lvl": 1.749755859,
+            "lvl": 1.700000763,
             "pre": false
           },
           "3": {
@@ -11907,7 +12035,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": -14.6529808,
+            "lvl": -14.70000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11923,7 +12051,7 @@
           },
           "3": {
             "on": true,
-            "lvl": -24.04821014,
+            "lvl": -23.99999809,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11931,7 +12059,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -23.08635712,
+            "lvl": -10.09999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11939,7 +12067,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -36.67914963,
+            "lvl": -33.90000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12623,7 +12751,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -4.467254639,
+            "lvl": -4.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12639,7 +12767,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -6.720802307,
+            "lvl": -6.700000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12647,7 +12775,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -22.00918388,
+            "lvl": -23.79999924,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12980,7 +13108,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -4.076248169,
+            "lvl": -4.100000381,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12996,7 +13124,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -3.522403717,
+            "lvl": -3.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13004,7 +13132,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -22.04155159,
+            "lvl": -22,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13337,7 +13465,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -6.265886307,
+            "lvl": -6.299999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13353,7 +13481,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -2.393600464,
+            "lvl": -2.399999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13361,7 +13489,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -23.05519295,
+            "lvl": -23.09999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13369,7 +13497,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -7.345293045,
+            "lvl": -7.29999733,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13686,7 +13814,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 5.099998474,
+            "lvl": 9.916461945,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13694,7 +13822,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -2.864124298,
+            "lvl": -2.899999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13710,7 +13838,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -0.769598007,
+            "lvl": 5.900001526,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13718,7 +13846,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -24.04467583,
+            "lvl": -23.99999809,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14781,7 +14909,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -6.180002213,
+            "lvl": -6.200000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14789,7 +14917,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -23.59674644,
+            "lvl": -23.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14797,7 +14925,7 @@
           },
           "6": {
             "on": true,
-            "lvl": 2.709415436,
+            "lvl": 2.700000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15122,7 +15250,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -5.601173401,
+            "lvl": -5.599998474,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15146,7 +15274,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -24.65031433,
+            "lvl": -24.70000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15154,7 +15282,7 @@
           },
           "6": {
             "on": true,
-            "lvl": 2.042629242,
+            "lvl": 2,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15503,7 +15631,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -24.63278961,
+            "lvl": -24.60000038,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16193,7 +16321,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -2.31671524,
+            "lvl": -2.29999733,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16217,7 +16345,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -5.399999619,
+            "lvl": -5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16574,7 +16702,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -20.57321548,
+            "lvl": -20.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16582,7 +16710,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -11.69058609,
+            "lvl": -11.70000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17280,7 +17408,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -11.68321609,
+            "lvl": -11.70000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17288,7 +17416,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -16.02515793,
+            "lvl": -14.90000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17296,7 +17424,7 @@
           },
           "6": {
             "on": true,
-            "lvl": 2.037654877,
+            "lvl": 2,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17469,10 +17597,10 @@
             "dlyon": false
           },
           "conn": {
-            "grp": "OFF",
-            "in": 1,
-            "altgrp": "OFF",
-            "altin": 1
+            "grp": "A",
+            "in": 16,
+            "altgrp": "USB",
+            "altin": 31
           }
         },
         "flt": {
@@ -17487,9 +17615,9 @@
           "tilt": 0
         },
         "clink": true,
-        "col": 1,
-        "name": "",
-        "icon": 0,
+        "col": 11,
+        "name": "Guest Vocals",
+        "icon": 113,
         "led": true,
         "mute": false,
         "fdr": -144,
@@ -17653,7 +17781,7 @@
           },
           "6": {
             "on": false,
-            "lvl": -79.04351807,
+            "lvl": -79,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17827,7 +17955,7 @@
           },
           "conn": {
             "grp": "A",
-            "in": 16,
+            "in": 17,
             "altgrp": "USB",
             "altin": 32
           }
@@ -23657,7 +23785,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -14.10557175,
+        "fdr": -14.09999847,
         "pan": 0,
         "wid": 100,
         "mon": "A",
@@ -24131,7 +24259,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -20.78559113,
+        "fdr": -20.79999924,
         "pan": 0,
         "wid": 100,
         "mon": "A",
