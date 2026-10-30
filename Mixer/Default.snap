@@ -235,7 +235,7 @@
           },
           "2": {
             "mode": "M",
-            "g": 17.5,
+            "g": 25,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -623,7 +623,7 @@
           },
           "2": {
             "mode": "M",
-            "g": 35,
+            "g": 25,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -688,7 +688,7 @@
           },
           "7": {
             "mode": "M",
-            "g": 17.5,
+            "g": 40,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -753,7 +753,7 @@
           },
           "12": {
             "mode": "M",
-            "g": 27.5,
+            "g": 37.5,
             "vph": false,
             "mute": false,
             "pol": false,
@@ -6916,7 +6916,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": 2.400001526,
+        "fdr": -6,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -7061,7 +7061,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -16.09999847,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -7069,7 +7069,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -28.59999847,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -7077,7 +7077,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -35,
+            "lvl": -8.099998474,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -7273,7 +7273,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -2.200000763,
+        "fdr": 4.5,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -7418,7 +7418,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -27.5,
+            "lvl": -33.90000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -7630,7 +7630,7 @@
         "icon": 202,
         "led": true,
         "mute": false,
-        "fdr": -7,
+        "fdr": -13.40000153,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -7775,7 +7775,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -28.99999809,
+            "lvl": -34.40000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -7987,7 +7987,7 @@
         "icon": 205,
         "led": true,
         "mute": false,
-        "fdr": -7.600000381,
+        "fdr": -21.79999924,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -8132,7 +8132,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -28.99999809,
+            "lvl": -36,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -8344,7 +8344,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -31.70000076,
+        "fdr": -34.79999924,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -8489,7 +8489,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -50,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -8701,7 +8701,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -18,
+        "fdr": -9.700000763,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -8862,7 +8862,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -59.79999924,
+            "lvl": -57.09999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9058,7 +9058,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -16.79999924,
+        "fdr": -9.600000381,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -9203,7 +9203,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -54,
+            "lvl": -82.80000305,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9219,7 +9219,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -50.70000076,
+            "lvl": -44.29999924,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9415,7 +9415,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -16.70000076,
+        "fdr": -11.5,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -9560,7 +9560,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -58,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9568,7 +9568,7 @@
           },
           "5": {
             "on": false,
-            "lvl": -144,
+            "lvl": -80,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9772,7 +9772,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -19.29999924,
+        "fdr": -15.29999924,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -9917,7 +9917,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -56.29999924,
+            "lvl": -82.31038666,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -9933,7 +9933,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -29.89999962,
+            "lvl": -28.99999809,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -10129,7 +10129,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -44.59999847,
+        "fdr": -54,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -10258,7 +10258,7 @@
           },
           "2": {
             "on": false,
-            "lvl": -86.5,
+            "lvl": -79.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -10274,7 +10274,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -45.69999695,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -10290,7 +10290,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -56.20000076,
+            "lvl": -54.40000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -10486,7 +10486,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -45.79999924,
+        "fdr": -53.59999847,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -10615,7 +10615,7 @@
           },
           "2": {
             "on": false,
-            "lvl": -82.5,
+            "lvl": -82.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -10972,7 +10972,7 @@
           },
           "2": {
             "on": false,
-            "lvl": -144,
+            "lvl": -83.90000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -10988,7 +10988,7 @@
           },
           "4": {
             "on": false,
-            "lvl": -1.600000381,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11345,7 +11345,7 @@
           },
           "4": {
             "on": false,
-            "lvl": 0.20000267,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11686,7 +11686,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -2.399999619,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11702,7 +11702,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -11,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11710,7 +11710,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -144,
+            "lvl": -89.19999695,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -11914,7 +11914,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -13.29999924,
+        "fdr": -17.59999847,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -12035,7 +12035,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": -14.70000076,
+            "lvl": -0.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12043,7 +12043,7 @@
           },
           "2": {
             "on": true,
-            "lvl": -9.5,
+            "lvl": -6.799999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12059,7 +12059,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -10.09999847,
+            "lvl": -12.29999924,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12067,7 +12067,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -33.90000153,
+            "lvl": -44.20000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12075,7 +12075,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -6.299999237,
+            "lvl": -4.100000381,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12416,7 +12416,7 @@
           },
           "4": {
             "on": false,
-            "lvl": -2.100000381,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12628,7 +12628,7 @@
         "icon": 101,
         "led": true,
         "mute": false,
-        "fdr": 1.299999237,
+        "fdr": -0.599998474,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -12767,7 +12767,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -6.700000763,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12775,7 +12775,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -23.79999924,
+            "lvl": -21.39999771,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12783,7 +12783,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -1.799999237,
+            "lvl": 2.900001526,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -12979,7 +12979,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": 3.900001526,
+        "fdr": -1.200000763,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -13124,7 +13124,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -3.5,
+            "lvl": 3.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13132,7 +13132,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -22,
+            "lvl": -20.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13140,7 +13140,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -1.099998474,
+            "lvl": 0.899999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13336,7 +13336,7 @@
         "icon": 300,
         "led": true,
         "mute": false,
-        "fdr": -1.099998474,
+        "fdr": -4.200000763,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -13457,7 +13457,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 3.200000763,
+            "lvl": 10,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13481,7 +13481,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -2.399999619,
+            "lvl": -4.299999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13497,7 +13497,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -7.29999733,
+            "lvl": -0.899999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13693,7 +13693,7 @@
         "icon": 300,
         "led": true,
         "mute": false,
-        "fdr": -7.700000763,
+        "fdr": 1.600000381,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -13814,7 +13814,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 9.916461945,
+            "lvl": 9.900001526,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13838,7 +13838,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 5.900001526,
+            "lvl": 3.299999237,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -13854,7 +13854,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -8,
+            "lvl": -2.100000381,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14049,8 +14049,8 @@
         "name": "Paul Acstc",
         "icon": 304,
         "led": true,
-        "mute": false,
-        "fdr": -17.5,
+        "mute": true,
+        "fdr": -18.19999886,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -14171,7 +14171,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": -9.399997711,
+            "lvl": -3.199998856,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14195,7 +14195,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -14.70000076,
+            "lvl": -14,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14203,7 +14203,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -144,
+            "lvl": -37,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14211,7 +14211,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -11.09999847,
+            "lvl": -9.899999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14560,7 +14560,7 @@
           },
           "5": {
             "on": false,
-            "lvl": -50.59999847,
+            "lvl": -49.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14568,7 +14568,7 @@
           },
           "6": {
             "on": false,
-            "lvl": -73.59999847,
+            "lvl": -79.09999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14764,7 +14764,7 @@
         "icon": 101,
         "led": true,
         "mute": false,
-        "fdr": 3.700000763,
+        "fdr": 1.200000763,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -14901,7 +14901,7 @@
           },
           "3": {
             "on": true,
-            "lvl": -4.100000381,
+            "lvl": -3.399999619,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14909,7 +14909,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -6.200000763,
+            "lvl": -16.09999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -14925,7 +14925,7 @@
           },
           "6": {
             "on": true,
-            "lvl": 2.700000763,
+            "lvl": 5.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15121,7 +15121,7 @@
         "icon": 300,
         "led": true,
         "mute": false,
-        "fdr": 1.900001526,
+        "fdr": -7.600000381,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -15266,7 +15266,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -9.200000763,
+            "lvl": -14.90000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15274,7 +15274,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -24.70000076,
+            "lvl": -28.29999924,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15282,7 +15282,7 @@
           },
           "6": {
             "on": true,
-            "lvl": 2,
+            "lvl": 4.900001526,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15631,7 +15631,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -24.60000038,
+            "lvl": -27.79999924,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -15639,7 +15639,7 @@
           },
           "6": {
             "on": true,
-            "lvl": 1.700000763,
+            "lvl": 5.099998474,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16192,7 +16192,7 @@
         "icon": 101,
         "led": true,
         "mute": false,
-        "fdr": 5.900001526,
+        "fdr": 2.700000763,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -16313,7 +16313,7 @@
         "send": {
           "1": {
             "on": true,
-            "lvl": 4.200000763,
+            "lvl": 2.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16329,7 +16329,7 @@
           },
           "3": {
             "on": true,
-            "lvl": 0.100000381,
+            "lvl": 3.099998474,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16337,7 +16337,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 2.400001526,
+            "lvl": 1.000001907,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16345,7 +16345,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -5,
+            "lvl": -4.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16353,7 +16353,7 @@
           },
           "6": {
             "on": true,
-            "lvl": 2.5,
+            "lvl": 3.599998474,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16549,7 +16549,7 @@
         "icon": 400,
         "led": true,
         "mute": false,
-        "fdr": -10.5,
+        "fdr": -9.399997711,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -16686,7 +16686,7 @@
           },
           "3": {
             "on": true,
-            "lvl": -13,
+            "lvl": -21.70000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16702,7 +16702,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -20.59999847,
+            "lvl": -21.70000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -16710,7 +16710,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -11.70000076,
+            "lvl": -14.90000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17043,7 +17043,7 @@
           },
           "3": {
             "on": true,
-            "lvl": -12.5,
+            "lvl": -15.70000076,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17051,7 +17051,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -11.90000153,
+            "lvl": -15.0328064,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17067,7 +17067,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -13,
+            "lvl": -6.700000763,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -17416,7 +17416,7 @@
           },
           "5": {
             "on": true,
-            "lvl": -14.90000153,
+            "lvl": -15.59999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -18122,7 +18122,7 @@
           },
           "4": {
             "on": false,
-            "lvl": -20,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -18138,7 +18138,7 @@
           },
           "6": {
             "on": true,
-            "lvl": -32.70000076,
+            "lvl": -35.40000153,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -18479,7 +18479,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -0.200000763,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -18852,7 +18852,7 @@
           },
           "6": {
             "on": false,
-            "lvl": -87.30000305,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -19048,7 +19048,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -144,
+        "fdr": -86.09999847,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -19193,7 +19193,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -89.19999695,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -19405,7 +19405,7 @@
         "icon": 0,
         "led": true,
         "mute": false,
-        "fdr": -144,
+        "fdr": -79.30000305,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -19550,7 +19550,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -19907,7 +19907,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -87.5,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -20119,7 +20119,7 @@
         "icon": 607,
         "led": true,
         "mute": false,
-        "fdr": -12.40000153,
+        "fdr": -16.29521179,
         "pan": 0,
         "wid": 100,
         "solosafe": false,
@@ -20264,7 +20264,7 @@
           },
           "4": {
             "on": true,
-            "lvl": -14.90000153,
+            "lvl": -22.00240326,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -20621,7 +20621,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -21284,7 +21284,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -21581,7 +21581,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -21597,7 +21597,7 @@
           },
           "6": {
             "on": false,
-            "lvl": 0,
+            "lvl": 0.20000267,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -21878,7 +21878,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0.899999619,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -22175,7 +22175,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -22472,7 +22472,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -22769,7 +22769,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -83.09999847,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -23066,7 +23066,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -23363,7 +23363,7 @@
           },
           "4": {
             "on": true,
-            "lvl": 0,
+            "lvl": -144,
             "pon": false,
             "mode": "PRE",
             "plink": 0,
@@ -23548,7 +23548,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -20,
+        "fdr": -22,
         "pan": 0,
         "wid": 100,
         "mon": "A",
@@ -23785,7 +23785,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -14.09999847,
+        "fdr": -6.600000381,
         "pan": 0,
         "wid": 100,
         "mon": "A",
@@ -24259,7 +24259,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -20.79999924,
+        "fdr": -16.79999924,
         "pan": 0,
         "wid": 100,
         "mon": "A",
@@ -24496,7 +24496,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -7.799999237,
+        "fdr": -7,
         "pan": 0,
         "wid": 100,
         "mon": "A",
@@ -24733,7 +24733,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -28.79999924,
+        "fdr": -32.20000076,
         "pan": 0,
         "wid": 100,
         "mon": "A",
@@ -25088,7 +25088,7 @@
           },
           "6": {
             "on": false,
-            "lvl": -144,
+            "lvl": -79.09999847,
             "pre": false
           },
           "7": {
@@ -25562,7 +25562,7 @@
           },
           "6": {
             "on": false,
-            "lvl": -87.30000305,
+            "lvl": -144,
             "pre": false
           },
           "7": {
@@ -27342,7 +27342,7 @@
         "led": true,
         "busmono": false,
         "mute": false,
-        "fdr": -15.70000076,
+        "fdr": -7,
         "pan": 0,
         "wid": 100,
         "mon": "A",
